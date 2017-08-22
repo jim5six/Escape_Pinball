@@ -1,0 +1,21 @@
+# config_version=4
+# Escape!
+
+#LaunchBall
+
+mode:
+  start_events:  s_plunger_lane_inactive
+  stop_events: timer_mode_countdown_complete
+   # priority: 800
+  # use_wait_queue: true
+
+timers:
+    mode_countdown:
+        start_value: 3
+        end_value: 0
+        direction: down
+        start_running: true
+        bcp: true
+
+show_player:
+  mode_LaunchBall_started: plunge_animation

@@ -1,0 +1,13 @@
+#config_version=4
+#Escape!
+
+config:
+- hardware.yaml
+- display.yaml
+- modes.yaml
+- keys.yaml
+- audio.yaml
+
+game:
+    balls_per_game: 3
+    max_players: 4

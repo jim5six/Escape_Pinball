@@ -1,0 +1,57 @@
+events:
+  game_ended: 80
+  game_started: 165
+player:
+  score:
+    average: 19292.500000000004
+    top:
+    - 83400
+    - 77300
+    - 75200
+    - 73100
+    - 66100
+    - 56100
+    - 52200
+    - 49200
+    - 48300
+    - 48100
+    total: 80
+switches:
+  s_ball_release: 93
+  s_droptargetbank1: 57
+  s_droptargetbank2: 60
+  s_jet1: 0
+  s_jet2: 0
+  s_jet3: 0
+  s_launch_button: 3
+  s_left_flipper: 806
+  s_left_inlane: 33
+  s_left_outlane: 22
+  s_left_slingshot: 163
+  s_matrixswitch0: 0
+  s_matrixswitch1: 0
+  s_matrixswitch2: 0
+  s_matrixswitch3: 0
+  s_matrixswitch4: 0
+  s_matrixswitch5: 0
+  s_matrixswitch6: 0
+  s_matrixswitch7: 0
+  s_plunger_lane: 315
+  s_popbumper1: 265
+  s_popbumper2: 186
+  s_popbumper3: 289
+  s_right_flipper: 843
+  s_right_flipper_upper: 77
+  s_right_inlane: 86
+  s_right_outlane: 22
+  s_right_slingshot: 193
+  s_scoop_vuk: 317
+  s_singledrop: 71
+  s_spiral_kicker: 6
+  s_start: 7
+  s_trough1: 291
+  s_trough2: 211
+  s_trough3: 210
+  s_trough4: 191
+  s_trough5: 0
+  s_trough_jam: 0
