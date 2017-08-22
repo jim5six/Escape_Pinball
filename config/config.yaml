@@ -5,6 +5,7 @@ config:
 - hardware.yaml
 - display.yaml
 - modes.yaml
+#Comment keys.yaml out in psyical machine
 - keys.yaml
 - audio.yaml
 
