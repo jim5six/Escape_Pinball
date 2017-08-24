@@ -1,33 +1,33 @@
 events:
-  game_ended: 80
-  game_started: 165
+  game_ended: 111
+  game_started: 201
 player:
   score:
-    average: 19292.500000000004
+    average: 21170.270270270266
     top:
+    - 107100
     - 83400
+    - 77700
     - 77300
     - 75200
     - 73100
+    - 72500
     - 66100
     - 56100
     - 52200
-    - 49200
-    - 48300
-    - 48100
-    total: 80
+    total: 111
 switches:
-  s_ball_release: 93
-  s_droptargetbank1: 57
-  s_droptargetbank2: 60
+  s_ball_release: 106
+  s_droptargetbank1: 104
+  s_droptargetbank2: 102
   s_jet1: 0
   s_jet2: 0
   s_jet3: 0
   s_launch_button: 3
-  s_left_flipper: 806
-  s_left_inlane: 33
-  s_left_outlane: 22
-  s_left_slingshot: 163
+  s_left_flipper: 1193
+  s_left_inlane: 62
+  s_left_outlane: 32
+  s_left_slingshot: 337
   s_matrixswitch0: 0
   s_matrixswitch1: 0
   s_matrixswitch2: 0
@@ -36,22 +36,22 @@ switches:
   s_matrixswitch5: 0
   s_matrixswitch6: 0
   s_matrixswitch7: 0
-  s_plunger_lane: 315
-  s_popbumper1: 265
-  s_popbumper2: 186
-  s_popbumper3: 289
-  s_right_flipper: 843
-  s_right_flipper_upper: 77
-  s_right_inlane: 86
-  s_right_outlane: 22
-  s_right_slingshot: 193
-  s_scoop_vuk: 317
-  s_singledrop: 71
-  s_spiral_kicker: 6
+  s_plunger_lane: 425
+  s_popbumper1: 378
+  s_popbumper2: 267
+  s_popbumper3: 391
+  s_right_flipper: 1309
+  s_right_flipper_upper: 478
+  s_right_inlane: 155
+  s_right_outlane: 42
+  s_right_slingshot: 381
+  s_scoop_vuk: 496
+  s_singledrop: 94
+  s_spiral_kicker: 102
   s_start: 7
-  s_trough1: 291
-  s_trough2: 211
-  s_trough3: 210
-  s_trough4: 191
+  s_trough1: 446
+  s_trough2: 318
+  s_trough3: 311
+  s_trough4: 290
   s_trough5: 0
   s_trough_jam: 0

@@ -120,9 +120,9 @@ switches:
     s_spiral_kicker:
         number: SD28
         label: Spiral Kicker
-    s_ball_release:
-        number: SD29
-        label: Subway Ball Release
+#    s_ball_release:
+#        number: SD29
+#        label: Subway Ball Release
     s_right_flipper_upper:
         number: SD30
         label: Right Upper Flipper Button
@@ -195,7 +195,7 @@ coils:
         label: Auto Plunger
     c_trough_eject:
         number: A0-B0-1
-        pulse_ms: 10
+        pulse_ms: 15
         label: Trough Eject
     c_flipper_right_upper:
         number: A0-B0-2
@@ -214,15 +214,15 @@ coils:
         label: Right Flipper
     c_left_slingshot:
         number: A0-B0-5
-        pulse_ms: 3
+        pulse_ms: 4
         label: Left Sling
     c_right_slingshot:
         number: A0-B0-6
-        pulse_ms: 3
+        pulse_ms: 4
         label: Right Sling
     c_spiral_kicker:
         number: A0-B0-7
-        pulse_ms: 5
+        pulse_ms: 8
         label: Spiral Kicker
 
   #####################################################
@@ -244,17 +244,17 @@ coils:
         number: A0-B1-3
         pulse_ms: 15
         label: Single Drop Target
-    c_ball_release:
-        number: A0-B1-4
-        pulse_ms: 50
-        label: Ball Release Coil
+#    c_ball_release:
+#        number: A0-B1-4
+#        pulse_ms: 50
+#        label: Ball Release Coil
     c_droptargetbank:
         number: A0-B1-6
         pulse_ms: 25
         label: Drop Target Bank
     c_scoop_VUK:
         number: A0-B1-7
-        pulse_ms: 40
+        pulse_ms: 10
         label: VUK
 
 autofire_coils:
@@ -300,12 +300,12 @@ drop_target_banks:
     stargetbank:
         drop_targets: targetbank1
         reset_coils: c_singledroptarget
-        reset_events: ball_starting, s_ball_release_active
+        reset_events: ball_end
     2targetbank:
         drop_targets: targetbank2_1, targetbank2_2
         reset_coils: c_droptargetbank
-        reset_on_complete: 500ms
-        reset_events: ball_starting
+        reset_events:
+            drop_targets_2targetbank_complete: 10s
 
 ball_devices:
   bd_trough:
@@ -321,15 +321,13 @@ ball_devices:
     eject_coil: c_auto_plunge
   bd_scoop:
     ball_switches: s_scoop_VUK
-    captures_from: bd_ball_release
     eject_coil: c_scoop_VUK
     eject_timeouts: 3s
-  bd_ball_release:
-    ball_switches: s_ball_release
-    eject_coil: c_ball_release
-    eject_targets: bd_scoop
-    eject_timeouts: 3s
-  bd_spiral_lock:
+#  bd_ball_release:
+#    ball_switches: s_ball_release
+#    eject_coil: c_ball_release
+#    eject_timeouts: 3s
+  bd_spiral_kicker:
     ball_switches: s_spiral_kicker
     eject_coil: c_spiral_kicker
-    eject_timeouts: 2s
+    eject_timeouts: 3s

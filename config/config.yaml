@@ -5,10 +5,324 @@ config:
 - hardware.yaml
 - display.yaml
 - modes.yaml
-# Comment keys.yaml out in psyical machine
-- keys.yaml
+# - keys.yaml
 - audio.yaml
 
 game:
     balls_per_game: 3
     max_players: 4
+    # player_controlled_eject_tag: plunge_button
+
+# hardware:
+#     platform: p_roc
+#     driverboards: pdb
+
+# modes:
+#     - base
+
+# switches:
+#     ##########################################################################
+#     # name:
+#     #   number: <number>
+#     #           <number> can be: SDx (x is the switch number) or switch matrix number
+#     #           Direct Switches: P-ROC switch # = SDx
+#     #           Remember numbers start at 0 "zero" and the Key Pin is not counted
+#     #           Jim - revise below when you understand how the switch matrix works -
+#     #           Bank B switch: P3-ROC switch # = SW-16 address * 16 + 8 + Bank B switch input
+#     #   type: <type>
+#     #         <type> 'NO' (normally open.  This is the default; so no need to use this)
+#     #                'NC' (normally closed.  Common for optos)?
+#     #   tags: <group>
+#     #   ballsearch: reset, stop(prevent counter from starting)
+#     #   debounce: auto(default), quick, normal
+#     ##########################################################################
+#     ####################################
+#     # P-Roc Direct Switch Inputs # J15 #
+#     ####################################
+#     s_left_flipper:
+#         number: SD8
+#         label: Left Flipper Button
+#     s_right_flipper:
+#         number: SD9
+#         label: Right Flipper Button
+#     s_left_slingshot:
+#         number: SD10
+#         tags: playfield_active
+#         debounce: quick
+#         label: Left Sling
+#     s_right_slingshot:
+#         number: SD11
+#         tags: playfield_active
+#         debounce: quick
+#         label: Right Sling
+#     s_left_inlane:
+#         number: SD12
+#         tags: playfield_active
+#         label: Left Inlane
+#     s_right_inlane:
+#         number: SD13
+#         tags: playfield_active
+#         label: Right Inlane
+#     s_left_outlane:
+#         number: SD14
+#         tags: drain
+#         label: Left Outlane
+#     s_right_outlane:
+#         number: SD15
+#         tags: drain
+#         label: Right Outlane
+#     ####################################
+#     # P-Roc Direct Switch Inputs # J33 #
+#     ####################################
+#     s_start:
+#         number: SD16
+#         tags: start
+#         label: Start Button
+#     s_popbumper1:
+#         number: SD17
+#         tags:
+#         debounce: quick
+#         label:
+#     s_popbumper2:
+#         number: SD18
+#         tags:
+#         debounce: quick
+#         label:
+#     s_popbumper3:
+#         number: SD19
+#         tags:
+#         debounce: quick
+#         label:
+#     s_singledrop:
+#         number: SD20
+#         tags:
+#         label: Single Drop Target
+#     s_droptargetbank1:
+#         number: SD21
+#         tags:
+#         label: Drop Target Bank 1
+#     s_droptargetbank2:
+#         number: SD22
+#         tags:
+#         label: Drop Target Bank 2
+#     s_scoop_VUK:
+#         number: SD23
+#         tags:
+#         label: VUK
+
+#     ####################################
+#     # P-Roc Direct Switch Inputs # J25 #
+#     ####################################
+#     s_trough1:
+#         number: SD24
+#         label: Trough 1
+#     s_trough2:
+#         number: SD25
+#         label: Trough 2
+#     s_trough3:
+#         number: SD26
+#         label: Trough 3
+#     s_trough4:
+#         number: SD27
+#         label: Trough 4
+# #    s_ball_release:
+# #        number: SD28
+# #        label: Ball Release
+# #    available:
+# #        number: SD29
+# #        label:
+#     s_plunger_lane:
+#         number: SD31
+#         label: Plunger Lane
+
+# coils:
+#     ##########################################################################
+#     # Coil numbering format: Ax-By-z:
+#     # Capital letters are required, lower case letters represent the numbers:
+#     # x : Board address (0-7)
+#     # y : Bank address (0 for A, 1 for B)
+#     # z : Output number (0-7)
+#     # Remember numbers start at 0 "zero" and the Key Pin is not counted
+#     ##########################################################################
+#     #####################################################
+#     # PD-16/Master # Address:0 # Bank:A # Voltage:70vdc #
+#     #####################################################
+#     c_auto_plunge:
+#         number: A0-B0-0
+#         pulse_ms: 10
+#         label: Auto Plunger
+#     c_trough_eject:
+#         number: A0-B0-1
+#         pulse_ms: 10
+#         label: Trough Eject
+#     c_flipper_right_upper:
+#         number: A0-B0-2
+#         pulse_ms: 7
+#         hold_power: 1
+#         label: Right Upper Flipper
+#     c_flipper_left_main:
+#         number: A0-B0-3
+#         pulse_ms: 15
+#         hold_power: 1
+#         label: Left Flipper
+#     c_flipper_right_main:
+#         number: A0-B0-4
+#         pulse_ms: 15
+#         hold_power: 1
+#         label: Right Flipper
+#     c_left_slingshot:
+#         number: A0-B0-5
+#         pulse_ms: 3
+#         label: Left Sling
+#     c_right_slingshot:
+#         number: A0-B0-6
+#         pulse_ms: 3
+#         label: Right Sling
+#   #####################################################
+#   # PD-16/Master # Address:0 # Bank:B # Voltage:70vdc #
+#   #####################################################
+#     c_popbumper1:
+#         number: A0-B1-0
+#         pulse_ms: 6
+#         label: Pop Bumper 1
+#     c_popbumper3:
+#         number: A0-B1-1
+#         pulse_ms: 6
+#         label: Pop Bumper 3
+#     c_popbumper2:
+#         number: A0-B1-2
+#         pulse_ms: 6
+#         label: Pop Bumper 2
+#     c_singledroptarget:
+#         number: A0-B1-3
+#         pulse_ms: 15
+#         label: Single Drop Target
+#     c_ball_release:
+#         number: A0-B1-4
+#         pulse_ms: 80
+#         label: Ball Release Coil
+#     c_droptargetbank:
+#         number: A0-B1-6
+#         pulse_ms: 25
+#         label: Drop Target Bank
+#     c_scoop_VUK:
+#         number: A0-B1-7
+#         pulse_ms: 40
+#         label: VUK
+
+# autofire_coils:
+#     left_slingshot:
+#         coil: c_left_slingshot
+#         switch: s_left_slingshot
+#     right_slingshot:
+#         coil: c_right_slingshot
+#         switch: s_right_slingshot
+#     popbumper1:
+#         coil: c_popbumper1
+#         switch: s_popbumper1
+#     popbumper2:
+#         coil: c_popbumper2
+#         switch: s_popbumper2
+#     popbumper3:
+#         coil: c_popbumper3
+#         switch: s_popbumper3
+
+# flippers:
+#     left_flipper:
+#         main_coil: c_flipper_left_main
+#         activation_switch: s_left_flipper
+#     right_flipper:
+#         main_coil: c_flipper_right_main
+#         activation_switch: s_right_flipper
+#     upper_right:
+#         main_coil: c_flipper_right_upper
+#         activation_switch: s_right_flipper
+
+# drop_targets:
+#     targetbank1:
+#         switch: s_singledrop
+#         reset_coil: c_singledroptarget
+#     targetbank2_1:
+#         switch: s_droptargetbank1
+#         reset_coil: c_droptargetbank
+#     targetbank2_2:
+#         switch: s_droptargetbank2
+#         reset_coil: c_droptargetbank
+
+# drop_target_banks:
+#     stargetbank:
+#         drop_targets: targetbank1
+#         reset_coils: c_singledroptarget
+#         reset_events: ball_end
+#     2targetbank:
+#         drop_targets: targetbank2_1, targetbank2_2
+#         reset_coils: c_droptargetbank
+#         reset_events:
+#             drop_targets_2targetbank_complete: 10s
+
+# displays:
+#     dmd:
+#         width: 128
+#         height: 32
+#         default: yes
+#     window:
+#         width: 1650
+#         height: 1080
+
+# window:
+#   width: 1650
+#   height: 1080
+#   title: Mission Pinball Framework
+#   resizable: false
+#   fullscreen: false
+#   borderless: true
+#   exit_on_escape: true
+#   source_display: window
+
+# slides:
+#   window_slide:
+#     widgets:
+#     - type: color_dmd
+#       width: 640
+#       height: 160
+#       pixel_size: .5
+#       x: center
+#       y: bottom+15%
+#     - type: image
+#       image: bg3_2
+
+#   dmd_slide:
+#     - type: text
+#       text: ESCAPE!
+#     - type: rectangle
+#       width: 128
+#       height: 32
+#       color: Red
+
+# slide_player:
+#   mc_reset_phase_1:
+#     dmd_slide:
+#         target: dmd
+#     window_slide:
+#         target: window
+
+# ball_devices:
+#   bd_trough:
+#     tags: trough, home, drain
+#     ball_switches: s_trough1, s_trough2, s_trough3, s_trough4
+#     eject_coil: c_trough_eject
+#     eject_targets: bd_plunger
+#   bd_plunger:
+#     ball_switches: s_plunger_lane
+#     eject_timeouts: 3s
+#     tags: ball_add_live
+#     #mechanical_eject: true
+#     eject_coil: c_auto_plunge
+#   bd_scoop:
+#     ball_switches: s_scoop_VUK
+#     eject_coil: c_scoop_VUK
+#     eject_timeouts: 3s
+# #  bd_ball_release:
+# #    ball_switches: s_ball_release
+# #    eject_coil: c_ball_release
+# #    eject_timeouts: 3s

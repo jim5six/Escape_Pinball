@@ -12,8 +12,6 @@ keyboard:
         switch: s_left_flipper
     rctrl:
         switch: s_right_flipper
-    m:
-        switch: s_right_flipper_upper
     p:
         switch: s_plunger_lane
         toggle: true
