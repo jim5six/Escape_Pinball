@@ -5,7 +5,7 @@
     p-roc_slide:
       widgets:
       - type: text
-        text: P-ROC POWERED
+        text: POWERED BY P-ROC
         font_size: 15
       transition:
         type: fade
@@ -46,7 +46,7 @@
     mission_pinball:
       widgets:
       - type: Text
-        text: MISSION PINBALL
+        text: THANKS MISSION PINBALL!
         font_size: 15
         color: red
       transition:
