@@ -1,0 +1,23 @@
+2017-08-26 11:50:22,695 : Machine : Mission Pinball Framework Core Engine v0.33.33
+2017-08-26 11:50:22,695 : Machine : Command line arguments: {'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'configfile': ['config'], 'pause': False, 'syslog_address': None, 'bcp': True, 'force_assets_load': False, 'create_config_cache': True, 'no_load_cache': False, 'mpfconfigfile': 'c:\\python34\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'mc_file_name': None, 'logfile': 'logs\\2017-08-26-11-50-22-mpf-MSI.log', 'loglevel': 11}
+2017-08-26 11:50:22,695 : Machine : MPF path: c:\python34\lib\site-packages\mpf
+2017-08-26 11:50:22,695 : Machine : Machine path: C:\Users\Jim\Documents\Git\Escape_Pinball
+2017-08-26 11:50:22,695 : Machine : Platform: win32
+2017-08-26 11:50:22,695 : Machine : Python executable location: c:\python34\python.exe
+2017-08-26 11:50:22,695 : Machine : Python version: 3.4.4 (64-bit)
+2017-08-26 11:50:22,965 : Machine : Loading cached config: C:\Users\Jim\AppData\Local\Temp\fa0b01ce8c398bcfdb09353f8b53b44cconfig
+2017-08-26 11:50:23,143 : SwitchController : Loading the SwitchController
+2017-08-26 11:50:23,197 : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 28300, 'change': 0, 'prev_value': 28300}
+2017-08-26 11:50:23,197 : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.33.33', 'change': False, 'prev_value': 'MPF v0.33.33'}
+2017-08-26 11:50:23,197 : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.33.33, Config version:4, Show version: 4, BCP version:1.1', 'change': False, 'prev_value': 'MPF v0.33.33, Config version:4, Show version: 4, BCP version:1.1'}
+2017-08-26 11:50:23,197 : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.4.4', 'change': False, 'prev_value': '3.4.4'}
+2017-08-26 11:50:23,197 : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.14393', 'change': False, 'prev_value': 'Windows-10-10.0.14393'}
+2017-08-26 11:50:23,197 : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'change': False, 'prev_value': 'Windows'}
+2017-08-26 11:50:23,197 : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'change': False, 'prev_value': '10'}
+2017-08-26 11:50:23,197 : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.14393', 'change': False, 'prev_value': '10.0.14393'}
+2017-08-26 11:50:23,197 : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'change': False, 'prev_value': 'AMD64'}
+2017-08-26 11:50:23,197 : EventManager : Event: ======'init_phase_1'====== Args={}
+2017-08-26 11:50:23,312 : EventManager : Event: ======'drop_target_bank_2targetbank_up'====== Args={}
+2017-08-26 11:50:23,312 : EventManager : Event: ======'drop_target_bank_stargetbank_up'====== Args={}
+2017-08-26 11:50:23,312 : EventManager : Event: ======'init_phase_2'====== Args={}
+2017-08-26 11:50:23,413 : BCPClientSocket.local_display : Connecting BCP to 'local_display' at localhost:5050...

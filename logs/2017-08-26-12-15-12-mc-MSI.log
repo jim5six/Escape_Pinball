@@ -1,0 +1,44 @@
+2017-08-26 12:15:13,329 : kivy : Factory: 194 symbols loaded
+2017-08-26 12:15:13,443 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_gif (img_pil, img_ffpyplayer ignored)
+2017-08-26 12:15:13,480 : kivy : VideoGstplayer: Using Gstreamer 1.10.2.0
+2017-08-26 12:15:13,481 : kivy : Video: Provider: gstplayer
+2017-08-26 12:15:13,501 : kivy : Loading MPF-MC controller
+2017-08-26 12:15:13,517 : mpfmc : Mission Pinball Framework Media Controller v0.33.13
+2017-08-26 12:15:13,517 : mpfmc : Mission Pinball Framework Game Engine v0.33.33
+2017-08-26 12:15:13,517 : mpfmc : Machine path: C:\Users\Jim\Documents\Git\Escape_Pinball
+2017-08-26 12:15:13,517 : mpfmc : Starting clock at 30.0Hz
+2017-08-26 12:15:13,533 : kivy : Text: Provider: sdl2
+2017-08-26 12:15:13,820 : kivy : OSC: using <thread> for socket
+2017-08-26 12:15:13,827 : kivy : Window: Provider: sdl2
+2017-08-26 12:15:14,012 : kivy : GL: Using the "OpenGL" graphics system
+2017-08-26 12:15:14,014 : kivy : GL: GLEW initialization succeeded
+2017-08-26 12:15:14,015 : kivy : GL: Backend used <glew>
+2017-08-26 12:15:14,016 : kivy : GL: OpenGL version <b'4.4.0 - Build 21.20.16.4534'>
+2017-08-26 12:15:14,017 : kivy : GL: OpenGL vendor <b'Intel'>
+2017-08-26 12:15:14,019 : kivy : GL: OpenGL renderer <b'Intel(R) HD Graphics 530'>
+2017-08-26 12:15:14,020 : kivy : GL: OpenGL parsed version: 4, 4
+2017-08-26 12:15:14,021 : kivy : GL: Shading version <b'4.40 - Build 21.20.16.4534'>
+2017-08-26 12:15:14,022 : kivy : GL: Texture max size <16384>
+2017-08-26 12:15:14,023 : kivy : GL: Texture max units <32>
+2017-08-26 12:15:14,043 : kivy : Shader: fragment shader: <b"WARNING: 0:7: '' :  #version directive missing">
+2017-08-26 12:15:14,044 : kivy : Shader: vertex shader: <b"WARNING: 0:7: '' :  #version directive missing">
+2017-08-26 12:15:14,064 : kivy : Window: auto add sdl2 input provider
+2017-08-26 12:15:14,066 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2017-08-26 12:15:14,075 : AudioInterface : NOTE: You may experience noise and other undesirable sound artifacts when you set your buffer at 1024 or smaller.
+2017-08-26 12:15:15,008 : AudioInterface : Initialized
+2017-08-26 12:15:15,014 : kivy : Base: Start application main loop
+2017-08-26 12:15:15,223 : MPF-MC BCP Server : Starting up on localhost port 5050
+2017-08-26 12:15:15,230 : MPF-MC BCP Server : Waiting for a connection...
+2017-08-26 12:15:15,407 : MPF-MC BCP Server : Received connection from: 127.0.0.1:51346
+2017-08-26 12:15:15,621 : kivy : GL: NPOT texture support is available
+2017-08-26 12:15:15,638 : kivy : Shader: fragment shader: <b"WARNING: 0:8: '' :  #version directive missing">
+2017-08-26 12:15:15,813 : kivy : Shader: fragment shader: <b"WARNING: 0:7: '' :  #version directive missing">
+2017-08-26 12:22:06,587 : kivy : Base: Leaving application in progress...
+2017-08-26 12:22:06,587 : mpfmc : Stopping...
+2017-08-26 12:22:06,587 : mpfmc : Loop rate 39.98 Hz
+2017-08-26 12:22:06,587 : kivy : MC run loop ended.
+2017-08-26 12:22:06,587 : kivy : Stopping child threads... (3 remaining)
+2017-08-26 12:22:06,791 : mpfmc : Stopping...
+2017-08-26 12:22:06,791 : mpfmc : Loop rate 39.96 Hz
+2017-08-26 12:22:06,859 : MPF-MC BCP Server : Stopping BCP sending thread
+2017-08-26 12:22:07,644 : kivy : All child threads stopped.
