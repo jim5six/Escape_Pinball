@@ -1,0 +1,9 @@
+2017-08-26 11:50:07,647 : Machine : Mission Pinball Framework Core Engine v0.33.33
+2017-08-26 11:50:07,647 : Machine : Command line arguments: {'bcp': True, 'force_platform': None, 'mpfconfigfile': 'c:\\python34\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'force_assets_load': False, 'mc_file_name': None, 'loglevel': 11, 'logfile': 'logs\\2017-08-26-11-50-07-mpf-MSI.log', 'pause': False, 'consoleloglevel': True, 'configfile': ['config'], 'syslog_address': None, 'create_config_cache': True, 'no_load_cache': False}
+2017-08-26 11:50:07,647 : Machine : MPF path: c:\python34\lib\site-packages\mpf
+2017-08-26 11:50:07,647 : Machine : Machine path: C:\Users\Jim\Documents\Git\Escape_Pinball
+2017-08-26 11:50:07,647 : Machine : Platform: win32
+2017-08-26 11:50:07,647 : Machine : Python executable location: c:\python34\python.exe
+2017-08-26 11:50:07,647 : Machine : Python version: 3.4.4 (64-bit)
+2017-08-26 11:50:07,947 : Machine : Loading cached config: C:\Users\Jim\AppData\Local\Temp\fa0b01ce8c398bcfdb09353f8b53b44cconfig
+2017-08-26 11:50:07,963 : P-ROC : Connecting to P-ROC

@@ -1,0 +1,19 @@
+2017-08-26 11:49:37,266 : Machine : Mission Pinball Framework Core Engine v0.33.33
+2017-08-26 11:49:37,266 : Machine : Command line arguments: {'no_load_cache': False, 'loglevel': 10, 'logfile': 'logs\\2017-08-26-11-49-37-mpf-MSI.log', 'syslog_address': None, 'mpfconfigfile': 'c:\\python34\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'force_assets_load': False, 'consoleloglevel': 20, 'mc_file_name': None, 'configfile': ['config'], 'pause': False, 'create_config_cache': True, 'force_platform': None, 'bcp': True}
+2017-08-26 11:49:37,266 : Machine : MPF path: c:\python34\lib\site-packages\mpf
+2017-08-26 11:49:37,266 : Machine : Machine path: C:\Users\Jim\Documents\Git\Escape_Pinball
+2017-08-26 11:49:37,266 : Machine : Platform: win32
+2017-08-26 11:49:37,266 : Machine : Python executable location: c:\python34\python.exe
+2017-08-26 11:49:37,266 : Machine : Python version: 3.4.4 (64-bit)
+2017-08-26 11:49:37,566 : Machine : Loading config from original files
+2017-08-26 11:49:37,566 : YAML File Interface : Loading file: c:\python34\lib\site-packages\mpf\mpfconfig.yaml
+2017-08-26 11:49:37,682 : Machine : Machine config file #1: C:\Users\Jim\Documents\Git\Escape_Pinball\config\config
+2017-08-26 11:49:37,682 : YAML File Interface : Loading file: C:\Users\Jim\Documents\Git\Escape_Pinball\config\config.yaml
+2017-08-26 11:49:37,698 : YAML File Interface : Loading file: C:\Users\Jim\Documents\Git\Escape_Pinball\config\hardware.yaml
+2017-08-26 11:49:37,798 : YAML File Interface : Loading file: C:\Users\Jim\Documents\Git\Escape_Pinball\config\display.yaml
+2017-08-26 11:49:37,813 : YAML File Interface : Loading file: C:\Users\Jim\Documents\Git\Escape_Pinball\config\modes.yaml
+2017-08-26 11:49:37,813 : YAML File Interface : Loading file: C:\Users\Jim\Documents\Git\Escape_Pinball\config\keys.yaml
+2017-08-26 11:49:37,833 : YAML File Interface : Loading file: C:\Users\Jim\Documents\Git\Escape_Pinball\config\audio.yaml
+2017-08-26 11:49:37,836 : Machine : Config file cache created: C:\Users\Jim\AppData\Local\Temp\fa0b01ce8c398bcfdb09353f8b53b44cconfig
+2017-08-26 11:49:37,836 : asyncio : Using selector: SelectSelector
+2017-08-26 11:49:37,899 : P-ROC : Connecting to P-ROC

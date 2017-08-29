@@ -1,0 +1,30 @@
+2017-08-26 12:05:12,908 : Machine : Mission Pinball Framework Core Engine v0.33.33
+2017-08-26 12:05:12,908 : Machine : Command line arguments: {'mc_file_name': None, 'no_load_cache': False, 'force_platform': None, 'mpfconfigfile': 'c:\\python34\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'loglevel': 11, 'create_config_cache': True, 'pause': False, 'consoleloglevel': 20, 'syslog_address': None, 'logfile': 'logs\\2017-08-26-12-05-12-mpf-MSI.log', 'force_assets_load': False, 'configfile': ['config'], 'bcp': True}
+2017-08-26 12:05:12,908 : Machine : MPF path: c:\python34\lib\site-packages\mpf
+2017-08-26 12:05:12,908 : Machine : Machine path: C:\Users\Jim\Documents\Git\Escape_Pinball\monitor
+2017-08-26 12:05:12,908 : Machine : Platform: win32
+2017-08-26 12:05:12,908 : Machine : Python executable location: c:\python34\python.exe
+2017-08-26 12:05:12,908 : Machine : Python version: 3.4.4 (64-bit)
+2017-08-26 12:05:13,167 : Machine : Loading config from original files
+2017-08-26 12:05:13,241 : Machine : Machine config file #1: C:\Users\Jim\Documents\Git\Escape_Pinball\monitor\config\config
+2017-08-26 12:05:13,243 : YAML Interface : Config file C:\Users\Jim\Documents\Git\Escape_Pinball\monitor\config\config.yaml is version 0. MPF 0.33.33 requires version 4
+2017-08-26 12:05:13,243 : YAML Interface : Use the Config File Migrator to automatically migrate your config file to the latest version.
+2017-08-26 12:05:13,243 : YAML Interface : Migration tool: https://missionpinball.com/docs/tools/config-file-migrator/
+2017-08-26 12:05:13,243 : YAML Interface : More info on config version 4: http://docs.missionpinball.org/docs/configuration-file-reference/important-config-file-concepts/config_version/config-version-4/
+2017-08-26 12:05:13,243 : root : Config file version mismatch: C:\Users\Jim\Documents\Git\Escape_Pinball\monitor\config\config.yaml
+Traceback (most recent call last):
+  File "c:\python34\lib\site-packages\mpf\commands\game.py", line 181, in __init__
+    MachineController(mpf_path, machine_path, vars(args)).run()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 96, in __init__
+    self._load_config()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 414, in _load_config
+    self._load_config_from_files()
+  File "c:\python34\lib\site-packages\mpf\core\machine.py", line 434, in _load_config_from_files
+    config_type='machine'))
+  File "c:\python34\lib\site-packages\mpf\core\config_processor.py", line 24, in load_config_file
+    config = FileManager.load(filename, verify_version, halt_on_error)
+  File "c:\python34\lib\site-packages\mpf\core\file_manager.py", line 165, in load
+    round_trip)
+  File "c:\python34\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 264, in load
+    raise ValueError("Config file version mismatch: {}".format(filename))
+ValueError: Config file version mismatch: C:\Users\Jim\Documents\Git\Escape_Pinball\monitor\config\config.yaml
