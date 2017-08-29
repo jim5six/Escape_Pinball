@@ -1,0 +1,16 @@
+# config_version=4
+# ESCAPE!
+
+# SkillSave mode. 5 seconds to complete.
+
+mode:
+  start_events: start_skillsave_mode
+  stop_events: #hit the shot or timer_mode_countdown_complete
+  priority: 300
+
+timers:
+  mode_countdown:
+    start_value: 5
+    end_value: 0
+    direction: down
+    start_running: true

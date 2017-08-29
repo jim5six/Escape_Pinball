@@ -1,0 +1,16 @@
+# config_version=4
+# ESCAPE!
+
+# Super Spinner mode. 30 seconds to complete.
+
+mode:
+  start_events: start_superspinner_mode
+  stop_events: #complete the shot or timer_mode_countdown_complete
+  priority: 300
+
+timers:
+  mode_countdown:
+    start_value: 30
+    end_value: 0
+    direction: down
+    start_running: true
