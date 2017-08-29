@@ -11,38 +11,38 @@ displays:
         height: 600
 
 window:
-  width: 800
-  height: 600
-  title: Mission Pinball Framework
-  resizable: true
-  fullscreen: false
-  borderless: false
-  exit_on_escape: true
-  source_display: window
+    width: 800
+    height: 600
+    title: Mission Pinball Framework
+    resizable: true
+    fullscreen: false
+    borderless: false
+    exit_on_escape: true
+    source_display: window
 
 slides:
-  window_slide:
-    widgets:
-    - type: color_dmd
-      width: 640
-      height: 160
-      pixel_size: .5
-      x: center
-      y: bottom+15%
-    - type: image
-      image: bg3_2
+    window_slide:
+      widgets:
+      - type: color_dmd
+        width: 640
+        height: 160
+        pixel_size: .5
+        x: center
+        y: bottom+15%
+      - type: image
+        image: bg3_2
 
-  dmd_slide:
-    - type: text
-      text: ESCAPE!
-    - type: rectangle
-      width: 128
-      height: 32
-      color: Red
+    dmd_slide:
+      - type: text
+        text: ESCAPE!
+      - type: rectangle
+        width: 128
+        height: 32
+        color: Red
 
 slide_player:
-  mc_reset_phase_1:
-    dmd_slide:
-        target: dmd
-    window_slide:
-        target: window
+    mc_reset_phase_1:
+      dmd_slide:
+          target: dmd
+      window_slide:
+          target: window

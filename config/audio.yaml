@@ -2,22 +2,22 @@
 # ESCAPE!
 
 sound_system:
-  buffer: 1024
-  frequency: 44100
-  channels: 2
-  master_volume: 0.9
-  tracks:
-    voice:
-      volume: 0.8
-      simultaneous_sounds: 1
-      preload: yes
-    sfx:
-      volume: 0.8
-      simultaneous_sounds: 8
-      preload: yes
-    music:
-      volume: 0.8
-      simultaneous_sounds: 1
+    buffer: 1024
+    frequency: 44100
+    channels: 2
+    master_volume: 0.9
+    tracks:
+        voice:
+            volume: 0.8
+            simultaneous_sounds: 1
+            preload: yes
+        sfx:
+            volume: 0.8
+            simultaneous_sounds: 8
+            preload: yes
+        music:
+            volume: 0.8
+            simultaneous_sounds: 1
 
 assets:
     sounds:

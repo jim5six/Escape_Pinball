@@ -120,9 +120,9 @@ switches:
     s_spiral_kicker:
         number: SD28
         label: Spiral Kicker
-#    s_ball_release:
-#        number: SD29
-#        label: Subway Ball Release
+    s_ball_release:
+        number: SD29
+        label: Subway Ball Release
     s_right_flipper_upper:
         number: SD30
         label: Right Upper Flipper Button
@@ -136,46 +136,134 @@ switches:
     # #J22 Pins 1-5, 7-9 are input for rows 0-7#
     ####################################
 
-    # s_matrixswitch0:
-    #     number: 0/0
-    #     tags:
-    #     debounce: quick #or normal or auto
-    #     label:
-    # s_matrixswitch1:
-    #     number: 0/1
-    #     tags:
-    #     debounce: quick #or normal or auto
-    #     label:
-    # s_matrixswitch2:
-    #     number: 0/2
-    #     tags:
-    #     debounce: quick #or normal or auto
-    #     label:
-    # s_matrixswitch3:
-    #     number: 0/3
-    #     tags:
-    #     debounce: quick #or normal or auto
-    #     label:
-    # s_matrixswitch4:
-    #     number: 0/4
-    #     tags:
-    #     debounce: quick #or normal or auto
-    #     label:
-    # s_matrixswitch5:
-    #     number: 0/5
-    #     tags:
-    #     debounce: quick #or normal or auto
-    #     label:
-    # s_matrixswitch6:
-    #     number: 0/6
-    #     tags:
-    #     debounce: quick #or normal or auto
-    #     label:
-    # s_matrixswitch7:
-    #     number: 0/7
-    #     tags:
-    #     debounce: quick #or normal or auto
-    #     label:
+# Martix Block 1
+
+    s_sneak:
+        number: 0/0
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_right_ramp_enter:
+        number: 0/1
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_quiet_target:
+        number: 0/2
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_right_orbit:
+        number: 0/3
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_P_lane:
+        number: 0/4
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_A_lane:
+        number: 0/5
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_C_lane:
+        number: 0/6
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_S_lane:
+        number: 0/7
+        tags:
+        debounce: quick #or normal or auto
+        label:
+
+# Martix block 2
+
+    s_skillsave:
+        number: 1/0
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_center_orbit:
+        number: 1/1
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_spiral_enter:
+        number: 1/2
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_captive_ball:
+        number: 1/3
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_cative_target:
+        number: 1/4
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_left_orbit:
+        number: 1/5
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_bath_target:
+        number: 1/6
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_bath_enter:
+        number: 1/7
+        tags:
+        debounce: quick #or normal or auto
+        label:
+
+# Martix block 3
+
+    s_spinner:
+        number: 2/0
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_left_ramp_enter:
+        number: 2/1
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_subway2:
+        number: 2/2
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_upper_sling:
+        number: 2/3
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_door_target:
+        number: 2/4
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_skillsave_target:
+        number: 2/5
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_subway1:
+        number: 2/6
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_:
+        number: 2/7
+        tags:
+        debounce: quick #or normal or auto
+        label:
 
 coils:
     ##########################################################################
@@ -244,10 +332,10 @@ coils:
         number: A0-B1-3
         pulse_ms: 15
         label: Single Drop Target
-#    c_ball_release:
-#        number: A0-B1-4
-#        pulse_ms: 50
-#        label: Ball Release Coil
+    c_ball_release:
+        number: A0-B1-4
+        pulse_ms: 50
+        label: Ball Release Coil
     c_droptargetbank:
         number: A0-B1-6
         pulse_ms: 25
@@ -308,26 +396,26 @@ drop_target_banks:
             drop_targets_2targetbank_complete: 10s
 
 ball_devices:
-  bd_trough:
-    tags: trough, home, drain
-    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4
-    eject_coil: c_trough_eject
-    eject_targets: bd_plunger
-  bd_plunger:
-    ball_switches: s_plunger_lane
-    eject_timeouts: 3s
-    tags: ball_add_live
-    mechanical_eject: true
-    eject_coil: c_auto_plunge
-  bd_scoop:
-    ball_switches: s_scoop_VUK
-    eject_coil: c_scoop_VUK
-    eject_timeouts: 3s
-#  bd_ball_release:
-#    ball_switches: s_ball_release
-#    eject_coil: c_ball_release
-#    eject_timeouts: 3s
-  bd_spiral_kicker:
-    ball_switches: s_spiral_kicker
-    eject_coil: c_spiral_kicker
-    eject_timeouts: 3s
+    bd_trough:
+        tags: trough, home, drain
+        ball_switches: s_trough1, s_trough2, s_trough3, s_trough4
+        eject_coil: c_trough_eject
+        eject_targets: bd_plunger
+    bd_plunger:
+        ball_switches: s_plunger_lane
+        eject_timeouts: 3s
+        tags: ball_add_live
+        mechanical_eject: true
+        eject_coil: c_auto_plunge
+    bd_scoop:
+        ball_switches: s_scoop_VUK
+        eject_coil: c_scoop_VUK
+        eject_timeouts: 3s
+    bd_ball_release:
+        ball_switches: s_ball_release
+        eject_coil: c_ball_release
+        eject_timeouts: 3s
+    bd_spiral_kicker:
+        ball_switches: s_spiral_kicker
+        eject_coil: c_spiral_kicker
+        eject_timeouts: 3s
