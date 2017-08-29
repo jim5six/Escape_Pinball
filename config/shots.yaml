@@ -1,0 +1,46 @@
+# config_version=4
+# ESCAPE!
+
+shots:
+  E_lane:
+    switch: s_left_inlane
+    show_token:
+      light: l_left_inlane
+  S_lane:
+    switch: s_s_rollover
+    show_token:
+      light: l_s_rollover
+  C_lane:
+    switch: s_c_rollover
+    show_token:
+      light: l_c_rollover
+  A_lane:
+    switch: s_a_rollover
+    show_token:
+      light: l_a_rollover
+  P_lane:
+    switch: s_p_rollover
+    show_token:
+      light: l_p_rollover
+  E2_Lane:
+    switch: s_right_inlane
+    show_token:
+      light: l_right_inlane
+  left_orbit:
+    #enter the switches in order separated by a comma required to complete shot
+    switch_sequence: switch1, switch2, switch3
+    time: 3s    
+  right_orbit:
+    switch_sequence: rswitch1, rswitch2, rswitch3
+    time: 3s
+  left_ramp:
+    switch_sequence: rampswitch1, rampswitch2, rampswitch3
+    time: 3s
+  attic_ramp:
+    switch_sequence: atticswitch1, atticswitch2, atticswitch3
+    time: 3s
+
+shot_groups:
+  rollover_lanes:
+    shots: E_lane, S_lane, C_lane, A_lane, P_lane, E2_lane
+  

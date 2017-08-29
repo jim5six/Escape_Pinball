@@ -1,6 +1,5 @@
-#config_version=4
-#Escape!
-#Test of new branch
+# config_version=4
+# ESCAPE!
 
 config:
 - hardware.yaml

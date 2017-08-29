@@ -1,0 +1,23 @@
+# config_version=4
+# ESCAPE!
+
+# Skill shot mode. 3 seconds to complete
+
+mode:
+  start_events: ball_starting
+  stop_events: timer_mode_timer_complete, shot achieved #create a shot in shots.yaml and add it here
+  priority: 300
+
+timers:
+  mode_timer:
+    start_value: 3
+    end_value: 0
+    direction: down
+    tick_interval: 1s
+    control_events:
+    - event: balldevice_playfield_ball_enter
+      action: start
+    start_running: false
+  target_rotator:
+    start_running: true
+    tick_interval: 1s

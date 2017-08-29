@@ -1,0 +1,9 @@
+# config_version=4
+# ESCAPE!
+
+# Closet Multiball mode.
+
+mode:
+  start_events: complete_closet_mode
+  stop_events: # drain all but 1 ball
+  priority: 300
