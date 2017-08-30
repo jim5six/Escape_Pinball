@@ -29,6 +29,40 @@ switches:
     #   number: 0/0  # column 0, row 0
     ##########################################################################
     ####################################
+    # P-Roc Direct Switch Inputs # J6 #
+    ####################################
+    s_ramp_target1:
+        number: SD0
+        label:
+    s_ramp_target2:
+        number: SD1
+        label:
+    s_ramp_target3:
+        number: SD2
+        tags:
+        label:
+    s_ramp_target4:
+        number: SD3
+        tags:
+        label:
+    s_:
+        number: SD4
+        tags:
+        label:
+    s_:
+        number: SD5
+        tags:
+        label:
+    s_:
+        number: SD6
+        tags:
+        label:
+    s_:
+        number: SD7
+        tags:
+        label:
+
+    ####################################
     # P-Roc Direct Switch Inputs # J15 #
     ####################################
     s_left_flipper:
@@ -63,6 +97,7 @@ switches:
         number: SD15
         tags: drain
         label: Right Outlane
+
     ####################################
     # P-Roc Direct Switch Inputs # J33 #
     ####################################
@@ -138,42 +173,42 @@ switches:
 
 # Martix Block 1
 
-    s_sneak:
+    s_around_scoop:
         number: 0/0
         tags:
         debounce: quick #or normal or auto
         label:
-    s_right_ramp_enter:
+    s_subway3:
         number: 0/1
         tags:
         debounce: quick #or normal or auto
         label:
-    s_quiet_target:
+    s_right_ramp_enter:
         number: 0/2
         tags:
         debounce: quick #or normal or auto
         label:
-    s_right_orbit:
+    s_quiet_target:
         number: 0/3
         tags:
         debounce: quick #or normal or auto
         label:
-    s_P_lane:
+    s_right_orbit:
         number: 0/4
         tags:
         debounce: quick #or normal or auto
         label:
-    s_A_lane:
+    s_P_lane:
         number: 0/5
         tags:
         debounce: quick #or normal or auto
         label:
-    s_C_lane:
+    s_A_lane:
         number: 0/6
         tags:
         debounce: quick #or normal or auto
         label:
-    s_S_lane:
+    s_C_lane:
         number: 0/7
         tags:
         debounce: quick #or normal or auto
@@ -181,42 +216,42 @@ switches:
 
 # Martix block 2
 
-    s_skillsave:
+    s_S_lane:
         number: 1/0
         tags:
         debounce: quick #or normal or auto
         label:
-    s_center_orbit:
+    s_skillsave:
         number: 1/1
         tags:
         debounce: quick #or normal or auto
         label:
-    s_spiral_enter:
+    s_center_orbit:
         number: 1/2
         tags:
         debounce: quick #or normal or auto
         label:
-    s_captive_ball:
+    s_spiral_enter:
         number: 1/3
         tags:
         debounce: quick #or normal or auto
         label:
-    s_cative_target:
+    s_captive_ball:
         number: 1/4
         tags:
         debounce: quick #or normal or auto
         label:
-    s_left_orbit:
+    s_cative_target:
         number: 1/5
         tags:
         debounce: quick #or normal or auto
         label:
-    s_bath_target:
+    s_left_orbit:
         number: 1/6
         tags:
         debounce: quick #or normal or auto
         label:
-    s_bath_enter:
+    s_bath_target:
         number: 1/7
         tags:
         debounce: quick #or normal or auto
@@ -224,43 +259,86 @@ switches:
 
 # Martix block 3
 
-    s_spinner:
+    s_bath_enter:
         number: 2/0
         tags:
         debounce: quick #or normal or auto
         label:
-    s_left_ramp_enter:
+    s_spinner:
         number: 2/1
         tags:
         debounce: quick #or normal or auto
         label:
-    s_subway2:
+    s_left_ramp_enter:
         number: 2/2
         tags:
         debounce: quick #or normal or auto
         label:
-    s_upper_sling:
+    s_subway2:
         number: 2/3
         tags:
         debounce: quick #or normal or auto
         label:
-    s_door_target:
+    s_upper_slingshot:
         number: 2/4
         tags:
         debounce: quick #or normal or auto
         label:
-    s_skillsave_target:
+    s_door_target:
         number: 2/5
         tags:
         debounce: quick #or normal or auto
         label:
-    s_subway1:
+    s_skillsave_target:
         number: 2/6
         tags:
         debounce: quick #or normal or auto
         label:
-    s_:
+    s_subway1:
         number: 2/7
+        tags:
+        debounce: quick #or normal or auto
+        label:
+
+# Martix block 4
+
+    s_vent_enter:
+        number: 3/0
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_attic_drop_ramp:
+        number: 3/1
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_left_ramp_center:
+        number: 3/2
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_attic_drop_kicker:
+        number: 3/3
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_attic_enter:
+        number: 3/4
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_right_ramp_top:
+        number: 3/5
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_left_ramp_top:
+        number: 3/6
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_:
+        number: 3/7
         tags:
         debounce: quick #or normal or auto
         label:
@@ -336,6 +414,10 @@ coils:
         number: A0-B1-4
         pulse_ms: 50
         label: Ball Release Coil
+    c_upper_slingshot:
+        number: A0-B1-5
+        pulse_ms: 4
+        label: Upper Slingshot
     c_droptargetbank:
         number: A0-B1-6
         pulse_ms: 25
@@ -345,6 +427,72 @@ coils:
         pulse_ms: 10
         label: VUK
 
+# The below PD-16 is not purchased yet
+  #####################################################
+  # PD-16 # Address:1 # Bank:A # Voltage:70vdc #
+  #####################################################
+    c_:
+        number: A1-B0-0
+        pulse_ms:
+        label:
+    c_:
+        number: A1-B0-1
+        pulse_ms:
+        label:
+    c_:
+        number: A1-B0-2
+        pulse_ms:
+        label:
+    c_:
+        number: A1-B0-3
+        pulse_ms:
+        label:
+    c_:
+        number: A1-B0-4
+        pulse_ms:
+        label:
+    c_:
+        number: A1-B0-6
+        pulse_ms:
+        label:
+    c_:
+        number: A1-B0-7
+        pulse_ms:
+        label:
+
+  #####################################################
+  # PD-16 # Address:1 # Bank:B # Voltage:24vdc #
+  #####################################################
+    c_attic_diverter:
+        number: A1-B1-0
+        pulse_ms:
+        hold_power:
+        label: Attic Diverter
+    c_:
+        number: A1-B0-1
+        pulse_ms:
+        label:
+    c_:
+        number: A1-B0-2
+        pulse_ms:
+        label:
+    c_:
+        number: A1-B0-3
+        pulse_ms:
+        label:
+    c_:
+        number: A1-B0-4
+        pulse_ms:
+        label:
+    c_:
+        number: A1-B0-6
+        pulse_ms:
+        label:
+    c_:
+        number: A1-B0-7
+        pulse_ms:
+        label:
+
 autofire_coils:
     left_slingshot:
         coil: c_left_slingshot
@@ -352,6 +500,10 @@ autofire_coils:
     right_slingshot:
         coil: c_right_slingshot
         switch: s_right_slingshot
+#This has not been installed yet
+    upper_slingshot:
+        coil: c_upper_slingshot
+        switch: s_upper_slingshot
     popbumper1:
         coil: c_popbumper1
         switch: s_popbumper1
