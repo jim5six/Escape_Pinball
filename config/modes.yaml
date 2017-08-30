@@ -6,3 +6,15 @@ modes:
     - EOB
     - LaunchBall
     - bgmusic
+    - attic
+    - bathroom
+    - closet
+    - closetMultiball
+    - kitchen
+    - quiet
+    - runMultiball
+    - skillsave
+    - skillshot
+    - spiral
+    - superspinner
+    - revenge    

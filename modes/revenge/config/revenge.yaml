@@ -1,0 +1,16 @@
+# config_version=4
+# ESCAPE!
+
+# Revenge Wizard mode. 3 Ball Multiball.
+
+mode:
+  start_events: start_revenge_mode
+  stop_events: timer_mode_countdown_complete
+  priority: 300
+
+timers:
+  mode_countdown:
+    start_value: 60
+    end_value: 0
+    direction: down
+    start_running: true
