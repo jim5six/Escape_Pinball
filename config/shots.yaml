@@ -4,28 +4,28 @@
 shots:
   E_lane:
     switch: s_left_inlane
-    show_token:
-      light: l_left_inlane
+#    show_token:
+#      light: l_left_inlane
   S_lane:
-    switch: s_s_rollover
-    show_token:
-      light: l_s_rollover
+    switch: s_S_lane
+#    show_token:
+#      light: l_s_rollover
   C_lane:
-    switch: s_c_rollover
-    show_token:
-      light: l_c_rollover
+    switch: s_C_lane
+#    show_token:
+#      light: l_c_rollover
   A_lane:
-    switch: s_a_rollover
-    show_token:
-      light: l_a_rollover
+    switch: s_A_lane
+#    show_token:
+#      light: l_a_rollover
   P_lane:
-    switch: s_p_rollover
-    show_token:
-      light: l_p_rollover
+    switch: s_P_lane
+#    show_token:
+#      light: l_p_rollover
   E2_Lane:
     switch: s_right_inlane
-    show_token:
-      light: l_right_inlane
+#    show_token:
+#      light: l_right_inlane
   left_orbit:
     switch_sequence: s_left_orbit, s_center_orbit, s_right_orbit
     time: 3s    

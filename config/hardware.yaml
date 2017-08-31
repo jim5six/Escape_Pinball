@@ -45,22 +45,22 @@ switches:
         number: SD3
         tags:
         label:
-    s_:
-        number: SD4
-        tags:
-        label:
-    s_:
-        number: SD5
-        tags:
-        label:
-    s_:
-        number: SD6
-        tags:
-        label:
-    s_:
-        number: SD7
-        tags:
-        label:
+    # s_:
+    #     number: SD4
+    #     tags:
+    #     label:
+    # s_:
+    #     number: SD5
+    #     tags:
+    #     label:
+    # s_:
+    #     number: SD6
+    #     tags:
+    #     label:
+    # s_:
+    #     number: SD7
+    #     tags:
+    #     label:
 
     ####################################
     # P-Roc Direct Switch Inputs # J15 #
@@ -337,11 +337,11 @@ switches:
         tags:
         debounce: quick #or normal or auto
         label:
-    s_:
-        number: 3/7
-        tags:
-        debounce: quick #or normal or auto
-        label:
+    # s_:
+    #     number: 3/7
+    #     tags:
+    #     debounce: quick #or normal or auto
+    #     label:
 
 coils:
     ##########################################################################
@@ -431,34 +431,34 @@ coils:
   #####################################################
   # PD-16 # Address:1 # Bank:A # Voltage:70vdc #
   #####################################################
-    c_:
-        number: A1-B0-0
-        pulse_ms:
-        label:
-    c_:
-        number: A1-B0-1
-        pulse_ms:
-        label:
-    c_:
-        number: A1-B0-2
-        pulse_ms:
-        label:
-    c_:
-        number: A1-B0-3
-        pulse_ms:
-        label:
-    c_:
-        number: A1-B0-4
-        pulse_ms:
-        label:
-    c_:
-        number: A1-B0-6
-        pulse_ms:
-        label:
-    c_:
-        number: A1-B0-7
-        pulse_ms:
-        label:
+    # c_:
+    #     number: A1-B0-0
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-1
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-2
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-3
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-4
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-6
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-7
+    #     pulse_ms:
+    #     label:
 
   #####################################################
   # PD-16 # Address:1 # Bank:B # Voltage:24vdc #
@@ -468,30 +468,30 @@ coils:
         pulse_ms:
         hold_power:
         label: Attic Diverter
-    c_:
-        number: A1-B0-1
-        pulse_ms:
-        label:
-    c_:
-        number: A1-B0-2
-        pulse_ms:
-        label:
-    c_:
-        number: A1-B0-3
-        pulse_ms:
-        label:
-    c_:
-        number: A1-B0-4
-        pulse_ms:
-        label:
-    c_:
-        number: A1-B0-6
-        pulse_ms:
-        label:
-    c_:
-        number: A1-B0-7
-        pulse_ms:
-        label:
+    # c_:
+    #     number: A1-B0-1
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-2
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-3
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-4
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-6
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-7
+    #     pulse_ms:
+    #     label:
 
 autofire_coils:
     left_slingshot:
@@ -500,7 +500,6 @@ autofire_coils:
     right_slingshot:
         coil: c_right_slingshot
         switch: s_right_slingshot
-#This has not been installed yet
     upper_slingshot:
         coil: c_upper_slingshot
         switch: s_upper_slingshot
@@ -521,7 +520,7 @@ flippers:
     right_flipper:
         main_coil: c_flipper_right_main
         activation_switch: s_right_flipper
-    upper_right:
+    right_upper_flipper:
         main_coil: c_flipper_right_upper
         activation_switch: s_right_flipper_upper
 
