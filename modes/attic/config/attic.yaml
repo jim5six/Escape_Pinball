@@ -4,13 +4,26 @@
 # Attic mode. 30 seconds to complete.
 
 mode:
-  start_events: start_attic_mode
-  stop_events: timer_mode_countdown_complete
-  priority: 300
+    start_events: start_attic_mode
+    stop_events: timer_mode_countdown_complete
+    priority: 300
+
+l_attic_mode_LED: flash
+
+logic_blocks:
+    sequences:
+        attic_mode:
+            events:
+              - s_vent_enter_hit
+              - s_subway1_hit
+              - stargetbank_hit
+              - s_subway2_hit
+            events_when_complete: l_attic_mode_LED_on, attic_complete_bonus
+
 
 timers:
-  mode_countdown:
-    start_value: 30
-    end_value: 0
-    direction: down
-    start_running: true
+    mode_countdown:
+        start_value: 30
+        end_value: 0
+        direction: down
+        start_running: true

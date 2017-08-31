@@ -45,10 +45,10 @@ switches:
         number: SD3
         tags:
         label:
-    # s_:
-    #     number: SD4
-    #     tags:
-    #     label:
+    s_Tiltbob:
+        number: SD4
+        tags: Tilt
+        label: Tiltbob
     # s_:
     #     number: SD5
     #     tags:
@@ -543,8 +543,7 @@ drop_target_banks:
     2targetbank:
         drop_targets: targetbank2_1, targetbank2_2
         reset_coils: c_droptargetbank
-        reset_events:
-            drop_targets_2targetbank_complete: 10s
+        reset_events: targetbank1_activate, ball_end 
 
 ball_devices:
     bd_trough:

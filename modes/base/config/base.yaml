@@ -3,6 +3,19 @@ mode:
     start_events: ball_starting
     priority: 100
 
+logic_blocks:
+    accruals:
+        enable_start_mode:
+            events:
+              - s_ramp_target1_hit
+              - s_ramp_target2_hit
+              - s_ramp_target3_hit
+              - s_ramp_target4_hit
+            persist_state: true
+            disable_on_complete: true
+            restart_events: attic_mode_done
+            events_when_complete: l_start_mode_LED_flash, mode_start_active
+
 slide_player:
   mode_base_started:
     widgets:
