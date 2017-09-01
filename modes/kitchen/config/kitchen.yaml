@@ -4,13 +4,13 @@
 # Kitchen mode. 30 seconds to get 30 pop bumper hits.
 
 mode:
-  start_events: start_kitchen_mode
-  stop_events: timer_mode_countdown_complete
-  priority: 300
+    start_events: start_kitchen_mode
+    stop_events: timer_mode_countdown_complete
+    priority: 300
 
 timers:
-  mode_countdown:
-    start_value: 30
-    end_value: 0
-    direction: down
-    start_running: true
+    mode_countdown:
+        start_value: 30
+        end_value: 0
+        direction: down
+        start_running: true

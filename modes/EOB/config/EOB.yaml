@@ -4,21 +4,21 @@
 #EOB
 
 mode:
-  start_events: ball_drain
-  stop_events: player_turn_stop
-   # priority: 800
-  # use_wait_queue: true
+    start_events: ball_drain
+    stop_events: player_turn_stop
+    #priority: 800
+    #use_wait_queue: true
 
 sound_player:
-  # mode_base_stop_music:
-  #   Background:
-  #     action: stop
-  mode_EOB_started: 
-    Drain:
-      action: play
-      loops: 0
-      # priority: 1
+    #mode_base_stop_music:
+    #Background:
+    #action: stop
+    mode_EOB_started: 
+        Drain:
+            action: play
+            loops: 0
+        #priority: 1
 
-  # mode_EOB_stop_music:
-  #   Drain:
-  #     action: stop 
+    #mode_EOB_stop_music:
+        #Drain:
+            #action: stop

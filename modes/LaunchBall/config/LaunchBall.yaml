@@ -4,10 +4,10 @@
 #LaunchBall
 
 mode:
-  start_events:  s_plunger_lane_inactive
-  stop_events: timer_mode_countdown_complete
-   # priority: 800
-  # use_wait_queue: true
+    start_events: s_plunger_lane_inactive
+    stop_events: timer_mode_countdown_complete
+    #priority: 800
+    #use_wait_queue: true
 
 timers:
     mode_countdown:
@@ -18,4 +18,4 @@ timers:
         bcp: true
 
 show_player:
-  mode_LaunchBall_started: plunge_animation
+    mode_LaunchBall_started: plunge_animation

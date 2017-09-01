@@ -3,46 +3,33 @@ mode:
     start_events: ball_starting
     priority: 100
 
-logic_blocks:
-    accruals:
-        enable_start_mode:
-            events:
-              - s_ramp_target1_hit
-              - s_ramp_target2_hit
-              - s_ramp_target3_hit
-              - s_ramp_target4_hit
-            persist_state: true
-            disable_on_complete: true
-            restart_events: attic_mode_done
-            events_when_complete: l_start_mode_LED_flash, mode_start_active
-
 slide_player:
-  mode_base_started:
-    widgets:
-      - type: text
-        text: (score)
-        number_grouping: true
-        min_digits: 2
-        font_size: 20
-      - type: text
-        text: PLAYER (number)
-        y: 0
-        x: 5
-        font_size: 5
-        anchor_x: left
-        anchor_y: bottom
-      - type: text
-        text: BALL (ball)
-        y: 0
-        x: right-5
-        anchor_x: right
-        anchor_y: bottom
-        font_size: 5
-      - type: text
-        text: "HITS: (jetpoints)"
-        font_size: 5
-        y: 25
-        anchor_y: bottom
+    mode_base_started:
+        widgets:
+          - type: text
+            text: (score)
+            number_grouping: true
+            min_digits: 2
+            font_size: 20
+          - type: text
+            text: PLAYER (number)
+            y: 0
+            x: 5
+            font_size: 5
+            anchor_x: left
+            anchor_y: bottom
+          - type: text
+            text: BALL (ball)
+            y: 0
+            x: right-5
+            anchor_x: right
+            anchor_y: bottom
+            font_size: 5
+          - type: text
+            text: "HITS: (jetpoints)"
+            font_size: 5
+            y: 25
+            anchor_y: bottom
 
 scoring:
     s_right_inlane_active:

@@ -22,15 +22,15 @@ window:
 
 slides:
     window_slide:
-      widgets:
-      - type: color_dmd
-        width: 640
-        height: 160
-        pixel_size: .5
-        x: center
-        y: bottom+15%
-      - type: image
-        image: bg3_2
+        widgets:
+          - type: color_dmd
+            width: 640
+            height: 160
+            pixel_size: .5
+            x: center
+            y: bottom+15%
+          - type: image
+            image: bg3_2
 
     dmd_slide:
       - type: text
@@ -42,7 +42,7 @@ slides:
 
 slide_player:
     mc_reset_phase_1:
-      dmd_slide:
-          target: dmd
-      window_slide:
-          target: window
+        dmd_slide:
+            target: dmd
+        window_slide:
+            target: window

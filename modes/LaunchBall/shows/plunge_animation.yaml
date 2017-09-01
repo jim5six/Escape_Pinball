@@ -2,17 +2,17 @@
 
 - duration: 3s
   slides:
-    p-roc_slide:
-      widgets:
-      # - type: text
-      #   text: PLUNGING!!!
-      #   font_size: 15
-      - type: image
-        image: plunger_1
-      transition:
-        type: push
-        # duration: 1s
-        direction: right
-      transition_out:
-        type: fade_away
-      target: dmd
+      p-roc_slide:
+          widgets:
+         #  - type: text
+         #    text: PLUNGING!!!
+         #    font_size: 15
+            - type: image
+              image: plunger_1
+          transition:
+              type: push
+         #    duration: 1s
+              direction: right
+          transition_out:
+              type: fade_away
+          target: dmd
