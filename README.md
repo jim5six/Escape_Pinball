@@ -1,2 +1,2 @@
-# Escape_Pinball Jim Martin Developement branch
-Developement Repository for Escape! pinball machine
+# Escape_Pinball Working Game Code
+Repository for Escape! pinball machine
