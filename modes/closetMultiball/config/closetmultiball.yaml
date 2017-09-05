@@ -4,7 +4,7 @@
 # Closet Multiball mode.
 
 mode:
-    start_events: complete_closet_mode
+    start_events: closet_mode_done
     stop_events:
       # drain all but 1 ball
     priority: 300
