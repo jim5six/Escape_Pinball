@@ -2,47 +2,40 @@
 # ESCAPE!
 
 displays:
-    dmd:
-        width: 128
-        height: 32
+    lcd:
+        width: 640
+        height: 360
         default: yes
-    window:
-        width: 800
-        height: 600
+    playfield:
+        width: 600
+        height: 800
 
 window:
-    width: 800
-    height: 600
-    title: Mission Pinball Framework
+    width: 640
+    height: 360
+    title: Escape! Pinball
     resizable: true
     fullscreen: false
     borderless: false
     exit_on_escape: true
-    source_display: window
+    source_display: lcd
 
 slides:
     window_slide:
         widgets:
-          - type: color_dmd
-            width: 640
-            height: 160
-            pixel_size: .5
-            x: center
-            y: bottom+15%
+          - type: text
+            text: ESCAPE!
+            bold: true
+            font_name: arial
+            font_size: 36
+          - type: rectangle
+            width: 540
+            height: 260
+            color: Red
           - type: image
             image: bg3_2
 
-    dmd_slide:
-      - type: text
-        text: ESCAPE!
-      - type: rectangle
-        width: 128
-        height: 32
-        color: Red
-
 slide_player:
     mc_reset_phase_1:
-        dmd_slide:
-            target: dmd
         window_slide:
-            target: window
+            target: lcd

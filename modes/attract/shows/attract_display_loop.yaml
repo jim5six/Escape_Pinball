@@ -8,12 +8,31 @@
       p-roc_slide:
           widgets:
             - type: text
-              text: P-ROC POWERED
-              font_size: 15
+              text: Powered by
+              bold: true
+              italic: true
+              font_name: arial
+              font_size: 100
+              color: red
+              y: top - 50
+            - type: text
+              text: R-ROC
+              bold: true
+              font_name: arial
+              font_size: 200
+              color: red
+              y: bottom + 100
+            - type: rectangle
+              width: 540
+              height: 260
+              corner_radius: 50
+              color: black
+            - type: image
+              image: bg3_2
 #           transition:
 #               type: fade
 #               duration: 1s
-          target: dmd
+          target: lcd
 
 # - duration: 3s
 #   slides:

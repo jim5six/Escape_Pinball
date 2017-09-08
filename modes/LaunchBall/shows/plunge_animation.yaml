@@ -15,4 +15,4 @@
               direction: right
           transition_out:
               type: fade_away
-          target: dmd
+          target: lcd
