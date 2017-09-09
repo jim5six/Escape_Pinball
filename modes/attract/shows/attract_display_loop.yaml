@@ -9,19 +9,17 @@
           widgets:
             - type: text
               text: Powered by
-              bold: true
-              italic: true
-              font_name: arial
-              font_size: 100
+              bold: false
+              font_name: ERASLGHT
+              font_size: 80
               color: red
-              y: top - 50
+              y: top - 85
             - type: text
-              text: R-ROC
-              bold: true
-              font_name: arial
-              font_size: 200
+              text: P-ROC
+              font_name: bnmachine
+              font_size: 160
               color: red
-              y: bottom + 100
+              y: bottom + 150
             - type: rectangle
               width: 540
               height: 260
