@@ -11,11 +11,13 @@ slide_player:
             number_grouping: true
             min_digits: 2
             font_size: 100
+            font_name: LLDCL__
           - type: text
             text: PLAYER (number)
             y: 0
             x: 5
             font_size: 20
+            font_name: LLDCL__
             anchor_x: left
             anchor_y: bottom
           - type: text
@@ -25,7 +27,8 @@ slide_player:
             anchor_x: right
             anchor_y: bottom
             font_size: 20
-          
+            font_name: LLDCL__
+
 scoring:
     s_a_lane_active:
         score: 1000
@@ -105,3 +108,13 @@ scoring:
         score: 1000
     s_vent_enter_active:
         score: 1000
+    left_orbit_hit:
+        score: 10000
+    right_orbit_hit:
+        score: 10000
+    center_orbit_hit:
+        score: 10000
+    left_ramp_hit:
+        score: 10000
+    attic_ramp_hit:
+        score: 10000

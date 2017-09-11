@@ -10,13 +10,13 @@
             - type: text
               text: Powered by
               bold: false
-              font_name: ERASLGHT
-              font_size: 80
+              font_name: MAGNETOB
+              font_size: 60
               color: red
               y: top - 85
             - type: text
               text: P-ROC
-              font_name: bnmachine
+              font_name: STENCIL
               font_size: 160
               color: red
               y: bottom + 150

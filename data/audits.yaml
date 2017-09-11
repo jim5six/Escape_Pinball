@@ -1,6 +1,6 @@
 events:
   game_ended: 114
-  game_started: 205
+  game_started: 208
 player:
   score:
     average: 21349.12280701754
@@ -18,11 +18,15 @@ player:
     total: 114
 shots:
   a_lane: 1
-  attic_ramp: 1
+  attic_ramp: 2
   c_lane: 1
-  e2_lane: 5
-  e_lane: 5
+  center_orbit: 1
+  e2_lane: 6
+  e_lane: 6
+  left_orbit: 2
+  left_ramp: 1
   p_lane: 1
+  right_orbit: 1
   s_lane: 1
 switches:
   s_a_lane: 1
@@ -36,7 +40,7 @@ switches:
   s_c_lane: 1
   s_captive_ball: 0
   s_cative_target: 0
-  s_center_orbit: 4
+  s_center_orbit: 8
   s_door_target: 0
   s_droptargetbank1: 108
   s_droptargetbank2: 106
@@ -45,13 +49,13 @@ switches:
   s_jet3: 0
   s_launch_button: 3
   s_left_flipper: 1202
-  s_left_inlane: 67
-  s_left_orbit: 6
-  s_left_outlane: 36
-  s_left_ramp_center: 0
-  s_left_ramp_enter: 2
-  s_left_ramp_top: 2
-  s_left_slingshot: 345
+  s_left_inlane: 68
+  s_left_orbit: 9
+  s_left_outlane: 37
+  s_left_ramp_center: 1
+  s_left_ramp_enter: 3
+  s_left_ramp_top: 3
+  s_left_slingshot: 346
   s_matrixswitch0: 0
   s_matrixswitch1: 0
   s_matrixswitch2: 0
@@ -61,7 +65,7 @@ switches:
   s_matrixswitch6: 0
   s_matrixswitch7: 0
   s_p_lane: 1
-  s_plunger_lane: 435
+  s_plunger_lane: 437
   s_popbumper1: 379
   s_popbumper2: 268
   s_popbumper3: 392
@@ -72,16 +76,16 @@ switches:
   s_ramp_target4: 3
   s_right_flipper: 1312
   s_right_flipper_upper: 480
-  s_right_inlane: 160
-  s_right_orbit: 3
+  s_right_inlane: 161
+  s_right_orbit: 7
   s_right_outlane: 46
-  s_right_ramp_enter: 2
-  s_right_ramp_top: 2
+  s_right_ramp_enter: 3
+  s_right_ramp_top: 3
   s_right_slingshot: 388
   s_s_lane: 1
   s_scoop_vuk: 502
   s_singledrop: 95
-  s_skillsave: 1
+  s_skillsave: 2
   s_skillsave_target: 1
   s_spinner: 14
   s_spiral_enter: 1
@@ -91,7 +95,7 @@ switches:
   s_subway2: 2
   s_subway3: 3
   s_tilt: 0
-  s_trough1: 456
+  s_trough1: 457
   s_trough2: 318
   s_trough3: 311
   s_trough4: 290
