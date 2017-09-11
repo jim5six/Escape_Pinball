@@ -10,12 +10,12 @@ slide_player:
             text: (score)
             number_grouping: true
             min_digits: 2
-            font_size: 20
+            font_size: 100
           - type: text
             text: PLAYER (number)
             y: 0
             x: 5
-            font_size: 5
+            font_size: 20
             anchor_x: left
             anchor_y: bottom
           - type: text
@@ -24,19 +24,92 @@ slide_player:
             x: right-5
             anchor_x: right
             anchor_y: bottom
-            font_size: 5
-          - type: text
-            text: "HITS: (jetpoints)"
-            font_size: 5
-            y: 25
-            anchor_y: bottom
-
+            font_size: 20
+          
 scoring:
-    s_right_inlane_active:
+    s_a_lane:
+        score: 1000
+    s_around_scoop:
+        score: 1000
+    s_attic_drop_kicker:
+        score: 10000
+    s_attic_drop_ramp:
         score: 100
-    s_left_flipper_active:
+    s_attic_enter:
         score: 1000
-        jetpoints: 1
-    s_right_flipper_active:
+    s_bath_enter:
         score: 1000
-        jetpoints: -2
+    s_bath_target:
+        score: 1000
+    s_c_lane:
+        score: 1000
+    s_captive_ball:
+        score: 1000
+    s_cative_target:
+        score: 10000
+    s_door_target:
+        score: 1000
+    s_droptargetbank1:
+        score: 1000
+    s_droptargetbank2:
+        score: 1000
+    s_left_inlane:
+        score: 1000
+    s_left_orbit:
+        score: 1000
+    s_left_outlane:
+        score: 1000
+    s_left_ramp_center:
+        score: 1000
+    s_left_ramp_enter:
+        score: 1000
+    s_left_ramp_top:
+        score: 1000
+    s_left_slingshot:
+        score: 1000
+    s_p_lane:
+        score: 1000
+    s_popbumper1:
+        score: 1000
+    s_popbumper2:
+        score: 1000
+    s_popbumper3:
+        score: 1000
+    s_quiet_target:
+        score: 10000
+    s_ramp_target1:
+        score: 1000
+    s_ramp_target2:
+        score: 1000
+    s_ramp_target3:
+        score: 1000
+    s_ramp_target4:
+        score: 1000
+    s_right_inlane:
+        score: 1000
+    s_right_outlane:
+        score: 1000
+    s_right_slingshot:
+        score: 1000
+    s_s_lane:
+        score: 1000
+    s_scoop_vuk:
+        score: 500
+    s_singledrop:
+        score: 1000
+    s_spinner:
+        score: 1000
+    s_spiral_enter:
+        score: 1000
+    s_spiral_kicker:
+        score: 1000
+    s_subway1:
+        score: 100
+    s_subway2:
+        score: 100
+    s_subway3:
+        score: 100
+    s_upper_slingshot:
+        score: 1000
+    s_vent_enter:
+        score: 1000
