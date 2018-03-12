@@ -30,10 +30,10 @@ slide_player:
             #font_name: LLDCL__
 
 # scoring:
-#     s_a_lane_active:
-#         score: 1000
-#     s_around_scoop_active:
-#         score: 1000
+    s_a_lane_active:
+        score: 1000
+    s_around_scoop_active:
+        score: 1000
 #     s_attic_drop_kicker_active:
 #         score: 10000
 #     s_attic_drop_ramp_active:
@@ -42,60 +42,60 @@ slide_player:
 #         score: 1000
 #     s_bath_enter_active:
 #         score: 1000
-#     s_bath_target_active:
-#         score: 1000
-#     s_c_lane_active:
-#         score: 1000
+    s_bath_target_active:
+        score: 1000
+    s_c_lane_active:
+        score: 1000
 #     s_captive_ball_active:
 #         score: 1000
-#     s_cative_target_active:
-#         score: 10000
+    s_cative_target_active:
+        score: 10000
 #     s_door_target_active:
 #         score: 1000
-#     s_droptargetbank1_active:
-#         score: 1000
-#     s_droptargetbank2_active:
-#         score: 1000
-#     s_left_inlane_active:
-#         score: 1000
-#     s_left_outlane_active:
-#         score: 100
-#     s_left_slingshot_active:
-#         score: 1000
-#     s_p_lane_active:
-#         score: 1000
-#     s_popbumper1_active:
-#         score: 1000
-#     s_popbumper2_active:
-#         score: 1000
-#     s_popbumper3_active:
-#         score: 1000
-#     s_quiet_target_active:
-#         score: 10000
-#     s_ramp_target1_active:
-#         score: 1000
-#     s_ramp_target2_active:
-#         score: 1000
-#     s_ramp_target3_active:
-#         score: 1000
-#     s_ramp_target4_active:
-#         score: 1000
-#     s_right_inlane_active:
-#         score: 1000
-#     s_right_outlane_active:
-#         score: 100
-#     s_right_slingshot_active:
-#         score: 1000
-#     s_s_lane_active:
-#         score: 1000
-#     s_scoop_vuk_active:
-#         score: 500
-#     s_singledrop_active:
-#         score: 1000
-#     s_spinner_active:
-#         score: 1000
-#     s_spiral_enter_active:
-#         score: 1000
+    s_droptargetbank1_active:
+        score: 1000
+    s_droptargetbank2_active:
+        score: 1000
+    s_left_inlane_active:
+        score: 1000
+    s_left_outlane_active:
+        score: 100
+    s_left_slingshot_active:
+        score: 1000
+    s_p_lane_active:
+        score: 1000
+    s_popbumper1_active:
+        score: 1000
+    s_popbumper2_active:
+        score: 1000
+    s_popbumper3_active:
+        score: 1000
+    s_quiet_target_active:
+        score: 10000
+    s_ramp_target1_active:
+        score: 1000
+    s_ramp_target2_active:
+        score: 1000
+    s_ramp_target3_active:
+        score: 1000
+    s_ramp_target4_active:
+        score: 1000
+    s_right_inlane_active:
+        score: 1000
+    s_right_outlane_active:
+        score: 100
+    s_right_slingshot_active:
+        score: 1000
+    s_s_lane_active:
+        score: 1000
+    s_scoop_vuk_active:
+        score: 500
+    s_singledrop_active:
+        score: 1000
+    s_spinner_active:
+        score: 1000
+    s_spiral_enter_active:
+        score: 1000
 #     s_spiral_kicker_active:
 #         score: 1000
 #     s_subway1_active:
@@ -104,17 +104,17 @@ slide_player:
 #         score: 100
 #     s_subway3_active:
 #         score: 100
-#     s_upper_slingshot_active:
-#         score: 1000
+    s_upper_slingshot_active:
+        score: 1000
 #     s_vent_enter_active:
 #         score: 1000
-#     left_orbit_hit:
-#         score: 10000
+    left_orbit_hit:
+        score: 10000
 #     right_orbit_hit:
 #         score: 10000
 #     center_orbit_hit:
 #         score: 10000
-#     left_ramp_hit:
-#         score: 10000
-#     attic_ramp_hit:
-#         score: 10000
+    left_ramp_hit:
+        score: 10000
+    attic_ramp_hit:
+        score: 10000

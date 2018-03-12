@@ -3,7 +3,7 @@
 
 # commented everything out so the events would not post and switch testing is easier in monitor - Jim 9-6-2017
 
-- duration: 3s
+#- duration: 3s
   slides:
       p-roc_slide:
           widgets:
