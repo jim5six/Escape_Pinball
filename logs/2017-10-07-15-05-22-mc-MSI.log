@@ -1,0 +1,32 @@
+2017-10-07 15:05:22,919 : kivy : Factory: 194 symbols loaded
+2017-10-07 15:05:23,278 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_gif (img_pil, img_ffpyplayer ignored)
+2017-10-07 15:05:23,559 : kivy : VideoGstplayer: Using Gstreamer 1.10.2.0
+2017-10-07 15:05:23,559 : kivy : Video: Provider: gstplayer
+2017-10-07 15:05:23,747 : kivy : Loading MPF-MC controller
+2017-10-07 15:05:23,763 : mpfmc : Mission Pinball Framework Media Controller v0.33.13
+2017-10-07 15:05:23,763 : mpfmc : Mission Pinball Framework Game Engine v0.33.33
+2017-10-07 15:05:23,763 : mpfmc : Machine path: C:\GIT\Escape_Pinball
+2017-10-07 15:05:23,763 : mpfmc : Starting clock at 30.0Hz
+2017-10-07 15:05:23,872 : kivy : Text: Provider: sdl2
+2017-10-07 15:05:24,356 : kivy : OSC: using <thread> for socket
+2017-10-07 15:05:24,388 : kivy : Window: Provider: sdl2
+2017-10-07 15:05:25,456 : kivy : GL: Using the "OpenGL" graphics system
+2017-10-07 15:05:25,466 : kivy : GL: GLEW initialization succeeded
+2017-10-07 15:05:25,467 : kivy : GL: Backend used <glew>
+2017-10-07 15:05:25,468 : kivy : GL: OpenGL version <b'4.5.0 NVIDIA 385.41'>
+2017-10-07 15:05:25,474 : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2017-10-07 15:05:25,476 : kivy : GL: OpenGL renderer <b'GeForce GTX 1060/PCIe/SSE2'>
+2017-10-07 15:05:25,486 : kivy : GL: OpenGL parsed version: 4, 5
+2017-10-07 15:05:25,487 : kivy : GL: Shading version <b'4.50 NVIDIA'>
+2017-10-07 15:05:25,494 : kivy : GL: Texture max size <32768>
+2017-10-07 15:05:25,495 : kivy : GL: Texture max units <32>
+2017-10-07 15:05:25,562 : kivy : Window: auto add sdl2 input provider
+2017-10-07 15:05:25,563 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2017-10-07 15:05:25,589 : AudioInterface : NOTE: You may experience noise and other undesirable sound artifacts when you set your buffer at 1024 or smaller.
+2017-10-07 15:05:27,589 : AudioInterface : Initialized
+2017-10-07 15:05:27,592 : kivy : Base: Start application main loop
+2017-10-07 15:05:28,759 : MPF-MC BCP Server : Starting up on localhost port 5050
+2017-10-07 15:05:28,765 : MPF-MC BCP Server : Waiting for a connection...
+2017-10-07 15:05:29,097 : MPF-MC BCP Server : Received connection from: 127.0.0.1:56582
+2017-10-07 15:05:29,374 : kivy : GL: NPOT texture support is available
+2017-10-07 15:20:57,188 : kivy : Base: Leaving application in progress...

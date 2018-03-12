@@ -33,8 +33,8 @@ shots:
     #     switch_sequence: s_right_orbit, s_center_orbit, s_left_orbit
     #     time: 3s
     # center_orbit:
-    #     switch_sequence: s_skillsave, s_center_orbit, s_right_orbit
-    #     time: 3s
+    #     switch_sequence: s_skillsave, s_right_orbit
+    #     time: 2s
     # left_ramp:
     #     switch_sequence: s_left_ramp_enter, s_left_ramp_center, s_left_ramp_top
     #     time: 5s

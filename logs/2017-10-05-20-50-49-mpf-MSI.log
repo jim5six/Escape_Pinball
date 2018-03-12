@@ -1,0 +1,747 @@
+2017-10-05 20:50:49,493 : Machine : Mission Pinball Framework Core Engine v0.33.33
+2017-10-05 20:50:49,493 : Machine : Command line arguments: {'no_load_cache': False, 'force_platform': 'virtual', 'consoleloglevel': 20, 'mc_file_name': None, 'pause': False, 'bcp': True, 'create_config_cache': True, 'loglevel': 11, 'force_assets_load': False, 'configfile': ['config'], 'logfile': 'logs\\2017-10-05-20-50-49-mpf-MSI.log', 'mpfconfigfile': 'c:\\python34\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'syslog_address': None}
+2017-10-05 20:50:49,493 : Machine : MPF path: c:\python34\lib\site-packages\mpf
+2017-10-05 20:50:49,493 : Machine : Machine path: C:\GIT\Escape_Pinball
+2017-10-05 20:50:49,493 : Machine : Platform: win32
+2017-10-05 20:50:49,493 : Machine : Python executable location: c:\python34\python.exe
+2017-10-05 20:50:49,493 : Machine : Python version: 3.4.4 (64-bit)
+2017-10-05 20:50:49,745 : Machine : Loading config from original files
+2017-10-05 20:50:49,823 : Machine : Machine config file #1: C:\GIT\Escape_Pinball\config\config
+2017-10-05 20:50:49,995 : Machine : Config file cache created: C:\Users\Jim\AppData\Local\Temp\fe94515d23647c6740272514cfb07204config
+2017-10-05 20:50:50,026 : SwitchController : Loading the SwitchController
+2017-10-05 20:50:50,089 : EventManager : Event: ======'machine_var_player1_score'====== Args={'change': 0, 'prev_value': 8000, 'value': 8000}
+2017-10-05 20:50:50,089 : EventManager : Event: ======'machine_var_mpf_version'====== Args={'change': False, 'prev_value': 'MPF v0.33.33', 'value': 'MPF v0.33.33'}
+2017-10-05 20:50:50,089 : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'change': False, 'prev_value': 'MPF v0.33.33, Config version:4, Show version: 4, BCP version:1.1', 'value': 'MPF v0.33.33, Config version:4, Show version: 4, BCP version:1.1'}
+2017-10-05 20:50:50,089 : EventManager : Event: ======'machine_var_python_version'====== Args={'change': False, 'prev_value': '3.4.4', 'value': '3.4.4'}
+2017-10-05 20:50:50,089 : EventManager : Event: ======'machine_var_platform'====== Args={'change': False, 'prev_value': 'Windows-10-10.0.10586', 'value': 'Windows-10-10.0.10586'}
+2017-10-05 20:50:50,089 : EventManager : Event: ======'machine_var_platform_system'====== Args={'change': False, 'prev_value': 'Windows', 'value': 'Windows'}
+2017-10-05 20:50:50,089 : EventManager : Event: ======'machine_var_platform_release'====== Args={'change': False, 'prev_value': '10', 'value': '10'}
+2017-10-05 20:50:50,089 : EventManager : Event: ======'machine_var_platform_version'====== Args={'change': False, 'prev_value': '10.0.10586', 'value': '10.0.10586'}
+2017-10-05 20:50:50,089 : EventManager : Event: ======'machine_var_platform_machine'====== Args={'change': False, 'prev_value': 'AMD64', 'value': 'AMD64'}
+2017-10-05 20:50:50,089 : EventManager : Event: ======'init_phase_1'====== Args={}
+2017-10-05 20:50:50,214 : EventManager : Event: ======'drop_target_bank_two_target_bank_up'====== Args={}
+2017-10-05 20:50:50,214 : EventManager : Event: ======'init_phase_2'====== Args={}
+2017-10-05 20:50:50,448 : BCPClientSocket.local_display : Connecting BCP to 'local_display' at localhost:5050...
+2017-10-05 20:50:53,574 : BCPClientSocket.local_display : Connected BCP to 'local_display' localhost:5050
+2017-10-05 20:50:53,577 : SwitchController : Registering switch handler: s_ball_release, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x00000000059B0198>>, state: 1, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,577 : SwitchController : Registering switch handler: s_ball_release, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x00000000059B0198>>, state: 0, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,581 : SwitchController : Registering switch handler: s_plunger_lane, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x000000000598E438>>, state: 1, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,581 : SwitchController : Registering switch handler: s_plunger_lane, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x000000000598E438>>, state: 0, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,584 : SwitchController : Registering switch handler: s_scoop_vuk, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x00000000059B01D0>>, state: 1, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,585 : SwitchController : Registering switch handler: s_scoop_vuk, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x00000000059B01D0>>, state: 0, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,588 : SwitchController : Registering switch handler: s_trough1, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x00000000059C1AC8>>, state: 1, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,588 : SwitchController : Registering switch handler: s_trough2, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x00000000059C1AC8>>, state: 1, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,588 : SwitchController : Registering switch handler: s_trough3, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x00000000059C1AC8>>, state: 1, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,589 : SwitchController : Registering switch handler: s_trough4, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x00000000059C1AC8>>, state: 1, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,589 : SwitchController : Registering switch handler: s_trough1, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x00000000059C1AC8>>, state: 0, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,590 : SwitchController : Registering switch handler: s_trough2, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x00000000059C1AC8>>, state: 0, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,590 : SwitchController : Registering switch handler: s_trough3, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x00000000059C1AC8>>, state: 0, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,590 : SwitchController : Registering switch handler: s_trough4, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x00000000059C1AC8>>, state: 0, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,594 : SwitchController : Registering switch handler: s_basement_kicker, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x00000000059C1A90>>, state: 1, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,595 : SwitchController : Registering switch handler: s_basement_kicker, <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x00000000059C1A90>>, state: 0, ms: 500, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,677 : EventManager : Event: ======'init_phase_3'====== Args={}
+2017-10-05 20:50:53,679 : AssetManager : Registering Asset: attract_display_loop, File: attract_display_loop.yaml, Default Group: default, Final Config: {'file': 'C:\\GIT\\Escape_Pinball\\modes\\attract\\shows\\attract_display_loop.yaml', 'load': 'preload'}
+2017-10-05 20:50:53,683 : SwitchController : Registering switch handler: s_subway1, <bound method Diverter.deactivate of <diverter.attic_diverter>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,686 : EventManager : Event: ======'machine_var_master_volume'====== Args={'change': 0.0, 'prev_value': 0.9, 'value': 0.9}
+2017-10-05 20:50:53,703 : EventManager : Event: ======'loading_assets'====== Args={'percent': 100, 'remaining': 0, 'total': 1, 'loaded': 1}
+2017-10-05 20:50:53,703 : EventManager : Event: ======'asset_loading_complete'====== Args={}
+2017-10-05 20:50:53,703 : AssetManager : Loading assets: 1/1 (100%)
+2017-10-05 20:50:53,703 : EventManager : Event: ======'init_phase_4'====== Args={}
+2017-10-05 20:50:53,711 : SwitchController : Registering switch handler: s_drop_target_bank1, <bound method DropTarget._update_state_from_switch of <drop_target.drop_target_bank2_1>>, state: 0, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,711 : SwitchController : Registering switch handler: s_drop_target_bank1, <bound method DropTarget._update_state_from_switch of <drop_target.drop_target_bank2_1>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,711 : SwitchController : Registering switch handler: s_drop_target_bank2, <bound method DropTarget._update_state_from_switch of <drop_target.drop_target_bank2_2>>, state: 0, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,711 : SwitchController : Registering switch handler: s_drop_target_bank2, <bound method DropTarget._update_state_from_switch of <drop_target.drop_target_bank2_2>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,712 : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'change': 0, 'prev_value': 124, 'value': 124}
+2017-10-05 20:50:53,713 : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'change': 0, 'prev_value': 417, 'value': 417}
+2017-10-05 20:50:53,713 : EventManager : Event: ======'machine_var_audits_shots_popbumpers'====== Args={'change': 0, 'prev_value': 13, 'value': 13}
+2017-10-05 20:50:53,714 : EventManager : Event: ======'machine_var_audits_shots_attic_ramp'====== Args={'change': 0, 'prev_value': 9, 'value': 9}
+2017-10-05 20:50:53,714 : EventManager : Event: ======'machine_var_audits_shots_ramp_target1'====== Args={'change': 0, 'prev_value': 30, 'value': 30}
+2017-10-05 20:50:53,714 : EventManager : Event: ======'machine_var_audits_shots_p_lane'====== Args={'change': 0, 'prev_value': 15, 'value': 15}
+2017-10-05 20:50:53,715 : EventManager : Event: ======'machine_var_audits_shots_popbumper1'====== Args={'change': 0, 'prev_value': 8, 'value': 8}
+2017-10-05 20:50:53,715 : EventManager : Event: ======'machine_var_audits_shots_mode_bonus_drop_target'====== Args={'change': 0, 'prev_value': 32, 'value': 32}
+2017-10-05 20:50:53,716 : EventManager : Event: ======'machine_var_audits_shots_c_lane'====== Args={'change': 0, 'prev_value': 16, 'value': 16}
+2017-10-05 20:50:53,716 : EventManager : Event: ======'machine_var_audits_shots_e_lane'====== Args={'change': 0, 'prev_value': 30, 'value': 30}
+2017-10-05 20:50:53,716 : EventManager : Event: ======'machine_var_audits_shots_ramp_target3'====== Args={'change': 0, 'prev_value': 25, 'value': 25}
+2017-10-05 20:50:53,716 : EventManager : Event: ======'machine_var_audits_shots_ramp_target2'====== Args={'change': 0, 'prev_value': 25, 'value': 25}
+2017-10-05 20:50:53,718 : EventManager : Event: ======'machine_var_audits_shots_captive_ball'====== Args={'change': 0, 'prev_value': 27, 'value': 27}
+2017-10-05 20:50:53,718 : EventManager : Event: ======'machine_var_audits_shots_left_orbit'====== Args={'change': 0, 'prev_value': 80, 'value': 80}
+2017-10-05 20:50:53,718 : EventManager : Event: ======'machine_var_audits_shots_s_lane'====== Args={'change': 0, 'prev_value': 14, 'value': 14}
+2017-10-05 20:50:53,719 : EventManager : Event: ======'machine_var_audits_shots_left_ramp'====== Args={'change': 0, 'prev_value': 44, 'value': 44}
+2017-10-05 20:50:53,719 : EventManager : Event: ======'machine_var_audits_shots_r_outlane'====== Args={'change': 0, 'prev_value': 3, 'value': 3}
+2017-10-05 20:50:53,719 : EventManager : Event: ======'machine_var_audits_shots_e2_lane'====== Args={'change': 0, 'prev_value': 25, 'value': 25}
+2017-10-05 20:50:53,720 : EventManager : Event: ======'machine_var_audits_shots_right_orbit'====== Args={'change': 0, 'prev_value': 24, 'value': 24}
+2017-10-05 20:50:53,720 : EventManager : Event: ======'machine_var_audits_shots_center_orbit'====== Args={'change': 0, 'prev_value': 2, 'value': 2}
+2017-10-05 20:50:53,720 : EventManager : Event: ======'machine_var_audits_shots_mode_select'====== Args={'change': 0, 'prev_value': 37, 'value': 37}
+2017-10-05 20:50:53,721 : EventManager : Event: ======'machine_var_audits_shots_bath_drop_target1'====== Args={'change': 0, 'prev_value': 15, 'value': 15}
+2017-10-05 20:50:53,721 : EventManager : Event: ======'machine_var_audits_shots_popbumper2'====== Args={'change': 0, 'prev_value': 8, 'value': 8}
+2017-10-05 20:50:53,722 : EventManager : Event: ======'machine_var_audits_shots_ramp_target4'====== Args={'change': 0, 'prev_value': 24, 'value': 24}
+2017-10-05 20:50:53,722 : EventManager : Event: ======'machine_var_audits_shots_a_lane'====== Args={'change': 0, 'prev_value': 14, 'value': 14}
+2017-10-05 20:50:53,722 : EventManager : Event: ======'machine_var_audits_shots_l_outlane'====== Args={'change': 0, 'prev_value': 8, 'value': 8}
+2017-10-05 20:50:53,723 : EventManager : Event: ======'machine_var_audits_shots_ramp_targets'====== Args={'change': 0, 'prev_value': 12, 'value': 12}
+2017-10-05 20:50:53,723 : EventManager : Event: ======'machine_var_audits_shots_popbumper3'====== Args={'change': 0, 'prev_value': 9, 'value': 9}
+2017-10-05 20:50:53,723 : EventManager : Event: ======'machine_var_audits_shots_bath_drop_target2'====== Args={'change': 0, 'prev_value': 6, 'value': 6}
+2017-10-05 20:50:53,724 : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'change': False, 'prev_value': {'top': [516000, 251900, 174000, 172400, 137300, 124900, 116500, 107100, 96000, 84900], 'average': 32863.70967741935, 'total': 124}, 'value': {'top': [516000, 251900, 174000, 172400, 137300, 124900, 116500, 107100, 96000, 84900], 'average': 32863.70967741935, 'total': 124}}
+2017-10-05 20:50:53,724 : EventManager : Event: ======'machine_var_audits_switches_s_matrixswitch3'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2017-10-05 20:50:53,725 : EventManager : Event: ======'machine_var_audits_switches_s_plunger_lane'====== Args={'change': 0, 'prev_value': 704, 'value': 704}
+2017-10-05 20:50:53,725 : EventManager : Event: ======'machine_var_audits_switches_s_skillsave'====== Args={'change': 0, 'prev_value': 6, 'value': 6}
+2017-10-05 20:50:53,725 : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'change': 0, 'prev_value': 329, 'value': 329}
+2017-10-05 20:50:53,726 : EventManager : Event: ======'machine_var_audits_switches_s_vent_enter'====== Args={'change': 0, 'prev_value': 6, 'value': 6}
+2017-10-05 20:50:53,726 : EventManager : Event: ======'machine_var_audits_switches_s_attic_enter'====== Args={'change': 0, 'prev_value': 8, 'value': 8}
+2017-10-05 20:50:53,726 : EventManager : Event: ======'machine_var_audits_switches_s_right_ramp_enter'====== Args={'change': 0, 'prev_value': 9, 'value': 9}
+2017-10-05 20:50:53,727 : EventManager : Event: ======'machine_var_audits_switches_s_subway2'====== Args={'change': 0, 'prev_value': 53, 'value': 53}
+2017-10-05 20:50:53,727 : EventManager : Event: ======'machine_var_audits_switches_s_popbumper1'====== Args={'change': 0, 'prev_value': 442, 'value': 442}
+2017-10-05 20:50:53,728 : EventManager : Event: ======'machine_var_audits_switches_s_left_outlane'====== Args={'change': 0, 'prev_value': 65, 'value': 65}
+2017-10-05 20:50:53,728 : EventManager : Event: ======'machine_var_audits_switches_s_quiet_target'====== Args={'change': 0, 'prev_value': 27, 'value': 27}
+2017-10-05 20:50:53,729 : EventManager : Event: ======'machine_var_audits_switches_s_trough4'====== Args={'change': 0, 'prev_value': 297, 'value': 297}
+2017-10-05 20:50:53,729 : EventManager : Event: ======'machine_var_audits_switches_s_center_orbit'====== Args={'change': 0, 'prev_value': 115, 'value': 115}
+2017-10-05 20:50:53,729 : EventManager : Event: ======'machine_var_audits_switches_s_subway3'====== Args={'change': 0, 'prev_value': 16, 'value': 16}
+2017-10-05 20:50:53,730 : EventManager : Event: ======'machine_var_audits_switches_s_a_lane'====== Args={'change': 0, 'prev_value': 14, 'value': 14}
+2017-10-05 20:50:53,730 : EventManager : Event: ======'machine_var_audits_switches_s_door_target'====== Args={'change': 0, 'prev_value': 48, 'value': 48}
+2017-10-05 20:50:53,730 : EventManager : Event: ======'machine_var_audits_switches_s_matrixswitch2'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2017-10-05 20:50:53,731 : EventManager : Event: ======'machine_var_audits_switches_s_around_scoop'====== Args={'change': 0, 'prev_value': 6, 'value': 6}
+2017-10-05 20:50:53,731 : EventManager : Event: ======'machine_var_audits_switches_s_basement_kicker'====== Args={'change': 0, 'prev_value': 112, 'value': 112}
+2017-10-05 20:50:53,732 : EventManager : Event: ======'machine_var_audits_switches_s_skillsave_target'====== Args={'change': 0, 'prev_value': 4, 'value': 4}
+2017-10-05 20:50:53,732 : EventManager : Event: ======'machine_var_audits_switches_s_ramp_target2'====== Args={'change': 0, 'prev_value': 35, 'value': 35}
+2017-10-05 20:50:53,732 : EventManager : Event: ======'machine_var_audits_switches_s_ball_release'====== Args={'change': 0, 'prev_value': 112, 'value': 112}
+2017-10-05 20:50:53,733 : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'change': 0, 'prev_value': 321, 'value': 321}
+2017-10-05 20:50:53,733 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1207, 'value': 1207}
+2017-10-05 20:50:53,734 : EventManager : Event: ======'machine_var_audits_switches_s_left_ramp_enter'====== Args={'change': 0, 'prev_value': 48, 'value': 48}
+2017-10-05 20:50:53,734 : EventManager : Event: ======'machine_var_audits_switches_s_drop_target_bank2'====== Args={'change': 0, 'prev_value': 6, 'value': 6}
+2017-10-05 20:50:53,734 : EventManager : Event: ======'machine_var_audits_switches_s_spinner'====== Args={'change': 0, 'prev_value': 24, 'value': 24}
+2017-10-05 20:50:53,735 : EventManager : Event: ======'machine_var_audits_switches_s_left_inlane'====== Args={'change': 0, 'prev_value': 92, 'value': 92}
+2017-10-05 20:50:53,735 : EventManager : Event: ======'machine_var_audits_switches_s_tiltbob'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2017-10-05 20:50:53,735 : EventManager : Event: ======'machine_var_audits_switches_s_p_lane'====== Args={'change': 0, 'prev_value': 15, 'value': 15}
+2017-10-05 20:50:53,736 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'change': 0, 'prev_value': 1326, 'value': 1326}
+2017-10-05 20:50:53,736 : EventManager : Event: ======'machine_var_audits_switches_s_single_drop_target'====== Args={'change': 0, 'prev_value': 32, 'value': 32}
+2017-10-05 20:50:53,736 : EventManager : Event: ======'machine_var_audits_switches_s_popbumper2'====== Args={'change': 0, 'prev_value': 337, 'value': 337}
+2017-10-05 20:50:53,736 : EventManager : Event: ======'machine_var_audits_switches_s_attic_drop_kicker'====== Args={'change': 0, 'prev_value': 4, 'value': 4}
+2017-10-05 20:50:53,738 : EventManager : Event: ======'machine_var_audits_switches_s_upper_slingshot'====== Args={'change': 0, 'prev_value': 9, 'value': 9}
+2017-10-05 20:50:53,738 : EventManager : Event: ======'machine_var_audits_switches_s_matrixswitch0'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2017-10-05 20:50:53,738 : EventManager : Event: ======'machine_var_audits_switches_s_trough_jam'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2017-10-05 20:50:53,739 : EventManager : Event: ======'machine_var_audits_switches_s_subway1'====== Args={'change': 0, 'prev_value': 6, 'value': 6}
+2017-10-05 20:50:53,739 : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'change': 0, 'prev_value': 382, 'value': 382}
+2017-10-05 20:50:53,740 : EventManager : Event: ======'machine_var_audits_switches_s_right_ramp_top'====== Args={'change': 0, 'prev_value': 10, 'value': 10}
+2017-10-05 20:50:53,740 : EventManager : Event: ======'machine_var_audits_switches_s_left_orbit'====== Args={'change': 0, 'prev_value': 110, 'value': 110}
+2017-10-05 20:50:53,740 : EventManager : Event: ======'machine_var_audits_switches_s_ramp_target3'====== Args={'change': 0, 'prev_value': 33, 'value': 33}
+2017-10-05 20:50:53,740 : EventManager : Event: ======'machine_var_audits_switches_s_matrixswitch4'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2017-10-05 20:50:53,741 : EventManager : Event: ======'machine_var_audits_switches_s_bath_enter'====== Args={'change': 0, 'prev_value': 11, 'value': 11}
+2017-10-05 20:50:53,741 : EventManager : Event: ======'machine_var_audits_switches_s_launch_button'====== Args={'change': 0, 'prev_value': 3, 'value': 3}
+2017-10-05 20:50:53,741 : EventManager : Event: ======'machine_var_audits_switches_s_captive_target'====== Args={'change': 0, 'prev_value': 28, 'value': 28}
+2017-10-05 20:50:53,742 : EventManager : Event: ======'machine_var_audits_switches_s_ramp_target4'====== Args={'change': 0, 'prev_value': 32, 'value': 32}
+2017-10-05 20:50:53,742 : EventManager : Event: ======'machine_var_audits_switches_s_s_lane'====== Args={'change': 0, 'prev_value': 14, 'value': 14}
+2017-10-05 20:50:53,742 : EventManager : Event: ======'machine_var_audits_switches_s_scoop_vuk'====== Args={'change': 0, 'prev_value': 607, 'value': 607}
+2017-10-05 20:50:53,742 : EventManager : Event: ======'machine_var_audits_switches_s_drop_target_bank1'====== Args={'change': 0, 'prev_value': 15, 'value': 15}
+2017-10-05 20:50:53,743 : EventManager : Event: ======'machine_var_audits_switches_s_droptargetbank1'====== Args={'change': 0, 'prev_value': 110, 'value': 110}
+2017-10-05 20:50:53,743 : EventManager : Event: ======'machine_var_audits_switches_s_matrixswitch5'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2017-10-05 20:50:53,744 : EventManager : Event: ======'machine_var_audits_switches_s_right_outlane'====== Args={'change': 0, 'prev_value': 69, 'value': 69}
+2017-10-05 20:50:53,744 : EventManager : Event: ======'machine_var_audits_switches_s_matrixswitch1'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2017-10-05 20:50:53,744 : EventManager : Event: ======'machine_var_audits_switches_s_matrixswitch6'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2017-10-05 20:50:53,744 : EventManager : Event: ======'machine_var_audits_switches_s_ramp_target1'====== Args={'change': 0, 'prev_value': 40, 'value': 40}
+2017-10-05 20:50:53,745 : EventManager : Event: ======'machine_var_audits_switches_s_jet3'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2017-10-05 20:50:53,745 : EventManager : Event: ======'machine_var_audits_switches_s_right_orbit'====== Args={'change': 0, 'prev_value': 109, 'value': 109}
+2017-10-05 20:50:53,745 : EventManager : Event: ======'machine_var_audits_switches_s_jet1'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2017-10-05 20:50:53,746 : EventManager : Event: ======'machine_var_audits_switches_s_attic_drop_ramp'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2017-10-05 20:50:53,746 : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'change': 0, 'prev_value': 572, 'value': 572}
+2017-10-05 20:50:53,746 : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'change': 0, 'prev_value': 180, 'value': 180}
+2017-10-05 20:50:53,746 : EventManager : Event: ======'machine_var_audits_switches_s_matrixswitch7'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2017-10-05 20:50:53,747 : EventManager : Event: ======'machine_var_audits_switches_s_left_ramp_center'====== Args={'change': 0, 'prev_value': 45, 'value': 45}
+2017-10-05 20:50:53,748 : EventManager : Event: ======'machine_var_audits_switches_s_bath_target'====== Args={'change': 0, 'prev_value': 11, 'value': 11}
+2017-10-05 20:50:53,748 : EventManager : Event: ======'machine_var_audits_switches_s_left_ramp_top'====== Args={'change': 0, 'prev_value': 46, 'value': 46}
+2017-10-05 20:50:53,748 : EventManager : Event: ======'machine_var_audits_switches_s_popbumper3'====== Args={'change': 0, 'prev_value': 455, 'value': 455}
+2017-10-05 20:50:53,749 : EventManager : Event: ======'machine_var_audits_switches_s_droptargetbank2'====== Args={'change': 0, 'prev_value': 109, 'value': 109}
+2017-10-05 20:50:53,749 : EventManager : Event: ======'machine_var_audits_switches_s_c_lane'====== Args={'change': 0, 'prev_value': 16, 'value': 16}
+2017-10-05 20:50:53,749 : EventManager : Event: ======'machine_var_audits_switches_s_basement_enter'====== Args={'change': 0, 'prev_value': 16, 'value': 16}
+2017-10-05 20:50:53,750 : EventManager : Event: ======'machine_var_audits_switches_s_jet2'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2017-10-05 20:50:53,750 : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'change': 0, 'prev_value': 421, 'value': 421}
+2017-10-05 20:50:53,750 : EventManager : Event: ======'machine_var_audits_switches_s_captive_ball'====== Args={'change': 0, 'prev_value': 32, 'value': 32}
+2017-10-05 20:50:53,751 : EventManager : Event: ======'machine_var_audits_switches_s_start'====== Args={'change': 0, 'prev_value': 8, 'value': 8}
+2017-10-05 20:50:53,751 : EventManager : Event: ======'machine_var_audits_switches_s_singledrop'====== Args={'change': 0, 'prev_value': 126, 'value': 126}
+2017-10-05 20:50:53,751 : EventManager : Event: ======'machine_var_audits_switches_s_trough5'====== Args={'change': 0, 'prev_value': 0, 'value': 0}
+2017-10-05 20:50:53,752 : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper_upper'====== Args={'change': 0, 'prev_value': 479, 'value': 479}
+2017-10-05 20:50:53,752 : EventManager : Event: ======'init_phase_5'====== Args={}
+2017-10-05 20:50:53,753 : EventManager : Event: ======'init_done'====== Args={}
+2017-10-05 20:50:53,753 : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2017-10-05 20:50:53,774 : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2017-10-05 20:50:53,775 : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2017-10-05 20:50:53,777 : EventManager : Event: ======'mode_tilt_starting'====== Args={}
+2017-10-05 20:50:53,777 : SwitchController : Found active switch: s_trough2
+2017-10-05 20:50:53,777 : SwitchController : Found active switch: s_trough4
+2017-10-05 20:50:53,777 : SwitchController : Found active switch: s_trough3
+2017-10-05 20:50:53,777 : SwitchController : Found active switch: s_trough1
+2017-10-05 20:50:53,778 : EventManager : Event: ======'diverter_attic_diverter_deactivating'====== Args={}
+2017-10-05 20:50:53,778 : EventManager : Event: ======'diverter_drop_target_deactivating'====== Args={}
+2017-10-05 20:50:53,778 : Mode.tilt : Started. Priority: 1000000
+2017-10-05 20:50:53,779 : EventManager : Event: ======'mode_tilt_started'====== Args={}
+2017-10-05 20:50:53,779 : EventManager : Event: ======'reset_complete'====== Args={}
+2017-10-05 20:50:53,781 : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2017-10-05 20:50:53,781 : Mode.attract : Started. Priority: 10
+2017-10-05 20:50:53,781 : EventManager : Event: ======'mode_attract_started'====== Args={}
+2017-10-05 20:50:53,782 : SwitchController : Registering switch handler: s_start, <bound method Attract.start_button_pressed of <Mode.attract>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,782 : SwitchController : Registering switch handler: s_start, <bound method Attract.start_button_released of <Mode.attract>>, state: 0, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:50:53,783 : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2017-10-05 20:50:53,783 : Machine : Starting the main run loop.
+2017-10-05 20:50:53,948 : EventManager : Event: ======'slide_p-roc_slide_created'====== Args={'_from_bcp': True}
+2017-10-05 20:50:53,956 : EventManager : Event: ======'slide_p-roc_slide_active'====== Args={'_from_bcp': True}
+2017-10-05 20:50:54,237 : BcpServer : New client connected.
+2017-10-05 20:51:06,212 : SwitchController : Processing switch. Name: s_start, state: 1, logical: True,
+2017-10-05 20:51:06,213 : SwitchController : <<<<<<< 's_start' active >>>>>>>
+2017-10-05 20:51:06,214 : EventManager : Event: ======'s_start_active'====== Args={}
+2017-10-05 20:51:06,215 : EventManager : Event: ======'sw_start'====== Args={}
+2017-10-05 20:51:06,216 : EventManager : Event: ======'sw_start_active'====== Args={}
+2017-10-05 20:51:06,323 : SwitchController : Processing switch. Name: s_start, state: 0, logical: True,
+2017-10-05 20:51:06,323 : SwitchController : <<<<<<< 's_start' inactive >>>>>>>
+2017-10-05 20:51:06,323 : EventManager : Event: ======'request_to_start_game'====== Args={}
+2017-10-05 20:51:06,324 : EventManager : Event: ======'s_start_inactive'====== Args={}
+2017-10-05 20:51:06,324 : EventManager : Event: ======'sw_start_inactive'====== Args={}
+2017-10-05 20:51:06,324 : EventManager : Event: ======'game_start'====== Args={'buttons': [], 'hold_time': 0.10899999999674037}
+2017-10-05 20:51:06,326 : EventManager : Event: ======'mode_game_starting'====== Args={}
+2017-10-05 20:51:06,326 : SwitchController : Removing switch handler. Switch: s_start, State: 1, ms: 0
+2017-10-05 20:51:06,326 : SwitchController : Removing switch handler. Switch: s_start, State: 0, ms: 0
+2017-10-05 20:51:06,326 : EventManager : Event: ======'mode_attract_stopping'====== Args={}
+2017-10-05 20:51:06,326 : Mode.attract : Stopped.
+2017-10-05 20:51:06,326 : EventManager : Event: ======'mode_attract_stopped'====== Args={}
+2017-10-05 20:51:06,328 : EventManager : Event: ======'clear'====== Args={'key': 'attract'}
+2017-10-05 20:51:06,328 : Mode.game : Started. Priority: 20
+2017-10-05 20:51:06,328 : EventManager : Event: ======'mode_game_started'====== Args={}
+2017-10-05 20:51:06,329 : EventManager : Event: ======'game_starting'====== Args={'game': <Mode.game>}
+2017-10-05 20:51:06,330 : EventManager : Event: ======'player_add_success'====== Args={'num': 1, 'player': <Player 1>}
+2017-10-05 20:51:06,330 : EventManager : Event: ======'player_turn_start'====== Args={'number': 1, 'player': <Player 1>}
+2017-10-05 20:51:06,331 : EventManager : Event: ======'game_started'====== Args={}
+2017-10-05 20:51:06,331 : Mode.game : Player added successfully. Total players: 1
+2017-10-05 20:51:06,332 : EventManager : Event: ======'player_extra_balls_lit'====== Args={'change': 0, 'prev_value': 0, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:06,332 : EventManager : Event: ======'player_extra_balls'====== Args={'change': 0, 'prev_value': 0, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:06,333 : EventManager : Event: ======'player_extra_balls_current_ball'====== Args={'change': 0, 'prev_value': 0, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:06,334 : EventManager : Event: ======'player_turn_starting'====== Args={'number': 1, 'player': <Player 1>}
+2017-10-05 20:51:06,334 : EventManager : Event: ======'player_ball'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:06,335 : EventManager : Event: ======'player_turn_started'====== Args={'number': 1, 'player': <Player 1>}
+2017-10-05 20:51:06,335 : EventManager : Event: ======'ball_starting'====== Args={'balls_remaining': 2, 'is_extra_ball': False}
+2017-10-05 20:51:06,340 : SwitchController : Registering switch handler: s_s_lane, <bound method Shot.hit of <shot.s_lane>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,340 : SwitchController : Registering switch handler: s_left_inlane, <bound method Shot.hit of <shot.e_lane>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,341 : SwitchController : Registering switch handler: s_c_lane, <bound method Shot.hit of <shot.c_lane>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,342 : SwitchController : Registering switch handler: s_a_lane, <bound method Shot.hit of <shot.a_lane>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,342 : SwitchController : Registering switch handler: s_p_lane, <bound method Shot.hit of <shot.p_lane>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,342 : SwitchController : Registering switch handler: s_right_inlane, <bound method Shot.hit of <shot.e2_lane>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,344 : EventManager : Event: ======'mode_skillshot_starting'====== Args={}
+2017-10-05 20:51:06,345 : EventManager : Event: ======'achievement_quiet_state_enabled'====== Args={'restore': False}
+2017-10-05 20:51:06,346 : EventManager : Event: ======'achievement_superspinner_state_enabled'====== Args={'restore': False}
+2017-10-05 20:51:06,346 : EventManager : Event: ======'achievement_check_exit1_state_enabled'====== Args={'restore': False}
+2017-10-05 20:51:06,346 : EventManager : Event: ======'achievement_kitchen_state_enabled'====== Args={'restore': False}
+2017-10-05 20:51:06,347 : EventManager : Event: ======'achievement_bathroom_state_enabled'====== Args={'restore': False}
+2017-10-05 20:51:06,348 : EventManager : Event: ======'achievement_closetmulitball_state_enabled'====== Args={'restore': False}
+2017-10-05 20:51:06,349 : EventManager : Event: ======'achievement_attic_state_enabled'====== Args={'restore': False}
+2017-10-05 20:51:06,349 : EventManager : Event: ======'achievement_upstairs_state_enabled'====== Args={'restore': False}
+2017-10-05 20:51:06,350 : EventManager : Event: ======'achievement_basement_state_enabled'====== Args={'restore': False}
+2017-10-05 20:51:06,356 : EventManager : Event: ======'mode_achievements_starting'====== Args={}
+2017-10-05 20:51:06,357 : EventManager : Event: ======'player_bonus_qualify_count'====== Args={'change': 0, 'prev_value': 0, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:06,358 : EventManager : Event: ======'player_light_mode_select_count'====== Args={'change': 0, 'prev_value': 0, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:06,359 : EventManager : Event: ======'player_light_mode_select2_count'====== Args={'change': 0, 'prev_value': 0, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:06,360 : EventManager : Event: ======'player_closet_mode_count'====== Args={'change': 0, 'prev_value': 0, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:06,370 : EventManager : Event: ======'mode_base_starting'====== Args={}
+2017-10-05 20:51:06,372 : SwitchController : Registering switch handler: s_popbumper1, <bound method Shot.hit of <shot.popbumper1>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,372 : SwitchController : Registering switch handler: s_single_drop_target, <bound method Shot.hit of <shot.mode_bonus_drop_target>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,374 : SwitchController : Registering switch handler: s_popbumper2, <bound method Shot.hit of <shot.popbumper2>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,374 : SwitchController : Registering switch handler: s_ramp_target2, <bound method Shot.hit of <shot.ramp_target2>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,376 : SwitchController : Registering switch handler: s_ramp_target1, <bound method Shot.hit of <shot.ramp_target1>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,378 : SwitchController : Registering switch handler: s_right_outlane, <bound method Shot.hit of <shot.r_outlane>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,380 : SwitchController : Registering switch handler: s_left_outlane, <bound method Shot.hit of <shot.l_outlane>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,380 : SwitchController : Registering switch handler: s_scoop_vuk, <bound method Shot.hit of <shot.mode_select>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,381 : SwitchController : Registering switch handler: s_drop_target_bank1, <bound method Shot.hit of <shot.bath_drop_target1>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,381 : SwitchController : Registering switch handler: s_ramp_target3, <bound method Shot.hit of <shot.ramp_target3>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,382 : SwitchController : Registering switch handler: s_ramp_target4, <bound method Shot.hit of <shot.ramp_target4>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,387 : SwitchController : Registering switch handler: s_popbumper3, <bound method Shot.hit of <shot.popbumper3>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,388 : SwitchController : Registering switch handler: s_drop_target_bank2, <bound method Shot.hit of <shot.bath_drop_target2>>, state: 1, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,389 : EventManager : Event: ======'balls_in_play'====== Args={'balls': 1}
+2017-10-05 20:51:06,390 : EventManager : Event: ======'ball_started'====== Args={'ball': 1, 'player': 1}
+2017-10-05 20:51:06,390 : EventManager : Event: ======'single_player_ball_started'====== Args={}
+2017-10-05 20:51:06,391 : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2017-10-05 20:51:06,394 : Mode.base : Started. Priority: 100
+2017-10-05 20:51:06,394 : EventManager : Event: ======'mode_base_started'====== Args={}
+2017-10-05 20:51:06,396 : EventManager : Event: ======'ball_save_default_enabled'====== Args={}
+2017-10-05 20:51:06,396 : EventManager : Event: ======'logicblock_spinner_qualify_updated'====== Args={'value': [False, False, False, False]}
+2017-10-05 20:51:06,396 : EventManager : Event: ======'logicblock_light_mode_select_updated'====== Args={'value': 0}
+2017-10-05 20:51:06,397 : EventManager : Event: ======'logicblock_bonus_qualify_updated'====== Args={'value': 0}
+2017-10-05 20:51:06,397 : EventManager : Event: ======'logicblock_closet_mode_updated'====== Args={'value': 0}
+2017-10-05 20:51:06,397 : EventManager : Event: ======'logicblock_light_mode_select2_updated'====== Args={'value': 0}
+2017-10-05 20:51:06,398 : EventManager : Event: ======'logicblock_light_mode_select_updated'====== Args={'value': 0}
+2017-10-05 20:51:06,398 : Mode.achievements : Started. Priority: 100
+2017-10-05 20:51:06,399 : EventManager : Event: ======'mode_achievements_started'====== Args={}
+2017-10-05 20:51:06,400 : Mode.skillshot : Started. Priority: 300
+2017-10-05 20:51:06,400 : EventManager : Event: ======'player_skillshot_mode_timer_tick'====== Args={'change': 3, 'prev_value': 0, 'value': 3, 'player_num': 1}
+2017-10-05 20:51:06,402 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 0, 'prev_value': 0, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:06,402 : Timer.target_rotator : Starting Timer.
+2017-10-05 20:51:06,402 : EventManager : Event: ======'timer_target_rotator_started'====== Args={'ticks_remaining': 0, 'ticks': 0}
+2017-10-05 20:51:06,403 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 0}
+2017-10-05 20:51:06,403 : EventManager : Event: ======'mode_skillshot_started'====== Args={}
+2017-10-05 20:51:06,403 : EventManager : Event: ======'player_s_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:06,408 : EventManager : Event: ======'slide_p-roc_slide_removed'====== Args={'_from_bcp': True}
+2017-10-05 20:51:06,409 : EventManager : Event: ======'slide_lcd_blank_active'====== Args={'_from_bcp': True}
+2017-10-05 20:51:06,409 : EventManager : Event: ======'balldevice_bd_trough_ball_eject_attempt'====== Args={'source': <ball_device.bd_trough>, 'balls': 1, 'num_attempts': 0, 'target': <ball_device.bd_plunger>, 'mechanical_eject': True}
+2017-10-05 20:51:06,410 : EventManager : Event: ======'balldevice_bd_trough_ejecting_ball'====== Args={'source': <ball_device.bd_trough>, 'balls': 1, 'num_attempts': 0, 'target': <ball_device.bd_plunger>, 'mechanical_eject': True}
+2017-10-05 20:51:06,411 : SwitchController : Registering switch handler: s_trough1, functools.partial(<function SwitchController._wait_handler at 0x00000000053BB400>, switch_name='s_trough1', ms=0, _future=<Future pending cb=[SwitchController._future_done([])()]>), state: 0, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,411 : SwitchController : Registering switch handler: s_trough2, functools.partial(<function SwitchController._wait_handler at 0x00000000053BB400>, switch_name='s_trough2', ms=0, _future=<Future pending cb=[SwitchController._future_done([])()]>), state: 0, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,411 : SwitchController : Registering switch handler: s_trough3, functools.partial(<function SwitchController._wait_handler at 0x00000000053BB400>, switch_name='s_trough3', ms=0, _future=<Future pending cb=[SwitchController._future_done([])()]>), state: 0, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,411 : SwitchController : Registering switch handler: s_trough4, functools.partial(<function SwitchController._wait_handler at 0x00000000053BB400>, switch_name='s_trough4', ms=0, _future=<Future pending cb=[SwitchController._future_done([])()]>), state: 0, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:06,428 : EventManager : Event: ======'slide_widgets_created'====== Args={'_from_bcp': True}
+2017-10-05 20:51:06,449 : EventManager : Event: ======'slide_widgets_active'====== Args={'_from_bcp': True}
+2017-10-05 20:51:06,889 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:06,891 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 1}
+2017-10-05 20:51:06,894 : EventManager : Event: ======'player_s_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:06,897 : EventManager : Event: ======'player_c_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:07,390 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 1, 'value': 2, 'player_num': 1}
+2017-10-05 20:51:07,392 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 2}
+2017-10-05 20:51:07,395 : EventManager : Event: ======'player_c_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:07,398 : EventManager : Event: ======'player_a_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:07,892 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 2, 'value': 3, 'player_num': 1}
+2017-10-05 20:51:07,895 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 3}
+2017-10-05 20:51:07,897 : EventManager : Event: ======'player_a_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:07,901 : EventManager : Event: ======'player_p_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:08,007 : SwitchController : Processing switch. Name: s_trough1, state: 0, logical: True,
+2017-10-05 20:51:08,008 : SwitchController : <<<<<<< 's_trough1' inactive >>>>>>>
+2017-10-05 20:51:08,009 : SwitchController : Found timed switch handler for k/v 103074.20300000001 / {'switch_name': 's_trough1', 'ms': 500, 'state': 0, 'callback_kwargs': {}, 'callback': <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x00000000059C1AC8>>, 'removed': False, 'return_info': False, 'switch_action': 's_trough1-0'}
+2017-10-05 20:51:08,009 : EventManager : Event: ======'s_trough1_inactive'====== Args={}
+2017-10-05 20:51:08,010 : SwitchController : Removing switch handler. Switch: s_trough1, State: 0, ms: 0
+2017-10-05 20:51:08,010 : SwitchController : Removing switch handler. Switch: s_trough4, State: 0, ms: 0
+2017-10-05 20:51:08,011 : SwitchController : Removing switch handler. Switch: s_trough3, State: 0, ms: 0
+2017-10-05 20:51:08,011 : SwitchController : Removing switch handler. Switch: s_trough2, State: 0, ms: 0
+2017-10-05 20:51:08,390 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 3, 'value': 4, 'player_num': 1}
+2017-10-05 20:51:08,392 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 4}
+2017-10-05 20:51:08,395 : EventManager : Event: ======'player_p_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:08,398 : EventManager : Event: ======'player_e2_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:08,511 : SwitchController : Processing timed switch handler. Switch: s_trough1  State: 0, ms: 500
+2017-10-05 20:51:08,891 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 4, 'value': 5, 'player_num': 1}
+2017-10-05 20:51:08,893 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 5}
+2017-10-05 20:51:08,896 : EventManager : Event: ======'player_p_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:08,900 : EventManager : Event: ======'player_e2_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:09,080 : SwitchController : Processing switch. Name: s_plunger_lane, state: 1, logical: True,
+2017-10-05 20:51:09,081 : SwitchController : <<<<<<< 's_plunger_lane' active >>>>>>>
+2017-10-05 20:51:09,082 : SwitchController : Found timed switch handler for k/v 103075.281 / {'switch_name': 's_plunger_lane', 'ms': 500, 'state': 1, 'callback_kwargs': {}, 'callback': <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x000000000598E438>>, 'removed': False, 'return_info': False, 'switch_action': 's_plunger_lane-1'}
+2017-10-05 20:51:09,082 : EventManager : Event: ======'machine_var_audits_switches_s_plunger_lane'====== Args={'change': 0, 'prev_value': 705, 'value': 705}
+2017-10-05 20:51:09,084 : EventManager : Event: ======'s_plunger_lane_active'====== Args={}
+2017-10-05 20:51:09,388 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 5, 'value': 6, 'player_num': 1}
+2017-10-05 20:51:09,389 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 6}
+2017-10-05 20:51:09,391 : EventManager : Event: ======'player_a_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:09,393 : EventManager : Event: ======'player_p_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:09,589 : SwitchController : Processing timed switch handler. Switch: s_plunger_lane  State: 1, ms: 500
+2017-10-05 20:51:09,592 : EventManager : Event: ======'balldevice_bd_plunger_ball_enter'====== Args={'new_balls': 1, 'device': <ball_device.bd_plunger>, 'unclaimed_balls': 0}
+2017-10-05 20:51:09,595 : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'source': <ball_device.bd_plunger>, 'balls': 1, 'num_attempts': 0, 'target': <playfield.playfield>, 'mechanical_eject': True}
+2017-10-05 20:51:09,597 : EventManager : Event: ======'balldevice_bd_trough_ball_eject_success'====== Args={'balls': 1, 'target': <ball_device.bd_plunger>}
+2017-10-05 20:51:09,602 : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'source': <ball_device.bd_plunger>, 'balls': 1, 'num_attempts': 0, 'target': <playfield.playfield>, 'mechanical_eject': True}
+2017-10-05 20:51:09,606 : SwitchController : Registering switch handler: s_plunger_lane, functools.partial(<function SwitchController._wait_handler at 0x00000000053BB400>, switch_name='s_plunger_lane', ms=0, _future=<Future pending cb=[SwitchController._future_done([])()]>), state: 0, ms: 0, info: False, cb_kwargs: {}
+2017-10-05 20:51:09,890 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 6, 'value': 7, 'player_num': 1}
+2017-10-05 20:51:09,892 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 7}
+2017-10-05 20:51:09,895 : EventManager : Event: ======'player_c_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:09,898 : EventManager : Event: ======'player_a_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:10,394 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 7, 'value': 8, 'player_num': 1}
+2017-10-05 20:51:10,396 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 8}
+2017-10-05 20:51:10,399 : EventManager : Event: ======'player_s_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:10,402 : EventManager : Event: ======'player_c_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:10,893 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 8, 'value': 9, 'player_num': 1}
+2017-10-05 20:51:10,895 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 9}
+2017-10-05 20:51:10,898 : EventManager : Event: ======'player_e_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:10,902 : EventManager : Event: ======'player_s_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:11,393 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 9, 'value': 10, 'player_num': 1}
+2017-10-05 20:51:11,396 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 10}
+2017-10-05 20:51:11,399 : EventManager : Event: ======'player_e_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:11,402 : EventManager : Event: ======'player_s_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:11,890 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 10, 'value': 11, 'player_num': 1}
+2017-10-05 20:51:11,892 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 11}
+2017-10-05 20:51:11,895 : EventManager : Event: ======'player_s_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:11,898 : EventManager : Event: ======'player_c_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:12,393 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 11, 'value': 12, 'player_num': 1}
+2017-10-05 20:51:12,396 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 12}
+2017-10-05 20:51:12,398 : EventManager : Event: ======'player_c_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:12,402 : EventManager : Event: ======'player_a_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:12,894 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 12, 'value': 13, 'player_num': 1}
+2017-10-05 20:51:12,897 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 13}
+2017-10-05 20:51:12,900 : EventManager : Event: ======'player_a_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:12,902 : EventManager : Event: ======'player_p_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:13,393 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 13, 'value': 14, 'player_num': 1}
+2017-10-05 20:51:13,395 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 14}
+2017-10-05 20:51:13,398 : EventManager : Event: ======'player_p_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:13,401 : EventManager : Event: ======'player_e2_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:13,882 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 14, 'value': 15, 'player_num': 1}
+2017-10-05 20:51:13,884 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 15}
+2017-10-05 20:51:13,887 : EventManager : Event: ======'player_p_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:13,891 : EventManager : Event: ======'player_e2_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:13,932 : SwitchController : Processing switch. Name: s_plunger_lane, state: 0, logical: True,
+2017-10-05 20:51:13,934 : SwitchController : <<<<<<< 's_plunger_lane' inactive >>>>>>>
+2017-10-05 20:51:13,935 : SwitchController : Found timed switch handler for k/v 103080.125 / {'switch_name': 's_plunger_lane', 'ms': 500, 'state': 0, 'callback_kwargs': {}, 'callback': <bound method SwitchCounter._switch_changed of <mpf.devices.ball_device.switch_counter.SwitchCounter object at 0x000000000598E438>>, 'removed': False, 'return_info': False, 'switch_action': 's_plunger_lane-0'}
+2017-10-05 20:51:13,935 : EventManager : Event: ======'s_plunger_lane_inactive'====== Args={}
+2017-10-05 20:51:13,937 : SwitchController : Removing switch handler. Switch: s_plunger_lane, State: 0, ms: 0
+2017-10-05 20:51:14,386 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 15, 'value': 16, 'player_num': 1}
+2017-10-05 20:51:14,388 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 16}
+2017-10-05 20:51:14,390 : EventManager : Event: ======'player_a_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:14,393 : EventManager : Event: ======'player_p_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:14,427 : SwitchController : Processing timed switch handler. Switch: s_plunger_lane  State: 0, ms: 500
+2017-10-05 20:51:14,890 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 16, 'value': 17, 'player_num': 1}
+2017-10-05 20:51:14,892 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 17}
+2017-10-05 20:51:14,895 : EventManager : Event: ======'player_c_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:14,899 : EventManager : Event: ======'player_a_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:15,394 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 17, 'value': 18, 'player_num': 1}
+2017-10-05 20:51:15,397 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 18}
+2017-10-05 20:51:15,400 : EventManager : Event: ======'player_s_lane_skill'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:15,403 : EventManager : Event: ======'player_c_lane_skill'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:15,880 : EventManager : Event: ======'player_skillshot_target_rotator_tick'====== Args={'change': 1, 'prev_value': 18, 'value': 19, 'player_num': 1}
+2017-10-05 20:51:15,882 : EventManager : Event: ======'timer_target_rotator_tick'====== Args={'ticks_remaining': 0, 'ticks': 19}
+2017-10-05 20:51:15,885 : SwitchController : Processing switch. Name: s_s_lane, state: 1, logical: True,
+2017-10-05 20:51:15,886 : SwitchController : <<<<<<< 's_s_lane' active >>>>>>>
+2017-10-05 20:51:15,887 : EventManager : Event: ======'s_lane_hit'====== Args={'profile': 'skill', 'state': 'lit'}
+2017-10-05 20:51:15,888 : EventManager : Event: ======'s_lane_skill_hit'====== Args={'profile': 'skill', 'state': 'lit'}
+2017-10-05 20:51:15,889 : EventManager : Event: ======'s_lane_skill_lit_hit'====== Args={'profile': 'skill', 'state': 'lit'}
+2017-10-05 20:51:15,890 : EventManager : Event: ======'s_lane_lit_hit'====== Args={'profile': 'skill', 'state': 'lit'}
+2017-10-05 20:51:15,891 : EventManager : Event: ======'player_s_lane_skill'====== Args={'change': 1, 'prev_value': 1, 'value': 2, 'player_num': 1}
+2017-10-05 20:51:15,894 : EventManager : Event: ======'rollover_lanes_hit'====== Args={'profile': 'skill', 'state': 'lit'}
+2017-10-05 20:51:15,896 : EventManager : Event: ======'rollover_lanes_skill_hit'====== Args={'profile': 'skill', 'state': 'lit'}
+2017-10-05 20:51:15,897 : EventManager : Event: ======'rollover_lanes_skill_lit_hit'====== Args={'profile': 'skill', 'state': 'lit'}
+2017-10-05 20:51:15,898 : EventManager : Event: ======'machine_var_audits_shots_s_lane'====== Args={'change': 0, 'prev_value': 15, 'value': 15}
+2017-10-05 20:51:15,900 : EventManager : Event: ======'machine_var_audits_switches_s_s_lane'====== Args={'change': 0, 'prev_value': 15, 'value': 15}
+2017-10-05 20:51:15,902 : EventManager : Event: ======'s_s_lane_active'====== Args={}
+2017-10-05 20:51:15,904 : EventManager : Event: ======'player_e_lane_skill'====== Args={'change': 2, 'prev_value': 0, 'value': 2, 'player_num': 1}
+2017-10-05 20:51:15,908 : EventManager : Event: ======'player_s_lane_skill'====== Args={'change': -2, 'prev_value': 2, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:15,911 : Timer.mode_timer : Stopping Timer
+2017-10-05 20:51:15,912 : EventManager : Event: ======'timer_mode_timer_stopped'====== Args={'ticks_remaining': 0, 'ticks': 3}
+2017-10-05 20:51:15,913 : Timer.target_rotator : Stopping Timer
+2017-10-05 20:51:15,913 : EventManager : Event: ======'timer_target_rotator_stopped'====== Args={'ticks_remaining': 0, 'ticks': 19}
+2017-10-05 20:51:15,914 : EventManager : Event: ======'mode_skillshot_stopping'====== Args={}
+2017-10-05 20:51:15,916 : EventManager : Event: ======'player_score'====== Args={'change': 200000, 'prev_value': 0, 'value': 200000, 'player_num': 1}
+2017-10-05 20:51:15,918 : EventManager : Event: ======'player_score'====== Args={'change': 1000, 'prev_value': 200000, 'value': 201000, 'player_num': 1}
+2017-10-05 20:51:15,920 : Mode.skillshot : Stopped.
+2017-10-05 20:51:15,923 : EventManager : Event: ======'mode_skillshot_stopped'====== Args={}
+2017-10-05 20:51:15,924 : EventManager : Event: ======'clear'====== Args={'key': 'skillshot'}
+2017-10-05 20:51:15,991 : SwitchController : Processing switch. Name: s_s_lane, state: 0, logical: True,
+2017-10-05 20:51:15,991 : SwitchController : <<<<<<< 's_s_lane' inactive >>>>>>>
+2017-10-05 20:51:15,991 : EventManager : Event: ======'s_s_lane_inactive'====== Args={}
+2017-10-05 20:51:17,022 : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_success'====== Args={'balls': 1, 'target': <playfield.playfield>}
+2017-10-05 20:51:17,024 : EventManager : Event: ======'ball_save_default_timer_start'====== Args={}
+2017-10-05 20:51:17,026 : EventManager : Event: ======'balldevice_playfield_ball_enter'====== Args={'new_balls': 1, 'device': <playfield.playfield>, 'unclaimed_balls': 1}
+2017-10-05 20:51:17,027 : EventManager : Event: ======'playfield_ball_count_change'====== Args={'change': 1, 'balls': 1}
+2017-10-05 20:51:23,007 : EventManager : Event: ======'ball_save_default_hurry_up'====== Args={}
+2017-10-05 20:51:23,516 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:23,517 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:23,518 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1208, 'value': 1208}
+2017-10-05 20:51:23,520 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:23,675 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:23,675 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:23,675 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:25,032 : EventManager : Event: ======'ball_save_default_grace_period'====== Args={}
+2017-10-05 20:51:25,832 : SwitchController : Processing switch. Name: s_left_inlane, state: 1, logical: True,
+2017-10-05 20:51:25,833 : SwitchController : <<<<<<< 's_left_inlane' active >>>>>>>
+2017-10-05 20:51:25,834 : EventManager : Event: ======'e_lane_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:25,835 : EventManager : Event: ======'e_lane_default_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:25,836 : EventManager : Event: ======'e_lane_default_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:25,836 : EventManager : Event: ======'e_lane_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:25,839 : EventManager : Event: ======'player_e_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:25,842 : EventManager : Event: ======'rollover_lanes_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:25,843 : EventManager : Event: ======'rollover_lanes_default_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:25,844 : EventManager : Event: ======'rollover_lanes_default_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:25,845 : EventManager : Event: ======'machine_var_audits_shots_e_lane'====== Args={'change': 0, 'prev_value': 31, 'value': 31}
+2017-10-05 20:51:25,847 : EventManager : Event: ======'machine_var_audits_switches_s_left_inlane'====== Args={'change': 0, 'prev_value': 93, 'value': 93}
+2017-10-05 20:51:25,849 : EventManager : Event: ======'s_left_inlane_active'====== Args={}
+2017-10-05 20:51:25,850 : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2017-10-05 20:51:25,852 : EventManager : Event: ======'sw_playfield_active_active'====== Args={}
+2017-10-05 20:51:25,853 : EventManager : Event: ======'player_score'====== Args={'change': 1000, 'prev_value': 201000, 'value': 202000, 'player_num': 1}
+2017-10-05 20:51:25,911 : SwitchController : Processing switch. Name: s_left_inlane, state: 0, logical: True,
+2017-10-05 20:51:25,911 : SwitchController : <<<<<<< 's_left_inlane' inactive >>>>>>>
+2017-10-05 20:51:25,911 : EventManager : Event: ======'s_left_inlane_inactive'====== Args={}
+2017-10-05 20:51:25,912 : EventManager : Event: ======'sw_playfield_active_inactive'====== Args={}
+2017-10-05 20:51:27,033 : EventManager : Event: ======'ball_save_default_disabled'====== Args={}
+2017-10-05 20:51:28,789 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:28,791 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:28,791 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1209, 'value': 1209}
+2017-10-05 20:51:28,793 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:28,795 : EventManager : Event: ======'player_e_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:28,798 : EventManager : Event: ======'player_e2_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:28,962 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:28,963 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:28,963 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:29,372 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:29,373 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:29,374 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1210, 'value': 1210}
+2017-10-05 20:51:29,376 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:29,378 : EventManager : Event: ======'player_p_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:29,381 : EventManager : Event: ======'player_e2_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:29,498 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:29,499 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:29,499 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:29,864 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:29,865 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:29,866 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1211, 'value': 1211}
+2017-10-05 20:51:29,867 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:29,870 : EventManager : Event: ======'player_a_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:29,873 : EventManager : Event: ======'player_p_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:30,007 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:30,007 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:30,007 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:30,304 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:30,305 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:30,305 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1212, 'value': 1212}
+2017-10-05 20:51:30,308 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:30,310 : EventManager : Event: ======'player_c_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:30,313 : EventManager : Event: ======'player_a_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:30,446 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:30,447 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:30,447 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:30,728 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:30,729 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:30,730 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1213, 'value': 1213}
+2017-10-05 20:51:30,732 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:30,733 : EventManager : Event: ======'player_s_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:30,736 : EventManager : Event: ======'player_c_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:30,854 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:30,855 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:30,855 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:31,176 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:31,176 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:31,178 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1214, 'value': 1214}
+2017-10-05 20:51:31,180 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:31,182 : EventManager : Event: ======'player_e_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:31,185 : EventManager : Event: ======'player_s_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:31,319 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:31,319 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:31,319 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:31,575 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:31,577 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:31,578 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1215, 'value': 1215}
+2017-10-05 20:51:31,579 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:31,581 : EventManager : Event: ======'player_e_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:31,585 : EventManager : Event: ======'player_e2_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:31,735 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:31,735 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:31,735 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:32,028 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:32,029 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:32,030 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1216, 'value': 1216}
+2017-10-05 20:51:32,031 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:32,033 : EventManager : Event: ======'player_p_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:32,037 : EventManager : Event: ======'player_e2_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:32,134 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:32,135 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:32,135 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:32,391 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:32,393 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:32,393 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1217, 'value': 1217}
+2017-10-05 20:51:32,395 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:32,397 : EventManager : Event: ======'player_a_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:32,400 : EventManager : Event: ======'player_p_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:32,519 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:32,519 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:32,519 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:32,980 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:32,981 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:32,982 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1218, 'value': 1218}
+2017-10-05 20:51:32,983 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:32,985 : EventManager : Event: ======'player_c_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:32,988 : EventManager : Event: ======'player_a_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:33,122 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:33,123 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:33,123 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:33,516 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:33,517 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:33,518 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1219, 'value': 1219}
+2017-10-05 20:51:33,519 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:33,522 : EventManager : Event: ======'player_s_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:33,525 : EventManager : Event: ======'player_c_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:33,642 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:33,643 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:33,643 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:34,308 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:34,309 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:34,310 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1220, 'value': 1220}
+2017-10-05 20:51:34,312 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:34,313 : EventManager : Event: ======'player_e_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:34,316 : EventManager : Event: ======'player_s_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:34,486 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:34,486 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:34,486 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:34,708 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:34,709 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:34,710 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1221, 'value': 1221}
+2017-10-05 20:51:34,711 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:34,713 : EventManager : Event: ======'player_e_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:34,716 : EventManager : Event: ======'player_e2_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:34,835 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:34,835 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:34,835 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:35,116 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:35,117 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:35,118 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1222, 'value': 1222}
+2017-10-05 20:51:35,120 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:35,122 : EventManager : Event: ======'player_p_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:35,125 : EventManager : Event: ======'player_e2_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:35,243 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:35,243 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:35,244 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:35,484 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:35,485 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:35,486 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1223, 'value': 1223}
+2017-10-05 20:51:35,488 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:35,490 : EventManager : Event: ======'player_a_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:35,493 : EventManager : Event: ======'player_p_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:35,627 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:35,627 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:35,627 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:35,944 : SwitchController : Processing switch. Name: s_left_flipper, state: 1, logical: True,
+2017-10-05 20:51:35,945 : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2017-10-05 20:51:35,946 : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'change': 0, 'prev_value': 1224, 'value': 1224}
+2017-10-05 20:51:35,947 : EventManager : Event: ======'s_left_flipper_active'====== Args={}
+2017-10-05 20:51:35,949 : EventManager : Event: ======'player_c_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:35,952 : EventManager : Event: ======'player_a_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:36,070 : SwitchController : Processing switch. Name: s_left_flipper, state: 0, logical: True,
+2017-10-05 20:51:36,071 : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2017-10-05 20:51:36,071 : EventManager : Event: ======'s_left_flipper_inactive'====== Args={}
+2017-10-05 20:51:37,856 : SwitchController : Processing switch. Name: s_left_inlane, state: 1, logical: True,
+2017-10-05 20:51:37,857 : SwitchController : <<<<<<< 's_left_inlane' active >>>>>>>
+2017-10-05 20:51:37,858 : EventManager : Event: ======'e_lane_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:37,860 : EventManager : Event: ======'e_lane_default_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:37,861 : EventManager : Event: ======'e_lane_default_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:37,862 : EventManager : Event: ======'e_lane_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:37,863 : EventManager : Event: ======'player_e_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:37,866 : EventManager : Event: ======'rollover_lanes_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:37,867 : EventManager : Event: ======'rollover_lanes_default_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:37,869 : EventManager : Event: ======'rollover_lanes_default_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:37,870 : EventManager : Event: ======'machine_var_audits_shots_e_lane'====== Args={'change': 0, 'prev_value': 32, 'value': 32}
+2017-10-05 20:51:37,872 : EventManager : Event: ======'machine_var_audits_switches_s_left_inlane'====== Args={'change': 0, 'prev_value': 94, 'value': 94}
+2017-10-05 20:51:37,874 : EventManager : Event: ======'s_left_inlane_active'====== Args={}
+2017-10-05 20:51:37,875 : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2017-10-05 20:51:37,876 : EventManager : Event: ======'sw_playfield_active_active'====== Args={}
+2017-10-05 20:51:37,879 : EventManager : Event: ======'player_score'====== Args={'change': 1000, 'prev_value': 202000, 'value': 203000, 'player_num': 1}
+2017-10-05 20:51:37,998 : SwitchController : Processing switch. Name: s_left_inlane, state: 0, logical: True,
+2017-10-05 20:51:37,999 : SwitchController : <<<<<<< 's_left_inlane' inactive >>>>>>>
+2017-10-05 20:51:37,999 : EventManager : Event: ======'s_left_inlane_inactive'====== Args={}
+2017-10-05 20:51:37,999 : EventManager : Event: ======'sw_playfield_active_inactive'====== Args={}
+2017-10-05 20:51:39,444 : SwitchController : Processing switch. Name: s_s_lane, state: 1, logical: True,
+2017-10-05 20:51:39,445 : SwitchController : <<<<<<< 's_s_lane' active >>>>>>>
+2017-10-05 20:51:39,446 : EventManager : Event: ======'s_lane_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:39,447 : EventManager : Event: ======'s_lane_default_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:39,448 : EventManager : Event: ======'s_lane_default_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:39,449 : EventManager : Event: ======'s_lane_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:39,451 : EventManager : Event: ======'player_s_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:39,454 : EventManager : Event: ======'rollover_lanes_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:39,456 : EventManager : Event: ======'rollover_lanes_default_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:39,457 : EventManager : Event: ======'rollover_lanes_default_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:39,458 : EventManager : Event: ======'machine_var_audits_shots_s_lane'====== Args={'change': 0, 'prev_value': 16, 'value': 16}
+2017-10-05 20:51:39,460 : EventManager : Event: ======'machine_var_audits_switches_s_s_lane'====== Args={'change': 0, 'prev_value': 16, 'value': 16}
+2017-10-05 20:51:39,462 : EventManager : Event: ======'s_s_lane_active'====== Args={}
+2017-10-05 20:51:39,464 : EventManager : Event: ======'player_score'====== Args={'change': 1000, 'prev_value': 203000, 'value': 204000, 'player_num': 1}
+2017-10-05 20:51:39,570 : SwitchController : Processing switch. Name: s_s_lane, state: 0, logical: True,
+2017-10-05 20:51:39,571 : SwitchController : <<<<<<< 's_s_lane' inactive >>>>>>>
+2017-10-05 20:51:39,571 : EventManager : Event: ======'s_s_lane_inactive'====== Args={}
+2017-10-05 20:51:41,368 : SwitchController : Processing switch. Name: s_p_lane, state: 1, logical: True,
+2017-10-05 20:51:41,369 : SwitchController : <<<<<<< 's_p_lane' active >>>>>>>
+2017-10-05 20:51:41,370 : EventManager : Event: ======'p_lane_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:41,371 : EventManager : Event: ======'p_lane_default_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:41,372 : EventManager : Event: ======'p_lane_default_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:41,374 : EventManager : Event: ======'p_lane_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:41,375 : EventManager : Event: ======'player_p_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:41,378 : EventManager : Event: ======'rollover_lanes_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:41,379 : EventManager : Event: ======'rollover_lanes_default_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:41,380 : EventManager : Event: ======'rollover_lanes_default_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:41,381 : EventManager : Event: ======'machine_var_audits_shots_p_lane'====== Args={'change': 0, 'prev_value': 16, 'value': 16}
+2017-10-05 20:51:41,383 : EventManager : Event: ======'machine_var_audits_switches_s_p_lane'====== Args={'change': 0, 'prev_value': 16, 'value': 16}
+2017-10-05 20:51:41,384 : EventManager : Event: ======'s_p_lane_active'====== Args={}
+2017-10-05 20:51:41,387 : EventManager : Event: ======'player_score'====== Args={'change': 1000, 'prev_value': 204000, 'value': 205000, 'player_num': 1}
+2017-10-05 20:51:41,522 : SwitchController : Processing switch. Name: s_p_lane, state: 0, logical: True,
+2017-10-05 20:51:41,523 : SwitchController : <<<<<<< 's_p_lane' inactive >>>>>>>
+2017-10-05 20:51:41,523 : EventManager : Event: ======'s_p_lane_inactive'====== Args={}
+2017-10-05 20:51:42,184 : SwitchController : Processing switch. Name: s_a_lane, state: 1, logical: True,
+2017-10-05 20:51:42,186 : SwitchController : <<<<<<< 's_a_lane' active >>>>>>>
+2017-10-05 20:51:42,186 : EventManager : Event: ======'a_lane_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:42,187 : EventManager : Event: ======'a_lane_default_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:42,189 : EventManager : Event: ======'a_lane_default_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:42,190 : EventManager : Event: ======'a_lane_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:42,191 : EventManager : Event: ======'player_a_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:42,194 : EventManager : Event: ======'rollover_lanes_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:42,195 : EventManager : Event: ======'rollover_lanes_default_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:42,197 : EventManager : Event: ======'rollover_lanes_default_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:42,198 : EventManager : Event: ======'machine_var_audits_shots_a_lane'====== Args={'change': 0, 'prev_value': 15, 'value': 15}
+2017-10-05 20:51:42,200 : EventManager : Event: ======'machine_var_audits_switches_s_a_lane'====== Args={'change': 0, 'prev_value': 15, 'value': 15}
+2017-10-05 20:51:42,201 : EventManager : Event: ======'s_a_lane_active'====== Args={}
+2017-10-05 20:51:42,203 : EventManager : Event: ======'player_score'====== Args={'change': 1000, 'prev_value': 205000, 'value': 206000, 'player_num': 1}
+2017-10-05 20:51:42,343 : SwitchController : Processing switch. Name: s_a_lane, state: 0, logical: True,
+2017-10-05 20:51:42,344 : SwitchController : <<<<<<< 's_a_lane' inactive >>>>>>>
+2017-10-05 20:51:42,344 : EventManager : Event: ======'s_a_lane_inactive'====== Args={}
+2017-10-05 20:51:44,606 : SwitchController : Processing switch. Name: s_right_inlane, state: 1, logical: True,
+2017-10-05 20:51:44,606 : SwitchController : <<<<<<< 's_right_inlane' active >>>>>>>
+2017-10-05 20:51:44,607 : EventManager : Event: ======'e2_lane_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:44,608 : EventManager : Event: ======'e2_lane_default_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:44,609 : EventManager : Event: ======'e2_lane_default_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:44,610 : EventManager : Event: ======'e2_lane_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:44,612 : EventManager : Event: ======'player_e2_lane_default'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:44,614 : EventManager : Event: ======'rollover_lanes_complete'====== Args={}
+2017-10-05 20:51:44,615 : EventManager : Event: ======'rollover_lanes_default_complete'====== Args={}
+2017-10-05 20:51:44,616 : EventManager : Event: ======'rollover_lanes_default_lit_complete'====== Args={}
+2017-10-05 20:51:44,619 : EventManager : Event: ======'rollover_lanes_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:44,621 : EventManager : Event: ======'rollover_lanes_default_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:44,622 : EventManager : Event: ======'rollover_lanes_default_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit'}
+2017-10-05 20:51:44,623 : EventManager : Event: ======'machine_var_audits_shots_e2_lane'====== Args={'change': 0, 'prev_value': 26, 'value': 26}
+2017-10-05 20:51:44,625 : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'change': 0, 'prev_value': 181, 'value': 181}
+2017-10-05 20:51:44,626 : EventManager : Event: ======'s_right_inlane_active'====== Args={}
+2017-10-05 20:51:44,628 : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2017-10-05 20:51:44,629 : EventManager : Event: ======'sw_playfield_active_active'====== Args={}
+2017-10-05 20:51:44,631 : EventManager : Event: ======'player_bonus_qualify_count'====== Args={'change': 1, 'prev_value': 0, 'value': 1, 'player_num': 1}
+2017-10-05 20:51:44,633 : EventManager : Event: ======'logicblock_bonus_qualify_updated'====== Args={'value': 1}
+2017-10-05 20:51:44,635 : EventManager : Event: ======'counter_bonus_qualify_hit'====== Args={'count': 1, 'remaining': 0}
+2017-10-05 20:51:44,636 : EventManager : Event: ======'logicblock_bonus_qualify_hit'====== Args={'count': 1, 'remaining': 0}
+2017-10-05 20:51:44,637 : EventManager : Event: ======'playfield_bonus_mode_start'====== Args={}
+2017-10-05 20:51:44,640 : EventManager : Event: ======'player_bonus_qualify_count'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:44,643 : EventManager : Event: ======'player_score'====== Args={'change': 1000, 'prev_value': 206000, 'value': 207000, 'player_num': 1}
+2017-10-05 20:51:44,668 : EventManager : Event: ======'mode_playfield_bonus_starting'====== Args={}
+2017-10-05 20:51:44,669 : Mode.playfield_bonus : Started. Priority: 500
+2017-10-05 20:51:44,670 : EventManager : Event: ======'mode_playfield_bonus_started'====== Args={}
+2017-10-05 20:51:44,747 : SwitchController : Processing switch. Name: s_right_inlane, state: 0, logical: True,
+2017-10-05 20:51:44,747 : SwitchController : <<<<<<< 's_right_inlane' inactive >>>>>>>
+2017-10-05 20:51:44,748 : EventManager : Event: ======'s_right_inlane_inactive'====== Args={}
+2017-10-05 20:51:44,748 : EventManager : Event: ======'sw_playfield_active_inactive'====== Args={}
+2017-10-05 20:51:47,630 : EventManager : Event: ======'player_e_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:47,634 : EventManager : Event: ======'player_s_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:47,636 : EventManager : Event: ======'player_c_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:47,639 : EventManager : Event: ======'player_a_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:47,642 : EventManager : Event: ======'player_p_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:47,645 : EventManager : Event: ======'player_e2_lane_default'====== Args={'change': -1, 'prev_value': 1, 'value': 0, 'player_num': 1}
+2017-10-05 20:51:53,618 : SwitchController : Processing switch. Name: s_left_slingshot, state: 1, logical: True,
+2017-10-05 20:51:53,619 : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2017-10-05 20:51:53,620 : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'change': 0, 'prev_value': 383, 'value': 383}
+2017-10-05 20:51:53,622 : EventManager : Event: ======'s_left_slingshot_active'====== Args={}
+2017-10-05 20:51:53,623 : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2017-10-05 20:51:53,625 : EventManager : Event: ======'sw_playfield_active_active'====== Args={}
+2017-10-05 20:51:53,626 : EventManager : Event: ======'player_score'====== Args={'change': 2000, 'prev_value': 207000, 'value': 209000, 'player_num': 1}
+2017-10-05 20:51:53,628 : EventManager : Event: ======'player_score'====== Args={'change': 1000, 'prev_value': 209000, 'value': 210000, 'player_num': 1}
+2017-10-05 20:51:53,743 : SwitchController : Processing switch. Name: s_left_slingshot, state: 0, logical: True,
+2017-10-05 20:51:53,743 : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2017-10-05 20:51:53,743 : EventManager : Event: ======'s_left_slingshot_inactive'====== Args={}
+2017-10-05 20:51:53,743 : EventManager : Event: ======'sw_playfield_active_inactive'====== Args={}
+2017-10-05 20:51:56,729 : SwitchController : Processing switch. Name: s_left_slingshot, state: 1, logical: True,
+2017-10-05 20:51:56,731 : SwitchController : <<<<<<< 's_left_slingshot' active >>>>>>>
+2017-10-05 20:51:56,731 : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'change': 0, 'prev_value': 384, 'value': 384}
+2017-10-05 20:51:56,733 : EventManager : Event: ======'s_left_slingshot_active'====== Args={}
+2017-10-05 20:51:56,735 : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2017-10-05 20:51:56,736 : EventManager : Event: ======'sw_playfield_active_active'====== Args={}
+2017-10-05 20:51:56,738 : EventManager : Event: ======'player_score'====== Args={'change': 2000, 'prev_value': 210000, 'value': 212000, 'player_num': 1}
+2017-10-05 20:51:56,740 : EventManager : Event: ======'player_score'====== Args={'change': 1000, 'prev_value': 212000, 'value': 213000, 'player_num': 1}
+2017-10-05 20:51:56,871 : SwitchController : Processing switch. Name: s_left_slingshot, state: 0, logical: True,
+2017-10-05 20:51:56,871 : SwitchController : <<<<<<< 's_left_slingshot' inactive >>>>>>>
+2017-10-05 20:51:56,872 : EventManager : Event: ======'s_left_slingshot_inactive'====== Args={}
+2017-10-05 20:51:56,872 : EventManager : Event: ======'sw_playfield_active_inactive'====== Args={}
+2017-10-05 20:52:36,274 : Machine : Shutting down...
+2017-10-05 20:52:36,274 : EventManager : Event: ======'shutdown'====== Args={}
+2017-10-05 20:52:36,274 : asyncio : Task was destroyed but it is pending!
+task: <Task pending coro=<get() running at c:\python34\lib\asyncio\queues.py:168> wait_for=<Future cancelled> cb=[_wait.<locals>._on_completion() at c:\python34\lib\asyncio\tasks.py:408]>
+2017-10-05 20:52:36,274 : asyncio : Task was destroyed but it is pending!
+task: <Task pending coro=<wait() running at c:\python34\lib\asyncio\locks.py:264> wait_for=<Future cancelled> cb=[_wait.<locals>._on_completion() at c:\python34\lib\asyncio\tasks.py:408]>
+2017-10-05 20:52:36,274 : asyncio : Task was destroyed but it is pending!
+task: <Task pending coro=<get() running at c:\python34\lib\asyncio\queues.py:168> wait_for=<Future cancelled> cb=[_wait.<locals>._on_completion() at c:\python34\lib\asyncio\tasks.py:408]>
+2017-10-05 20:52:36,274 : asyncio : Task was destroyed but it is pending!
+task: <Task pending coro=<wait() running at c:\python34\lib\asyncio\locks.py:264> wait_for=<Future cancelled> cb=[_wait.<locals>._on_completion() at c:\python34\lib\asyncio\tasks.py:408]>
+2017-10-05 20:52:36,274 : asyncio : Task was destroyed but it is pending!
+task: <Task pending coro=<get() running at c:\python34\lib\asyncio\queues.py:168> wait_for=<Future cancelled> cb=[_wait.<locals>._on_completion() at c:\python34\lib\asyncio\tasks.py:408]>
+2017-10-05 20:52:36,274 : asyncio : Task was destroyed but it is pending!
+task: <Task pending coro=<wait() running at c:\python34\lib\asyncio\locks.py:264> wait_for=<Future cancelled> cb=[_wait.<locals>._on_completion() at c:\python34\lib\asyncio\tasks.py:408]>
+2017-10-05 20:52:36,274 : asyncio : Task was destroyed but it is pending!
+task: <Task pending coro=<get() running at c:\python34\lib\asyncio\queues.py:168> wait_for=<Future cancelled> cb=[_wait.<locals>._on_completion() at c:\python34\lib\asyncio\tasks.py:408]>
+2017-10-05 20:52:36,274 : asyncio : Task was destroyed but it is pending!
+task: <Task pending coro=<wait() running at c:\python34\lib\asyncio\locks.py:264> wait_for=<Future cancelled> cb=[_wait.<locals>._on_completion() at c:\python34\lib\asyncio\tasks.py:408]>
+2017-10-05 20:52:36,274 : asyncio : Task was destroyed but it is pending!
+task: <Task pending coro=<get() running at c:\python34\lib\asyncio\queues.py:168> wait_for=<Future cancelled> cb=[_wait.<locals>._on_completion() at c:\python34\lib\asyncio\tasks.py:408]>
+2017-10-05 20:52:36,274 : asyncio : Task was destroyed but it is pending!
+task: <Task pending coro=<wait() running at c:\python34\lib\asyncio\locks.py:264> wait_for=<Future cancelled> cb=[_wait.<locals>._on_completion() at c:\python34\lib\asyncio\tasks.py:408]>
+2017-10-05 20:52:36,290 : root : MPF run loop ended.
