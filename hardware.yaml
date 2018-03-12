@@ -1,0 +1,571 @@
+# config_version=4
+# ESCAPE!
+
+
+hardware:
+    platform: p_roc
+    driverboards: pdb
+
+switches:
+    ##########################################################################
+    # Using 24 direct switches and 8x15 (128 switches) matrix
+    # NOTE: Opto switches must use Direct switches
+    # Direct Switches, SD8 - SD31
+    # name:
+    #   number: <number>
+    #           <number> can be: SDx (x is the switch number) or switch matrix number
+    #           Direct Switches: P-ROC switch # = SDx
+    #           Remember numbers start at 0 "zero" and the Key Pin is not counted
+    #           Bank B switch: P3-ROC switch # = SW-16 address * 16 + 8 + Bank B switch input
+    #   type: <type>
+    #         <type> 'NO' (normally open.  This is the default; so no need to use this)
+    #                'NC' (normally closed.  Common for optos)?
+    #   tags: <group>
+    #   ballsearch: reset, stop(prevent counter from starting)
+    #   debounce: auto(default), quick, normal
+    #
+    # Switch matrix switch numbers are entered using the column number, then a slash, then the row number.
+    # Matrix switches, 0/0 - 7/15
+    #   number: 0/0  # column 0, row 0
+    ##########################################################################
+    ####################################
+    # P-Roc Direct Switch Inputs # J6 #
+    ####################################
+    #s_:
+    #    number: SD0
+    #    label:
+    #s_:
+    #    number: SD1
+    #    label:
+    #:
+    #    number: SD2
+    #    tags:
+    #    label:
+    s_upper_slingshot:
+        number: SD3
+        tags:
+        label:
+    s_ramp_target4:
+        number: SD4
+        tags:
+        label:
+    s_ramp_target3:
+        number: SD5
+        tags:
+        label:
+    s_ramp_target2:
+        number: SD6
+        tags:
+        label:
+    s_ramp_target1:
+        number: SD7
+        tags:
+        label:
+
+    ####################################
+    # P-Roc Direct Switch Inputs # J15 #
+    ####################################
+    s_left_flipper:
+        number: SD8
+        label: Left Flipper Button
+    s_right_flipper:
+        number: SD9
+        label: Right Flipper Button
+    s_left_slingshot:
+        number: SD10
+        tags: playfield_active
+        debounce: quick
+        label: Left Sling
+    s_right_slingshot:
+        number: SD11
+        tags: playfield_active
+        debounce: quick
+        label: Right Sling
+    s_left_inlane:
+        number: SD12
+        tags: playfield_active
+        label: Left Inlane
+    s_right_inlane:
+        number: SD13
+        tags: playfield_active
+        label: Right Inlane
+    s_left_outlane:
+        number: SD14
+        tags: drain
+        label: Left Outlane
+    s_right_outlane:
+        number: SD15
+        tags: drain
+        label: Right Outlane
+
+    ####################################
+    # P-Roc Direct Switch Inputs # J33 #
+    ####################################
+    s_start:
+        number: SD16
+        tags: start
+        label: Start Button
+    s_popbumper1:
+        number: SD17
+        tags:
+        debounce: quick
+        label:
+    s_popbumper2:
+        number: SD18
+        tags:
+        debounce: quick
+        label:
+    s_popbumper3:
+        number: SD19
+        tags:
+        debounce: quick
+        label:
+    s_singledrop:
+        number: SD20
+        tags:
+        label: Single Drop Target
+    s_droptargetbank1:
+        number: SD21
+        tags:
+        label: Drop Target Bank 1
+    s_droptargetbank2:
+        number: SD22
+        tags:
+        label: Drop Target Bank 2
+    s_scoop_VUK:
+        number: SD23
+        tags:
+        label: VUK
+
+    ####################################
+    # P-Roc Direct Switch Inputs # J25 #
+    ####################################
+    s_trough1:
+        number: SD24
+        label: Trough 1
+    s_trough2:
+        number: SD25
+        label: Trough 2
+    s_trough3:
+        number: SD26
+        label: Trough 3
+    s_trough4:
+        number: SD27
+        label: Trough 4
+    s_spiral_kicker:
+        number: SD28
+        label: Spiral Kicker
+    s_ball_release:
+        number: SD29
+        label: Subway Ball Release
+    s_right_flipper_upper:
+        number: SD30
+        label: Right Upper Flipper Button
+    s_plunger_lane:
+        number: SD31
+        label: Plunger Lane
+
+    ####################################
+    # P-Roc Matrix Switch Inputs column 0, row 0-15 /7?
+    # #J19 pins 1 is output for all column 0 switches#
+    # #J22 Pins 1-5, 7-9 are input for rows 0-7#
+    ####################################
+
+# Martix Block 1
+
+    s_bath_target:
+        number: 0/0
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_left_orbit:
+        number: 1/0
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_spiral_enter:
+        number: 2/0
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_skillsave:
+        number: 3/0
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_S_lane:
+        number: 4/0
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_C_lane:
+        number: 5/0
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_A_lane:
+        number: 6/0
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_P_lane:
+        number: 7/0
+        tags:
+        debounce: quick #or normal or auto
+        label:
+
+# Martix block 2
+
+    s_left_ramp_enter:
+        number: 0/1
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_spinner:
+        number: 1/1
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_cative_target:
+        number: 2/1
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_quiet_target:
+        number: 3/1
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_right_ramp_enter:
+        number: 4/1
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    s_around_scoop:
+        number: 5/1
+        tags:
+        debounce: quick #or normal or auto
+        label:
+    # s_subway3:
+    #     number: 1/6
+    #     tags:
+    #     debounce: quick #or normal or auto
+    #     label:
+    # s_:
+    #     number: 1/7
+    #     tags:
+    #     debounce: quick #or normal or auto
+    #     label:
+
+# Martix block 3
+
+#     s_bath_enter:
+#         number: 2/0
+#         tags:
+#         debounce: quick #or normal or auto
+#         label:
+#     s_:
+#         number: 2/1
+#         tags:
+#         debounce: quick #or normal or auto
+#         label:
+#     s_:
+#         number: 2/2
+#         tags:
+#         debounce: quick #or normal or auto
+#         label:
+#     s_subway2:
+#         number: 2/3
+#         tags:
+#         debounce: quick #or normal or auto
+#         label:
+#     s_:
+#         number: 2/4
+#         tags:
+#         debounce: quick #or normal or auto
+#         label:
+#     s_door_target:
+#         number: 2/5
+#         tags:
+#         debounce: quick #or normal or auto
+#         label:
+#     s_skillsave_target:
+#         number: 2/6
+#         tags:
+#         debounce: quick #or normal or auto
+#         label:
+#     s_subway1:
+#         number: 2/7
+#         tags:
+#         debounce: quick #or normal or auto
+#         label:
+
+# Martix block 4
+
+#     s_vent_enter:
+#         number: 3/0
+#         tags:
+#         debounce: quick #or normal or auto
+#         label:
+#     s_attic_drop_ramp:
+#         number: 3/1
+#         tags:
+#         debounce: quick #or normal or auto
+#         label:
+#     s_left_ramp_center:
+#         number: 3/2
+#         tags:
+#         debounce: quick #or normal or auto
+#         label:
+#     s_attic_drop_kicker:
+#         number: 3/3
+#         tags:
+#         debounce: quick #or normal or auto
+#         label:
+#     s_attic_enter:
+#         number: 3/4
+#         tags:
+#         debounce: quick #or normal or auto
+#         label:
+#     s_right_ramp_top:
+#         number: 3/5
+#         tags:
+#         debounce: quick #or normal or auto
+#         label:
+#     s_left_ramp_top:
+#         number: 3/6
+#         tags:
+#         debounce: quick #or normal or auto
+#         label:
+    # s_:
+    #     number: 3/7
+    #     tags:
+    #     debounce: quick #or normal or auto
+    #     label:
+
+coils:
+    ##########################################################################
+    # Coil numbering format: Ax-By-z:
+    # Capital letters are required, lower case letters represent the numbers:
+    # x : Board address (0-7)
+    # y : Bank address (0 for A, 1 for B)
+    # z : Output number (0-7)
+    # Remember numbers start at 0 "zero" and the Key Pin is not counted
+    ##########################################################################
+    #####################################################
+    # PD-16/Master # Address:0 # Bank:A # Voltage:70vdc #
+    #####################################################
+    c_auto_plunge:
+        number: A0-B0-0
+        pulse_ms: 10
+        label: Auto Plunger
+    c_trough_eject:
+        number: A0-B0-1
+        pulse_ms: 15
+        label: Trough Eject
+    c_flipper_right_upper:
+        number: A0-B0-2
+        pulse_ms: 7
+        hold_power: 1
+        label: Right Upper Flipper
+    c_flipper_left_main:
+        number: A0-B0-3
+        pulse_ms: 15
+        hold_power: 1
+        label: Left Flipper
+    c_flipper_right_main:
+        number: A0-B0-4
+        pulse_ms: 15
+        hold_power: 1
+        label: Right Flipper
+    c_left_slingshot:
+        number: A0-B0-5
+        pulse_ms: 4
+        label: Left Sling
+    c_right_slingshot:
+        number: A0-B0-6
+        pulse_ms: 4
+        label: Right Sling
+    c_upper_slingshot:
+        number: A0-B0-7
+        pulse_ms: 4
+        label: Upper Sling
+
+  #####################################################
+  # PD-16/Master # Address:0 # Bank:B # Voltage:70vdc #
+  #####################################################
+    c_popbumper1:
+        number: A0-B1-0
+        pulse_ms: 6
+        label: Pop Bumper 1
+    c_popbumper3:
+        number: A0-B1-1
+        pulse_ms: 6
+        label: Pop Bumper 3
+    c_popbumper2:
+        number: A0-B1-2
+        pulse_ms: 6
+        label: Pop Bumper 2
+    c_singledroptarget:
+        number: A0-B1-3
+        pulse_ms: 15
+        label: Single Drop Target
+    c_ball_release:
+        number: A0-B1-4
+        pulse_ms: 50
+        label: Ball Release Coil
+#    c_spiral_kicker:
+#        number: A0-B1-5
+#        pulse_ms: 4
+#        label: Spiral Kicker
+    c_droptargetbank:
+        number: A0-B1-6
+        pulse_ms: 25
+        label: Drop Target Bank
+    c_scoop_VUK:
+        number: A0-B1-7
+        pulse_ms: 10
+        label: VUK
+
+# The below PD-16 is not purchased yet
+  #####################################################
+  # PD-16 # Address:1 # Bank:A # Voltage:70vdc #
+  #####################################################
+    # c_:
+    #     number: A1-B0-0
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-1
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-2
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-3
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-4
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-6
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-7
+    #     pulse_ms:
+    #     label:
+
+  #####################################################
+  # PD-16 # Address:1 # Bank:B # Voltage:24vdc #
+  #####################################################
+    # c_attic_diverter:
+    #     number: A1-B1-0
+    #     pulse_ms:
+    #     hold_power:
+    #     label: Attic Diverter
+    # c_:
+    #     number: A1-B0-1
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-2
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-3
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-4
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-6
+    #     pulse_ms:
+    #     label:
+    # c_:
+    #     number: A1-B0-7
+    #     pulse_ms:
+    #     label:
+
+autofire_coils:
+    left_slingshot:
+        coil: c_left_slingshot
+        switch: s_left_slingshot
+    right_slingshot:
+        coil: c_right_slingshot
+        switch: s_right_slingshot
+    upper_slingshot:
+        coil: c_upper_slingshot
+        switch: s_upper_slingshot
+    popbumper1:
+        coil: c_popbumper1
+        switch: s_popbumper1
+    popbumper2:
+        coil: c_popbumper2
+        switch: s_popbumper2
+    popbumper3:
+        coil: c_popbumper3
+        switch: s_popbumper3
+
+flippers:
+    left_flipper:
+        main_coil: c_flipper_left_main
+        activation_switch: s_left_flipper
+    right_flipper:
+        main_coil: c_flipper_right_main
+        activation_switch: s_right_flipper
+    right_upper_flipper:
+        main_coil: c_flipper_right_upper
+        activation_switch: s_right_flipper_upper
+
+drop_targets:
+    targetbank1:
+        switch: s_singledrop
+        reset_coil: c_singledroptarget
+    targetbank2_1:
+        switch: s_droptargetbank1
+        reset_coil: c_droptargetbank
+    targetbank2_2:
+        switch: s_droptargetbank2
+        reset_coil: c_droptargetbank
+
+drop_target_banks:
+    stargetbank:
+        drop_targets: targetbank1
+        reset_coils: c_singledroptarget
+        reset_events: ball_end
+    2targetbank:
+        drop_targets: targetbank2_1, targetbank2_2
+        reset_coils: c_droptargetbank
+        reset_events: targetbank1_activate, ball_end 
+
+ball_devices:
+    bd_trough:
+        tags: trough, home, drain
+        ball_switches: s_trough1, s_trough2, s_trough3, s_trough4
+        eject_coil: c_trough_eject
+        eject_targets: bd_plunger
+    bd_plunger:
+        ball_switches: s_plunger_lane
+        eject_timeouts: 3s
+        tags: ball_add_live
+        mechanical_eject: true
+        eject_coil: c_auto_plunge
+    bd_scoop:
+        ball_switches: s_scoop_VUK
+        eject_coil: c_scoop_VUK
+        eject_timeouts: 3s
+    bd_ball_release:
+        ball_switches: s_ball_release
+        eject_coil: c_ball_release
+        eject_timeouts: 3s
+#    bd_spiral_kicker:
+#        ball_switches: s_spiral_kicker
+#        eject_coil: c_spiral_kicker
+#        eject_timeouts: 3s

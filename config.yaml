@@ -1,0 +1,15 @@
+# config_version=4
+# ESCAPE!
+
+config:
+- hardware.yaml
+- display.yaml
+- modes.yaml
+# Comment out keys.yaml on psyical machine!
+#- keys.yaml
+- audio.yaml
+- shots.yaml
+
+game:
+    balls_per_game: 3
+    max_players: 4
