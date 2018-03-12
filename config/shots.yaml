@@ -26,21 +26,21 @@ shots:
         switch: s_right_inlane
 #            show_token:
 #                light: l_right_inlane
-    left_orbit:
-        switch_sequence: s_left_orbit, s_center_orbit, s_right_orbit
-        time: 3s    
-    right_orbit:
-        switch_sequence: s_right_orbit, s_center_orbit, s_left_orbit
-        time: 3s
-    center_orbit:
-        switch_sequence: s_skillsave, s_center_orbit, s_right_orbit
-        time: 3s
-    left_ramp:
-        switch_sequence: s_left_ramp_enter, s_left_ramp_center, s_left_ramp_top
-        time: 5s
-    attic_ramp:
-        switch_sequence: s_right_ramp_enter, s_right_ramp_top
-        time: 3s
+    # left_orbit:
+    #     switch_sequence: s_left_orbit, s_center_orbit, s_right_orbit
+    #     time: 3s    
+    # right_orbit:
+    #     switch_sequence: s_right_orbit, s_center_orbit, s_left_orbit
+    #     time: 3s
+    # center_orbit:
+    #     switch_sequence: s_skillsave, s_center_orbit, s_right_orbit
+    #     time: 3s
+    # left_ramp:
+    #     switch_sequence: s_left_ramp_enter, s_left_ramp_center, s_left_ramp_top
+    #     time: 5s
+    # attic_ramp:
+    #     switch_sequence: s_right_ramp_enter, s_right_ramp_top
+    #     time: 3s
 
 shot_groups:
     rollover_lanes:
