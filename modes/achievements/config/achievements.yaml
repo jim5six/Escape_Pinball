@@ -1,0 +1,166 @@
+#config_version=5
+#ESCAPE!
+
+mode:
+    start_events:
+        ball_starting
+    priority: 100
+
+achievements:
+    kitchen:
+        start_events:
+            achievement_kitchen_state_selected
+        events_when_started:
+            kitchen_mode_start
+        complete_events:
+            kitchen2_mode_complete
+            timer_kitchen2_mode_countdown_complete
+            timer_kitchen2_mode_countdown_stopped
+        events_when_completed:
+            kitchen_achievement_complete
+        # show_tokens:
+        #     leds: l_kitchen_mode_LED
+        # show_when_started: flash
+        # show_when_completed: on
+    bathroom:
+        start_events:
+            achievement_bathroom_state_selected
+        events_when_started:
+            bathroom_mode_start
+        complete_events:
+            bathroom2_mode_complete
+            timer_bathroom2_mode_countdown_complete
+        events_when_completed:
+            bathroom_achievement_complete
+        # show_tokens:
+        #     leds: l_bathroom_mode_LED
+        # show_when_started: flash
+        # show_when_completed: on
+    attic:
+        start_events:
+            achievement_attic_state_selected
+        events_when_started:
+            attic_mode_start
+        complete_events:
+            attic_mode_complete
+        events_when_completed:
+            attic_achievement_complete
+        # show_tokens:
+        #     leds: l_attic_mode_LED
+        # show_when_started: flash
+        # show_when_completed: on
+    upstairs:
+        start_events:
+            achievement_upstairs_state_selected
+        events_when_started:
+            upstairs_mode_start
+        complete_events:
+            upstairs2_mode_complete
+            timer_upstairs2_mode_countdown_complete
+        events_when_completed:
+            upstairs_achievement_complete
+        # show_tokens:
+        #     leds: l_upstairs_mode_LED
+        # show_when_started: flash
+        # show_when_completed: on
+    quiet:
+        start_events:
+            achievement_quiet_state_selected
+        events_when_started:
+            quiet_mode_start
+        complete_events:
+            quiet2_mode_complete
+            timer_quiet2_mode_countdown_complete
+        events_when_completed:
+            quiet_achievement_complete
+        # show_tokens:
+        #     leds: l_quiet_mode_LED
+        # show_when_started: flash
+        # show_when_completed: on
+    closetmulitball:
+        start_events:
+            closet_mode_complete
+        events_when_started:
+            closetmultiball_mode_start
+        complete_events:
+            closetmultiball_mode_stopped
+        events_when_completed:
+            closetmultiball_achievement_complete
+        # show_tokens:
+        #     leds: l_closetmultiball_mode_LED
+        # show_when_started: flash
+        # show_when_completed: on
+    basement:
+        start_events:
+            achievement_basement_state_selected
+        events_when_started:
+            basement_mode_start
+        complete_events:
+            basement2_mode_complete
+            timer_basement2_mode_countdown_complete
+        events_when_completed:
+            basement_achievement_complete
+        # show_tokens:
+        #     leds: l_basement_mode_LED
+        # show_when_started: flash
+        # show_when_completed: on
+    check_exit1:
+        start_events:
+            achievement_check_exit1_state_selected
+        events_when_started:
+            check_exit1_mode_start
+        complete_events:
+            check_exit1_mode_complete
+            timer_exit1_mode_countdown_complete
+        events_when_completed:
+            check_exit1_achievement_complete
+        # show_tokens:
+        #     leds: l_exit_mode_LED, l_ramp_target1, l_ramp_target2, l_ramp_target3, l_ramp_target4
+        # show_when_started: flash
+        # show_when_completed: on
+    superspinner:
+        start_events:
+            spinner_qualify_complete
+        events_when_started:
+            superspinner_mode_start
+        complete_events:
+            superspinner_mode_complete
+        events_when_completed:
+            superspinner_achievement_complete
+        reset_events:
+            superspinner_achievement_complete
+        # show_tokens:
+        #     leds: l_spinner_mode_LED
+        # show_when_started: flash
+        # show_when_completed: on
+
+achievement_groups:
+    mode_group1:
+        enable_events:
+            achievement_random_start
+        achievements:
+            kitchen
+            quiet
+            bathroom
+        auto_select: false
+        select_random_achievement_events:
+            achievement_random_start
+        start_selected_events:
+            mode_select_complete
+        events_when_all_completed:
+            achievement_check_exit1_state_selected
+            achievement_group_mode_group1_complete
+    mode_group2:
+        enable_events:
+            achievement_random2_start
+        achievements:
+            attic
+            basement
+            upstairs
+        auto_select: false
+        select_random_achievement_events:
+            achievement_random2_start
+        start_selected_events:
+            mode_select2_complete
+        events_when_all_completed:
+            revenge_mode_start

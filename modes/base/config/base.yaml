@@ -1,57 +1,373 @@
-#config_version=4
+#config_version=5
+#ESCAPE!
+
 mode:
     start_events: ball_starting
     priority: 100
 
+ball_saves:
+    default:
+        active_time: 8s
+        hurry_up_time: 2s
+        grace_period: 2s
+        enable_events:
+            mode_base_started
+        disable_events:
+            timer_skillsave_countdown_started
+        timer_start_events:
+            balldevice_bd_plunger_ball_eject_success
+        early_ball_save_events:
+            s_right_outlane_active
+            S_left_outlane_active
+        auto_launch: yes
+        balls_to_save: 1
+        label: Ball Save
+ 
+shots:
+    l_outlane:
+        switch: s_left_outlane
+        show_tokens:
+            light: l_left_outlane
+    r_outlane:
+        switch: s_right_outlane
+        show_tokens:
+            light: l_right_outlane
+    e_lane:
+        switch: s_left_inlane
+        show_tokens:
+            light: l_left_inlane
+    s_lane:
+        switch: s_s_lane
+        show_tokens:
+            light: l_s_rollover
+    c_lane:
+        switch: s_c_lane
+        show_tokens:
+            light: l_c_rollover
+    a_lane:
+        switch: s_a_lane
+        show_tokens:
+            light: l_a_rollover
+    p_lane:
+        switch: s_p_lane
+        show_tokens:
+            light: l_p_rollover
+    e2_lane:
+        switch: s_right_inlane
+        show_tokens:
+            light: l_right_inlane
+    mode_select:
+        switch: s_scoop_VUK
+        show_tokens:
+            light: l_mode_select
+    ramp_target1:
+        switch: s_ramp_target1
+        show_tokens:
+            light: l_ramp_target1
+    ramp_target2:
+        switch: s_ramp_target2
+        show_tokens:
+            light: l_ramp_target2
+    ramp_target3:
+        switch: s_ramp_target3
+        show_tokens:
+            light: l_ramp_target3
+    ramp_target4:
+        switch: s_ramp_target4
+        show_tokens:
+            light: l_ramp_target4
+    mode_bonus_drop_target:
+        switch: s_singledrop
+        show_tokens:
+            light: l_single_drop_target
+    bath_drop_target1:
+        switch: s_drop_target_bank1
+        show_tokens:
+            light: l_drop_target_bank1
+    bath_drop_target2:
+        switch: s_drop_target_bank2
+        show_tokens:
+            light: l_drop_target_bank2
+    popbumper1:
+        switch: s_popbumper1
+        show_tokens:
+            light: l_popbumper
+    popbumper2:
+        switch: s_popbumper2
+        show_tokens:
+            light: l_popbumper
+    popbumper3:
+        switch: s_popbumper3
+        show_tokens:
+            light: l_popbumper
+    spinner:
+        switch: s_spinner
+        show_tokens:
+            light: l_spinner_LED
+
+sequence_shots:
+    left_orbit:
+        switch_sequence: s_left_orbit, s_center_orbit, s_right_orbit
+        sequence_timeout: 3s    
+    right_orbit:
+        switch_sequence: s_right_orbit, s_center_orbit, s_left_orbit
+        sequence_timeout: 3s
+    center_orbit:
+        switch_sequence: s_skillsave, s_center_orbit, s_right_orbit
+        sequence_timeout: 3s
+    left_ramp:
+        switch_sequence: s_left_ramp_enter, s_left_ramp_center, s_left_ramp_top
+        sequence_timeout: 5s
+    attic_ramp:
+        switch_sequence: s_right_ramp_enter, s_right_ramp_top
+        sequence_timeout: 3s
+    # captive_ball:
+    #     switch_sequence: s_captive_ball, s_captive_target
+    #     time: 2s
+    ramp_targets:
+        switch_sequence: s_ramp_target1, s_ramp_target2, s_ramp_target3, s_ramp_target4
+        sequence_timeout: 10s
+    subway:
+        switch_sequence: s_subway2, s_subway1
+        sequence_timeout: 5s
+    upstairs_loop:
+        switch_sequence: s_left_ramp_enter, s_left_ramp_center, s_left_ramp_top, s_right_inlane 
+        sequence_timeout: 5s
+
+shot_groups:
+    rollover_lanes:
+        shots: e_lane, s_lane, c_lane, a_lane, p_lane, e2_lane
+        rotate_left_events:
+            s_left_flipper_active
+            s_popbumper1_active
+            s_upper_slingshot_active
+        rotate_right_events:
+            s_right_flipper_active
+            s_popbumper2_active
+            s_popbumper3_active
+        reset_events: rollover_lanes_lit_complete
+    ramp_target_set:
+        shots: ramp_target1, ramp_target2, ramp_target3, ramp_target4
+        reset_events: ramp_target_set_lit_complete
+    popbumper_set:
+        shots: popbumper1, popbumper2, popbumper3
+    outlane:
+        shots: r_outlane, l_outlane
+        reset_events: ball_will_end
+
+show_player:
+    rollover_lanes_lit_complete: flash_lanes
+
+counters:
+    light_mode_select:
+        enable_events:
+            mode_base_started
+            kitchen_achievement_complete
+            quiet_achievement_complete
+            bathroom_achievement_complete
+        count_events:
+            left_orbit_hit
+        starting_count: 0
+        count_complete_value: 1
+        direction: up
+        persist_state: true
+        disable_events:
+            mode_bathroom_started
+            mode_kitchen_started
+            mode_quiet_started
+            achievement_group_mode_group1_complete
+        reset_events:
+            bathroom_achievement_complete
+            kitchen_achievement_complete
+            quiet_achievement_complete
+        events_when_complete:
+            light_mode_select_complete
+            mode_select_start
+    light_mode_select2:
+        enable_events:
+            check_exit1_mode_complete
+            attic_achievement_complete
+            basement_achievement_complete
+            upstairs_achievement_complete
+        count_events:
+            right_orbit_hit
+        starting_count: 0
+        count_complete_value: 2
+        direction: up
+        persist_state: true
+        disable_events:
+            mode_attic_started
+            mode_basement_started
+            mode_upstairs_started
+        reset_events:
+            attic_achievement_complete
+            basement_achievement_complete
+            upstairs_achievement_complete
+        events_when_complete:
+            light_mode_select2_complete
+            mode_select2_start
+    # closet_mode:
+    #     count_events:
+    #         s_subway3_active
+    #     starting_count: 0
+    #     count_complete_value: 2
+    #     direction: up
+    #     persist_state: true
+    #     events_when_complete:
+    #         closetmultiball_mode_start
+    #         closet_mode_complete
+    bonus_qualify:
+        count_events:
+            rollover_lanes_complete
+        starting_count: 0
+        count_complete_value: 1
+        direction: up
+        persist_state: false
+        reset_on_complete: false
+        events_when_complete:
+            playfield_bonus_start
+    upstairs_loops:
+        count_events:
+            upstairs_loop_hit
+        starting_count: 5
+        count_complete_value: 0
+        direction: down
+        persist_state: true
+        events_when_complete:
+            upstairs_loops_complete
+accruals:
+    spinner_qualify:
+        events:
+            ramp_target1_hit
+            ramp_target2_hit
+            ramp_target3_hit
+            ramp_target4_hit
+        persist_state: false
+        reset_on_complete: true
+        events_when_complete:
+            spinner_qualify_complete
+            superspinner_mode_start
+
+extra_balls:
+    upstairs_loops_eb:
+        award_events: upstairs_loops_complete
+
 slide_player:
     mode_base_started:
-        widgets:
-          - type: text
-            text: (score)
-            number_grouping: true
-            min_digits: 2
-            font_size: 100
-            #font_name: LLDCL__
-          - type: text
-            text: PLAYER (number)
-            y: 0
-            x: 5
-            font_size: 20
-            #font_name: LLDCL__
-            anchor_x: left
-            anchor_y: bottom
-          - type: text
-            text: BALL (ball)
-            y: 0
-            x: right-5
-            anchor_x: right
-            anchor_y: bottom
-            font_size: 20
-            #font_name: LLDCL__
+        mode_base_slide:
+            - type: text
+              text: FIND THE KEYS TO OPEN THE DOOR!
+              font_size: 75
+              font_name: FEASFBI_.ttf
+              color: ffff00
+              anchor_x: center
+              anchor_y: bottom
+            - type: text
+              text: (score)
+              number_grouping: true
+              min_digits: 2
+              font_size: 100
+              font_name: digital-7 (italic).ttf
+              color: ffa500
+              anchor_x: center
+              anchor_y: top
+            - type: text
+              text: PLAYER (number)
+              y: 0
+              x: 3
+              font_size: 40
+              font_name: FEASFBI_.ttf
+              color: ffff00
+              anchor_x: left
+              anchor_y: bottom
+            - type: text
+              text: BALL (ball)
+              y: 0
+              x: right-3
+              anchor_x: right
+              anchor_y: bottom
+              font_size: 40
+              font_name: FEASFBI_.ttf
+              color: ffff00
 
-# scoring:
+widgets:
+    modeselect_widget:
+        -  type: text
+           text: "HIT THE LEFT ORBIT TO\nLITE SCOOP FOR MODE START" 
+           font_size: 50
+           font_name: FEASFBI_.ttf
+           color: ffff00
+           x: left+5
+           anchor_x: left
+           y: top-10
+           anchor_y: top
+    modeselect2_widget:
+        -  type: text
+           text: "HIT THE RIGHT ORBIT TWICE TO\nLITE SCOOP FOR MODE START" 
+           font_size: 50
+           font_name: FEASFBI_.ttf
+           color: ffff00
+           x: left+5
+           anchor_x: left
+           y: top-10
+           anchor_y: top
+    multiplier_widget:
+        -  type: text
+           text: "COMPLETE E.S.C.A.P.E. LANES\nTO ACTIVATE PLAYFIELD MULTIPLIER" 
+           font_size: 50
+           font_name: FEASFBI_.ttf
+           color: ffff00
+           x: left+5
+           anchor_x: left
+           y: top-120
+           anchor_y: top
+    spinner_widget:
+        -  type: text
+           text: "HIT THE RAMP TARGETS\nTO ACTVATE SUPER SPINNER" 
+           font_size: 50
+           font_name: FEASFBI_.ttf
+           color: ffff00
+           x: right-5
+           anchor_x: right
+           y: top-10
+           anchor_y: top
+    loopseb_widget:
+        -  type: text
+           text: "HIT THE LEFT RAMP 5 TIMES\nIN A ROW TO COLLECT EXRTA BALL" 
+           font_size: 50
+           font_name: FEASFBI_.ttf
+           color: ffff00
+           x: right-5
+           anchor_x: right
+           y: top-120
+           anchor_y: top
+
+widget_player:
+    mode_base_started:
+        modeselect_widget:
+            target: lcd
+        multiplier_widget:
+            target: lcd
+        spinner_widget:
+            target: lcd
+        loopseb_widget:
+            target: lcd
+    check_exit1_mode_complete: modeselect2_widget
+    attic_achievement_complete: modeselect2_widget
+    basement_achievement_complete: modeselect2_widget
+    upstairs_achievement_complete: modeselect2_widget
+
+variable_player:
     s_a_lane_active:
         score: 1000
     s_around_scoop_active:
         score: 1000
-#     s_attic_drop_kicker_active:
-#         score: 10000
-#     s_attic_drop_ramp_active:
-#         score: 100
-#     s_attic_enter_active:
-#         score: 1000
-#     s_bath_enter_active:
-#         score: 1000
     s_bath_target_active:
         score: 1000
     s_c_lane_active:
         score: 1000
-#     s_captive_ball_active:
-#         score: 1000
     s_cative_target_active:
         score: 10000
-#     s_door_target_active:
-#         score: 1000
     s_droptargetbank1_active:
         score: 1000
     s_droptargetbank2_active:
@@ -71,7 +387,7 @@ slide_player:
     s_popbumper3_active:
         score: 1000
     s_quiet_target_active:
-        score: 10000
+        score: 1000
     s_ramp_target1_active:
         score: 1000
     s_ramp_target2_active:
@@ -94,26 +410,24 @@ slide_player:
         score: 1000
     s_spinner_active:
         score: 1000
-    s_spiral_enter_active:
+    s_basement_enter_active:
         score: 1000
-#     s_spiral_kicker_active:
-#         score: 1000
-#     s_subway1_active:
-#         score: 100
-#     s_subway2_active:
-#         score: 100
-#     s_subway3_active:
-#         score: 100
+    s_basement_kicker_active:
+        score: 1000
+    s_subway1_active:
+        score: 100
+    s_subway2_active:
+        score: 100
     s_upper_slingshot_active:
         score: 1000
-#     s_vent_enter_active:
-#         score: 1000
+    s_vent_enter_active:
+        score: 1000
     left_orbit_hit:
         score: 10000
-#     right_orbit_hit:
-#         score: 10000
-#     center_orbit_hit:
-#         score: 10000
+    right_orbit_hit:
+        score: 10000
+    center_orbit_hit:
+        score: 10000
     left_ramp_hit:
         score: 10000
     attic_ramp_hit:

@@ -1,0 +1,113 @@
+#config_version=5
+#ESCAPE!
+
+# Playfield 4x bonus
+
+mode:
+    start_events:
+        playfield_bonus4_start
+    stop_events:
+        playfield_bonus8_start
+        drain
+    priority: 210
+
+counters:
+    8xbonus_qualify:
+        count_events:
+            rollover_lanes_complete
+        starting_count: 0
+        count_complete_value: 3
+        direction: up
+        persist_state: false
+        reset_on_complete: true
+        events_when_complete:
+            playfield_bonus8_start
+
+widgets:
+    playfield_bonus4_widget:
+        -  type: text
+           text: PLAYFIELD 4X!
+           font_size: 75
+           font_name: FEASFBI_.ttf
+           color: ffff00
+           y: top-5
+           anchor_y: top
+
+widget_player:
+    mode_playfield_bonus4_started: playfield_bonus4_widget
+
+variable_player:
+    s_a_lane_active:
+        score: 3000
+    s_around_scoop_active:
+        score: 3000
+    s_bath_target_active:
+        score: 3000
+    s_c_lane_active:
+        score: 3000
+    s_cative_target_active:
+        score: 30000
+    s_droptargetbank1_active:
+        score: 3000
+    s_droptargetbank2_active:
+        score: 3000
+    s_left_inlane_active:
+        score: 3000
+    s_left_outlane_active:
+        score: 300
+    s_left_slingshot_active:
+        score: 3000
+    s_p_lane_active:
+        score: 3000
+    s_popbumper1_active:
+        score: 3000
+    s_popbumper2_active:
+        score: 3000
+    s_popbumper3_active:
+        score: 3000
+    s_quiet_target_active:
+        score: 3000
+    s_ramp_target1_active:
+        score: 3000
+    s_ramp_target2_active:
+        score: 3000
+    s_ramp_target3_active:
+        score: 3000
+    s_ramp_target4_active:
+        score: 3000
+    s_right_inlane_active:
+        score: 3000
+    s_right_outlane_active:
+        score: 300
+    s_right_slingshot_active:
+        score: 3000
+    s_s_lane_active:
+        score: 3000
+    s_scoop_vuk_active:
+        score: 1500
+    s_singledrop_active:
+        score: 3000
+    s_spinner_active:
+        score: 3000
+    s_basement_enter_active:
+        score: 3000
+    s_basement_kicker_active:
+        score: 3000
+    s_subway1_active:
+        score: 300
+    s_subway2_active:
+        score: 300
+    s_upper_slingshot_active:
+        score: 3000
+    s_vent_enter_active:
+        score: 3000
+    left_orbit_hit:
+        score: 30000
+    right_orbit_hit:
+        score: 30000
+    center_orbit_hit:
+        score: 30000
+    left_ramp_hit:
+        score: 30000
+    attic_ramp_hit:
+        score: 30000

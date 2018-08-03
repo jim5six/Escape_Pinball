@@ -1,51 +1,44 @@
 #config_version=5
 #ESCAPE!
 
-# Quiet mode. 30 seconds to complete bonus mode.
+# basement mode. 30 seconds to complete bonus mode.
 
 mode:
     start_events:
-        quiet_mode_start
-    restart_on_next_ball: true
+        basement_mode_start
     stop_events:
-        quiet2_mode_complete
-        timer_quiet2_mode_countdown_complete
-        timer_quiet2_mode_countdown_stopped
+        timer_basement2_mode_countdown_complete
+        basement2_mode_complete
+        timer_basement2_mode_countdown_stopped
     priority: 300
 
-counters:
-    quiet_mode:
-        count_events:
-            s_quiet_target_active
-        starting_count: 0
-        count_complete_value: 1
-        direction: up
-#        restart_events:
-#            any other playfield switch hit
-        events_when_complete:
-            quiet_mode_complete
-            quiet2_mode_start
 sequences:
-    quiet2_mode:
+    basement_mode:
+        events:
+            s_basement_enter_active
+            balldevice_bd_basement_kicker_ejecting_ball
+        persist_state: true
+        events_when_complete:
+            basement_mode_complete
+            basement2_mode_start
+    basement2_mode:
         enable_events:
-            quiet_mode_complete
+            basement_mode_complete
         events:
             mode_bonus_drop_target_hit
             s_subway1_active
         events_when_complete:
-            quiet2_mode_complete
-            quiet_bonus_collect
+            basement_bonus_collect
+            basement2_mode_complete
 
 variable_player:
-    quiet_mode_complete:
-        score: 5000
-    quiet_bonus_collect:
-        score: 100000
+    basement_bonus_collect:
+      score: 100000
 
 slides:
-    quiet_mode_slide:
+    basement_mode_slide:
         - type: text
-          text: BE QUIET!!!
+          text: BASEMENT MODE
           font_size: 75
           font_name: FEASFBI_.ttf
           color: ffff00
@@ -78,7 +71,7 @@ slides:
           font_size: 40
           font_name: FEASFBI_.ttf
           color: ffff00
-    quiet2_mode_slide:
+    basement2_mode_slide:
         - type: text
           text: GET THE BONUS!
           font_size: 75
@@ -115,20 +108,16 @@ slides:
           color: ffff00
 
 slide_player:
-    mode_quiet_started:
-        quiet_mode_slide:
-            target: lcd
-    quiet_mode_complete:
-        quiet2_mode_slide:
-            target: lcd
+    mode_basement_started: basement_mode_slide
+    mode_basement2_started: basement2_mode_slide
 
 timers:
-    quiet2_mode_countdown:
+    basement2_mode_countdown:
         start_value: 30
         end_value: 0
         direction: down
         control_events:
-          - event: quiet_mode_complete
+          - event: basement_mode_complete
             action: start
           - event: ball_will_end
             action: stop

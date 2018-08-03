@@ -1,0 +1,69 @@
+#config_version=5
+#ESCAPE!
+
+# Bash Door to try to exit mode. (Ramp Targets for Now)
+
+mode:
+    start_events:
+        check_exit1_mode_start
+    restart_on_next_ball: true
+    stop_events:
+        timer_exit1_mode_countdown_complete
+        check_exit1_mode_complete
+        timer_exit1_mode_countdown_stopped
+    priority: 300
+
+sequences:
+    check_exit1_mode:
+        events:
+            ramp_target1_hit, ramp_target2_hit, ramp_target3_hit, ramp_target4_hit 
+        events_when_complete:
+            check_exit1_mode_complete
+
+slide_player:
+    mode_check_exit1_started:
+        check_exit1_mode_slide:
+            - type: text
+              text: HIT THE RAMP TARGETS
+              font_size: 75
+              font_name: FEASFBI_.ttf
+              color: ffff00
+              anchor_x: center
+              anchor_y: bottom
+            - type: text
+              text: (score)
+              number_grouping: true
+              min_digits: 2
+              font_size: 100
+              font_name: digital-7 (italic).ttf
+              color: ffa500
+              anchor_x: center
+              anchor_y: top
+            - type: text
+              text: PLAYER (number)
+              y: 0
+              x: 3
+              font_size: 40
+              font_name: FEASFBI_.ttf
+              color: ffff00
+              anchor_x: left
+              anchor_y: bottom
+            - type: text
+              text: BALL (ball)
+              y: 0
+              x: right-3
+              anchor_x: right
+              anchor_y: bottom
+              font_size: 40
+              font_name: FEASFBI_.ttf
+              color: ffff00
+
+timers:
+    exit1_mode_countdown:
+        start_value: 30
+        end_value: 0
+        direction: down
+        control_events:
+          - event: ball_will_end
+            action: stop
+        start_running: true

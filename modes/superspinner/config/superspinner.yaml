@@ -1,18 +1,40 @@
-# config_version=4
-# ESCAPE!
+#config_version=5
+#ESCAPE!
 
-# Super Spinner mode. 30 seconds to complete.
+# Super Spinner mode.
 
 mode:
-    start_events: start_superspinner_mode
+    start_events:
+        spinner_qualify_complete
     stop_events:
-        timer_mode_countdown_complete
-        # complete the shot
-    priority: 300
+        superspinner_mode_complete
+        drain
+    priority: 500
 
-timers:
-    mode_countdown:
-        start_value: 30
-        end_value: 0
-        direction: down
-        start_running: true
+sequences:
+    superspinner_mode:
+        events:
+            s_spinner_active
+            left_orbit_hit
+            s_captive_target_active
+        events_when_complete:
+            superspinner_mode_complete
+            superspinner_bonus_collect
+        reset_on_complete: true
+
+widgets:
+    superspinner_widget:
+        -  type: text
+           text: Super Spinner Active
+           font_size: 75
+           font_name: FEASFBI_.ttf
+           color: ffff00
+           y: top-5
+           anchor_y: top
+
+widget_player:
+    mode_superspinner_started: superspinner_widget
+
+variable_player:
+    superspinner_bonus_collect:
+      score: 100000

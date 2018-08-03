@@ -1,8 +1,8 @@
-#config_version=4
+#config_version=5
 #Escape!
 
 mode:
-    start_events: balldevice_bd_trough_ball_eject_success
+    start_events:  balldevice_bd_trough_ball_eject_success
     stop_events: balldevice_bd_trough_ball_enter
 
 sound_player:
@@ -12,8 +12,8 @@ sound_player:
             loops: -1
             volume: 0.75
   # mode_base_stopping:
-  #   Background:
-  #     action: stop  
+  #     Background:
+  #         action: stop  
     mode_bgmusic_stopped:
         Background:
-            action: stop 
+            action: stop

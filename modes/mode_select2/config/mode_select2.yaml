@@ -1,0 +1,65 @@
+#config_version=5
+#ESCAPE!
+
+mode:
+    start_events:
+        mode_select2_start
+    stop_events:
+        mode_select2_complete
+    priority: 110
+
+counters:
+    mode_select2:
+        enable_events:
+            mode_mode_select2_started
+        count_events:
+            balldevice_bd_scoop_ejecting_ball
+        starting_count: 0
+        count_complete_value: 1
+        direction: up
+        disable_events:
+            attic_achievement_complete
+            basement_achievement_complete
+            upstairs_achievement_complete
+        events_when_complete:
+            achievement_random2_start
+            mode_select2_complete
+        reset_on_complete: true
+
+slide_player:
+    mode_mode_select2_started:
+        mode_select2_slide:
+            - type: text
+              text: "HIT THE SCOOP AGAIN\nTO START ANOTHER MODE!"
+              font_size: 75
+              font_name: FEASFBI_.ttf
+              color: ffff00
+              anchor_x: center
+              anchor_y: bottom
+            - type: text
+              text: (score)
+              number_grouping: true
+              min_digits: 2
+              font_size: 100
+              font_name: digital-7 (italic).ttf
+              color: ffa500
+              anchor_x: center
+              anchor_y: top
+            - type: text
+              text: PLAYER (number)
+              y: 0
+              x: 3
+              font_size: 40
+              font_name: FEASFBI_.ttf
+              color: ffff00
+              anchor_x: left
+              anchor_y: bottom
+            - type: text
+              text: BALL (ball)
+              y: 0
+              x: right-3
+              anchor_x: right
+              anchor_y: bottom
+              font_size: 40
+              font_name: FEASFBI_.ttf
+              color: ffff00

@@ -1,51 +1,48 @@
 #config_version=5
 #ESCAPE!
 
-# Quiet mode. 30 seconds to complete bonus mode.
+# upstairs mode. 30 seconds to complete bonus mode.
 
 mode:
     start_events:
-        quiet_mode_start
+        upstairs_mode_start
     restart_on_next_ball: true
     stop_events:
-        quiet2_mode_complete
-        timer_quiet2_mode_countdown_complete
-        timer_quiet2_mode_countdown_stopped
+        timer_upstairs2_mode_countdown_complete
+        upstairs2_mode_complete
+        timer_upstairs2_mode_countdown_stopped
     priority: 300
 
 counters:
-    quiet_mode:
+    upstairs_mode:
         count_events:
-            s_quiet_target_active
+            left_ramp_hit
         starting_count: 0
-        count_complete_value: 1
+        count_complete_value: 3
         direction: up
-#        restart_events:
-#            any other playfield switch hit
+        persist_state: true
         events_when_complete:
-            quiet_mode_complete
-            quiet2_mode_start
+            upstairs_mode_complete
+            upstairs2_mode_start
 sequences:
-    quiet2_mode:
+    upstairs2_mode:
         enable_events:
-            quiet_mode_complete
+            upstairs_mode_complete
         events:
             mode_bonus_drop_target_hit
             s_subway1_active
         events_when_complete:
-            quiet2_mode_complete
-            quiet_bonus_collect
+            upstairs_bonus_collect
+            upstairs2_mode_complete
 
 variable_player:
-    quiet_mode_complete:
-        score: 5000
-    quiet_bonus_collect:
-        score: 100000
+    upstairs_bonus_collect:
+      score: 100000
 
 slides:
-    quiet_mode_slide:
+    upstairs_mode_slide:
         - type: text
-          text: BE QUIET!!!
+          text: UPSTAIRS MODE
           font_size: 75
           font_name: FEASFBI_.ttf
           color: ffff00
@@ -78,7 +75,7 @@ slides:
           font_size: 40
           font_name: FEASFBI_.ttf
           color: ffff00
-    quiet2_mode_slide:
+    upstairs2_mode_slide:
         - type: text
           text: GET THE BONUS!
           font_size: 75
@@ -115,20 +112,16 @@ slides:
           color: ffff00
 
 slide_player:
-    mode_quiet_started:
-        quiet_mode_slide:
-            target: lcd
-    quiet_mode_complete:
-        quiet2_mode_slide:
-            target: lcd
+    mode_upstairs_started: upstairs_mode_slide
+    mode_upstairs2_started: upstairs2_mode_slide
 
 timers:
-    quiet2_mode_countdown:
+    upstairs2_mode_countdown:
         start_value: 30
         end_value: 0
         direction: down
         control_events:
-          - event: quiet_mode_complete
+          - event: upstairs_mode_complete
             action: start
           - event: ball_will_end
             action: stop

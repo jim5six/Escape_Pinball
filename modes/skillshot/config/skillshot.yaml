@@ -1,25 +1,57 @@
-# config_version=4
-# ESCAPE!
+#config_version=5
+#ESCAPE!
 
-# Skill shot mode. 3 seconds to complete
+# Skill shot mode
+# One of the 4 lanes is lit, sweeping back-and-forth at a 1s interval.
+# Hit the lit lane for 99,000 points.
+# Mode timer starts when the ball enters the playfield and stops 3s
+# after that so the player only gets one shot.
+
 
 mode:
     start_events: ball_starting
     stop_events:
         timer_mode_timer_complete
-        # shot achieved, create a shot in shots.yaml and add it here.
+        rollover_lanes_skill_lit_hit
+        rollover_lanes_hit
     priority: 300
 
 timers:
     mode_timer:
-        start_value: 3
+        start_value: 4
         end_value: 0
         direction: down
         tick_interval: 1s
         control_events:
-        - event: balldevice_playfield_ball_enter
-          action: start
+          - event: balldevice_playfield_ball_enter
+            action: start
         start_running: false
     target_rotator:
         start_running: true
         tick_interval: 1s
+
+shot_profiles:
+    skill:
+        rotation_pattern: r, r, r, r, l, l, l, r, r, r, l, l, l, r, r, r, l, l, l, r, r, r, l, l, l, l
+        states:
+        - name: unlit
+          show: off
+        - name: lit
+          show: flash
+          loops: -1
+          speed: 10
+        - name: hit
+          show: on
+shots:
+    s_lane:
+        advance_events: mode_skillshot_started
+
+shot_groups:
+    rollover_lanes:
+        profile: skill
+        rotate_events: timer_target_rotator_tick
+        reset_events: mode_skillshot_started
+
+variable_player:
+    rollover_lanes_skill_lit_hit:
+        score: 99000

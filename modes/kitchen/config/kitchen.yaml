@@ -1,16 +1,136 @@
-# config_version=4
-# ESCAPE!
+#config_version=5
+#ESCAPE!
 
-# Kitchen mode. 30 seconds to get 30 pop bumper hits.
+# Kitchen mode. 30 seconds to complete bonus mode.
 
 mode:
-    start_events: start_kitchen_mode
-    stop_events: timer_mode_countdown_complete
+    start_events:
+        kitchen_mode_start
+    restart_on_next_ball: true
+    stop_events:
+        timer_kitchen2_mode_countdown_complete
+        kitchen2_mode_complete
+        timer_kitchen2_mode_countdown_stopped
     priority: 300
 
+counters:
+    kitchen_mode:
+        count_events:
+            s_popbumper1_active
+            s_popbumper2_active
+            s_popbumper3_active
+        starting_count: 1
+        count_complete_value: 0
+        direction: down
+        persist_state: true
+        events_when_complete:
+            kitchen_mode_complete
+            kitchen2_mode_start
+sequences:
+    kitchen2_mode:
+        enable_events:
+            kitchen_mode_complete
+        events:
+            mode_bonus_drop_target_hit
+            s_subway2_active
+        events_when_complete:
+            kitchen_complete_bonus
+            kitchen2_mode_complete
+
+variable_player:
+    kitchen_mode_complete:
+        score: 5000
+    kitchen_complete_bonus:
+        score: 100000
+
+slides:
+    kitchen_mode_slide:
+        - type: text
+          text: KITCHEN MODE
+          font_size: 75
+          font_name: FEASFBI_.ttf
+          color: ffff00
+          anchor_x: center
+          anchor_y: bottom
+        - type: text
+          text: (score)
+          number_grouping: true
+          min_digits: 2
+          font_size: 100
+          font_name: digital-7 (italic).ttf
+          color: ffa500
+          anchor_x: center
+          anchor_y: top
+        - type: text
+          text: PLAYER (number)
+          y: 0
+          x: 3
+          font_size: 40
+          font_name: FEASFBI_.ttf
+          color: ffff00
+          anchor_x: left
+          anchor_y: bottom
+        - type: text
+          text: BALL (ball)
+          y: 0
+          x: right-3
+          anchor_x: right
+          anchor_y: bottom
+          font_size: 40
+          font_name: FEASFBI_.ttf
+          color: ffff00
+    kitchen2_mode_slide:
+        - type: text
+          text: GET THE BONUS!
+          font_size: 75
+          font_name: FEASFBI_.ttf
+          color: ffff00
+          anchor_x: center
+          anchor_y: bottom
+        - type: text
+          text: (score)
+          number_grouping: true
+          min_digits: 2
+          font_size: 100
+          font_name: digital-7 (italic).ttf
+          color: ffa500
+          anchor_x: center
+          anchor_y: top
+        - type: text
+          text: PLAYER (number)
+          y: 0
+          x: 3
+          font_size: 40
+          font_name: FEASFBI_.ttf
+          color: ffff00
+          anchor_x: left
+          anchor_y: bottom
+        - type: text
+          text: BALL (ball)
+          y: 0
+          x: right-3
+          anchor_x: right
+          anchor_y: bottom
+          font_size: 40
+          font_name: FEASFBI_.ttf
+          color: ffff00
+
+slide_player:
+    mode_kitchen_started:
+        kitchen_mode_slide:
+            target: lcd
+    kitchen_mode_complete:
+        kitchen2_mode_slide:
+            target: lcd
+
 timers:
-    mode_countdown:
+    kitchen2_mode_countdown:
         start_value: 30
         end_value: 0
         direction: down
-        start_running: true
+        control_events:
+          - event: kitchen_mode_complete
+            action: start
+          - event: ball_will_end
+            action: stop
+        start_running: false

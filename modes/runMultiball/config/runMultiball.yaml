@@ -1,10 +1,11 @@
-# config_version=4
-# ESCAPE!
+#config_version=5
+#ESCAPE!
 
 # runMulitball mode.
 
 mode:
-    start_events: start_runMultiball_mode
+    start_events:
+        runMultiball_mode_start
     stop_events:
-      # hit the required shots, drain all but 1 ball
+        drain
     priority: 300

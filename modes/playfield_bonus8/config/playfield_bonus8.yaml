@@ -1,0 +1,100 @@
+#config_version=5
+#ESCAPE!
+
+# Playfield 8x bonus
+
+mode:
+    start_events:
+        playfield_bonus8_start
+    stop_events:
+        drain
+    priority: 220
+
+widgets:
+    playfield_bonus8_widget:
+        -  type: text
+           text: PLAYFIELD 8X!
+           font_size: 75
+           font_name: FEASFBI_.ttf
+           color: ffff00
+           y: top-5
+           anchor_y: top
+
+widget_player:
+    mode_playfield_bonus8_started: playfield_bonus8_widget
+
+variable_player:
+    s_a_lane_active:
+        score: 7000
+    s_around_scoop_active:
+        score: 7000
+    s_bath_target_active:
+        score: 7000
+    s_c_lane_active:
+        score: 7000
+    s_cative_target_active:
+        score: 70000
+    s_droptargetbank1_active:
+        score: 7000
+    s_droptargetbank2_active:
+        score: 7000
+    s_left_inlane_active:
+        score: 7000
+    s_left_outlane_active:
+        score: 700
+    s_left_slingshot_active:
+        score: 7000
+    s_p_lane_active:
+        score: 7000
+    s_popbumper1_active:
+        score: 7000
+    s_popbumper2_active:
+        score: 7000
+    s_popbumper3_active:
+        score: 7000
+    s_quiet_target_active:
+        score: 7000
+    s_ramp_target1_active:
+        score: 7000
+    s_ramp_target2_active:
+        score: 7000
+    s_ramp_target3_active:
+        score: 7000
+    s_ramp_target4_active:
+        score: 7000
+    s_right_inlane_active:
+        score: 7000
+    s_right_outlane_active:
+        score: 700
+    s_right_slingshot_active:
+        score: 7000
+    s_s_lane_active:
+        score: 7000
+    s_scoop_vuk_active:
+        score: 3500
+    s_singledrop_active:
+        score: 7000
+    s_spinner_active:
+        score: 7000
+    s_basement_enter_active:
+        score: 7000
+    s_basement_kicker_active:
+        score: 7000
+    s_subway1_active:
+        score: 700
+    s_subway2_active:
+        score: 700
+    s_upper_slingshot_active:
+        score: 7000
+    s_vent_enter_active:
+        score: 7000
+    left_orbit_hit:
+        score: 70000
+    right_orbit_hit:
+        score: 70000
+    center_orbit_hit:
+        score: 70000
+    left_ramp_hit:
+        score: 70000
+    attic_ramp_hit:
+        score: 70000

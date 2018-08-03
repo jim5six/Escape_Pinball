@@ -1,0 +1,21 @@
+#config_version=5
+#ESCAPE!
+
+# Closet Multiball mode.
+
+mode:
+    start_events:
+        closet_mode_complete
+    stop_events:
+        closetmultiball_mode_stopped
+    priority: 300
+
+multiballs:
+    closetMultiball:
+        ball_count: 3
+        ball_count_type: total
+        shoot_again: 20s
+        start_events:
+            closetmultiball_mode_started
+        stop_events:
+            closetmultiball_mode_stopped
