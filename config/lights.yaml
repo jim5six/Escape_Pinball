@@ -1,0 +1,171 @@
+#config_version=5
+#ESCAPE!
+
+hardware:
+    lights: fadecandy
+
+lights:
+    l_left_inlane:
+        number: 0-0
+        type: rgb
+        default_on_color: white
+    l_s_rollover:
+        number: 0-1
+        type: rgb
+        default_on_color: white
+    l_c_rollover:
+        number: 0-2
+        type: rgb
+        default_on_color: white
+    l_a_rollover:
+        number: 0-3
+        type: rgb
+        default_on_color: white
+    l_p_rollover:
+        number: 0-4
+        type: rgb
+        default_on_color: white
+    l_right_inlane:
+        number: 0-5
+        type: rgb
+        default_on_color: white
+    l_ramp_target1:
+        number: 6
+        type: rgb
+        default_on_color: yellow
+    l_ramp_target2:
+        number: 7
+        type: rgb
+        default_on_color: yellow
+    l_ramp_target3:
+        number: 8
+        type: rgb
+        default_on_color: yellow
+    l_ramp_target4:
+        number: 9
+        type: rgb
+        default_on_color: yellow
+    l_single_drop_target:
+        number: 10
+        type: rgb
+        default_on_color: yellow
+    l_drop_target_bank1:
+        number: 11
+        type: rgb
+        default_on_color: yellow
+    l_drop_target_bank2:
+        number: 12
+        type: rgb
+        default_on_color: yellow
+    # l_closet_LED:
+    #     number: 13
+    #     type: rgb
+    #     default_on_color: yellow
+    l_bathroom_LED:
+        number: 14
+        type: rgb
+        default_on_color: yellow
+    l_attic_LED:
+        number: 15
+        type: rgb
+        default_on_color: yellow
+    l_upstairs_LED:
+        number: 16
+        type: rgb
+        default_on_color: yellow
+    l_quiet_LED:
+        number: 17
+        type: rgb
+        default_on_color: yellow
+    l_basement_LED:
+        number: 18
+        type: rgb
+        default_on_color: yellow
+    # l_exit_LED:
+    #     number: 19
+    #     type: rgb
+    #     default_on_color: yellow
+    l_spinner_LED:
+        number: 20
+        type: rgb
+        default_on_color: yellow
+    l_popbumper:
+        number: 21
+        type: rgb
+        default_on_color: yellow
+    l_left_outlane:
+        number: 22
+        type: rgb
+        default_on_color: yellow
+    l_right_outlane:
+        number: 23
+        type: rgb
+        default_on_color: yellow
+    l_mode_select:
+        number: 24
+        type: rgb
+        default_on_color: yellow
+    l_bathroom_mode_LED:
+        number: 25
+        type: rgb
+        default_on_color: yellow
+    l_attic_mode_LED:
+        number: 26
+        type: rgb
+        default_on_color: yellow
+    l_upstairs_mode_LED:
+        number: 27
+        type: rgb
+        default_on_color: yellow
+    l_quiet_mode_LED:
+        number: 28
+        type: rgb
+        default_on_color: yellow
+    l_kitchen_mode_LED:
+        number: 29
+        type: rgb
+        default_on_color: yellow
+    l_basement_mode_LED:
+        number: 30
+        type: rgb
+        default_on_color: yellow
+    # l_closetmultiball_mode_LED:
+    #     number: 31
+    #     type: rgb
+    #     default_on_color: yellow
+    # l_runmultiball_mode_LED:
+    #     number: 32
+    #     type: rgb
+    #     default_on_color: yellow
+    # l_exit_mode_LED:
+    #     number: 33
+    #     type: rgb
+    #     default_on_color: yellow
+    l_spinner_mode_LED:
+        number: 34
+        type: rgb
+        default_on_color: yellow
+    l_ball_save:
+        number: 35
+        type: rgb
+        default_on_color: yellow
+    l_mode_select_qualify:
+        number: 36
+        type: rgb
+        default_on_color: yellow
+    l_mode_select2_qualify:
+        number: 37
+        type: rgb
+        default_on_color: yellow
+    l_bonus_2x:
+        number: 38
+        type: rgb
+        default_on_color: yellow
+    l_bonus_4x:
+        number: 39
+        type: rgb
+        default_on_color: yellow
+    l_bonus_8x:
+        number: 40
+        type: rgb
+        default_on_color: yellow

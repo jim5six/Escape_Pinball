@@ -1,5 +1,5 @@
-# config_version=4
-# ESCAPE!
+#config_version=5
+#ESCAPE!
 
 sound_system:
     buffer: 1024

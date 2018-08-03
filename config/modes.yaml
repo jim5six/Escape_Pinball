@@ -1,21 +1,28 @@
-# config_version=4
-# ESCAPE!
+#config_version=5
+#ESCAPE!
 
 modes:
+  - achievements
+  - attic
   - base
-  #- EOB
-  #- LaunchBall
-  # - bgmusic
-  # - attic
-  # - bathroom
-  # - closet
-  # - closetMultiball
-  # - kitchen
-  # - quiet
-  # - runMultiball
-  # - skillsave
-  # - skillshot
-  # - spiral
-  # - superspinner
-  # - revenge
-  # - tilt    
+  - basement
+  - bathroom
+#  - bgmusic
+  - check_exit1
+#  - closetmultiball
+#  - EOB
+  - kitchen
+#  - LaunchBall
+  - mode_select
+  - mode_select2
+  - playfield_bonus
+  - playfield_bonus4
+  - playfield_bonus8
+  - quiet
+#  - revenge
+#  - runmultiball
+#  - skillsave
+#  - skillshot
+  - superspinner
+  - upstairs
+#  - tilt

@@ -1,0 +1,21 @@
+#config_version=5
+#ESCAPE!
+
+virtual_platform_start_active_switches:
+    s_trough1
+    s_trough2
+    s_trough3
+    s_trough4
+
+keyboard:
+    lctrl:
+        switch: s_left_flipper
+    rctrl:
+        switch: s_right_flipper
+    p:
+        switch: s_plunger_lane
+        toggle: true
+    1:
+        switch: s_start
+    q:
+        switch: s_right_inlane

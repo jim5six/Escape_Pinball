@@ -1,47 +1,136 @@
-# config_version=4
-# ESCAPE!
+#config_version=5
+#ESCAPE!
 
 shots:
-    E_lane:
+    l_outlane:
+        switch: s_left_outlane
+        show_tokens:
+            light: l_left_outlane
+    r_outlane:
+        switch: s_right_outlane
+        show_tokens:
+            light: l_right_outlane
+    e_lane:
         switch: s_left_inlane
-#            show_token:
-#                light: l_left_inlane
-    S_lane:
-        switch: s_S_lane
-#            show_token:
-#                light: l_s_rollover
-    C_lane:
-        switch: s_C_lane
-#            show_token:
-#                light: l_c_rollover
-    A_lane:
-        switch: s_A_lane
-#            show_token:
-#                light: l_a_rollover
-    P_lane:
-        switch: s_P_lane
-#            show_token:
-#                light: l_p_rollover
-    E2_Lane:
+        show_tokens:
+            light: l_left_inlane
+    s_lane:
+        switch: s_s_lane
+        show_tokens:
+            light: l_s_rollover
+    c_lane:
+        switch: s_c_lane
+        show_tokens:
+            light: l_c_rollover
+    a_lane:
+        switch: s_a_lane
+        show_tokens:
+            light: l_a_rollover
+    p_lane:
+        switch: s_p_lane
+        show_tokens:
+            light: l_p_rollover
+    e2_lane:
         switch: s_right_inlane
-#            show_token:
-#                light: l_right_inlane
-    # left_orbit:
-    #     switch_sequence: s_left_orbit, s_center_orbit, s_right_orbit
-    #     time: 3s    
-    # right_orbit:
-    #     switch_sequence: s_right_orbit, s_center_orbit, s_left_orbit
-    #     time: 3s
-    # center_orbit:
-    #     switch_sequence: s_skillsave, s_right_orbit
-    #     time: 2s
+        show_tokens:
+            light: l_right_inlane
+    mode_select:
+        switch: s_scoop_VUK
+        show_tokens:
+            light: l_mode_select
+    ramp_target1:
+        switch: s_ramp_target1
+        show_tokens:
+            light: l_ramp_target1
+    ramp_target2:
+        switch: s_ramp_target2
+        show_tokens:
+            light: l_ramp_target2
+    ramp_target3:
+        switch: s_ramp_target3
+        show_tokens:
+            light: l_ramp_target3
+    ramp_target4:
+        switch: s_ramp_target4
+        show_tokens:
+            light: l_ramp_target4
+    mode_bonus_drop_target:
+        switch: s_singledrop
+        show_tokens:
+            light: l_single_drop_target
+    bath_drop_target1:
+        switch: s_drop_target_bank1
+        show_tokens:
+            light: l_drop_target_bank1
+    bath_drop_target2:
+        switch: s_drop_target_bank2
+        show_tokens:
+            light: l_drop_target_bank2
+    popbumper1:
+        switch: s_popbumper1
+        show_tokens:
+            light: l_popbumper
+    popbumper2:
+        switch: s_popbumper2
+        show_tokens:
+            light: l_popbumper
+    popbumper3:
+        switch: s_popbumper3
+        show_tokens:
+            light: l_popbumper
+    spinner:
+        switch: s_spinner
+        show_tokens:
+            light: l_spinner_LED
+sequence_shots:
+    left_orbit:
+        switch_sequence: s_left_orbit, s_center_orbit, s_right_orbit
+        sequence_timeout: 3s    
+    right_orbit:
+        switch_sequence: s_right_orbit, s_center_orbit, s_left_orbit
+        sequence_timeout: 3s
+    center_orbit:
+        switch_sequence: s_skillsave, s_center_orbit, s_right_orbit
+        sequence_timeout: 3s
     # left_ramp:
     #     switch_sequence: s_left_ramp_enter, s_left_ramp_center, s_left_ramp_top
-    #     time: 5s
+    #     sequence_timeout: 5s
     # attic_ramp:
     #     switch_sequence: s_right_ramp_enter, s_right_ramp_top
-    #     time: 3s
+    #     sequence_timeout: 3s
+    # captive_ball:
+    #     switch_sequence: s_captive_ball, s_captive_target
+    #     time: 2s
+    ramp_targets:
+        switch_sequence: s_ramp_target1, s_ramp_target2, s_ramp_target3, s_ramp_target4
+        sequence_timeout: 10s
+    # subway:
+    #     switch_sequence: s_subway1, s_subway2, s_subway3
+    #     sequence_timeout: 10s
+    # upstairs_loop:
+    #     switch_sequence: s_left_ramp_top, s_right_inlane, s_left_ramp_enter, s_left_ramp_center
+    #     sequence_timeout: 5s
 
 shot_groups:
     rollover_lanes:
-        shots: E_lane, S_lane, C_lane, A_lane, P_lane, E2_lane
+        shots: e_lane, s_lane, c_lane, a_lane, p_lane, e2_lane
+        rotate_left_events:
+            s_left_flipper_active
+            s_popbumper1_active
+            s_upper_slingshot_active
+        rotate_right_events:
+            s_right_flipper_active
+            s_popbumper2_active
+            s_popbumper3_active
+        reset_events:
+            rollover_lanes_default_lit_complete: 3s
+    ramp_target_set:
+        shots: ramp_target1, ramp_target2, ramp_target3, ramp_target4
+        reset_events: ramp_target_set_default_lit_complete
+    bathroom_drop_targets:
+        shots: bath_drop_target1, bath_drop_target2
+    popbumper_set:
+        shots: popbumper1, popbumper2, popbumper3
+    outlane:
+        shots: r_outlane, l_outlane
+        reset_events: ball_will_end

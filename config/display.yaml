@@ -1,41 +1,60 @@
-# config_version=4
-# ESCAPE!
+#config_version=5
+#ESCAPE!
 
 displays:
+    # overlay:
+    #     width: 800
+    #     height: 200
     lcd:
-        width: 640
-        height: 360
-        default: yes
-    playfield:
+        width: 1920
+        height: 1080
+        default: true
+    second_monitor:
         width: 600
         height: 800
 
 window:
-    width: 640
-    height: 360
+    width: 1920
+    height: 1080
     title: Escape! Pinball
-    resizable: true
-    fullscreen: false
-    borderless: false
+    resizable: False
+    fullscreen: true
+    borderless: true
     exit_on_escape: true
     source_display: lcd
 
 slides:
-    window_slide:
+    welcome_slide:
         widgets:
-          - type: text
-            text: ESCAPE!
-            bold: true
-            font_name: arial
-            font_size: 36
-          - type: rectangle
-            width: 540
-            height: 260
-            color: Red
-          - type: image
-            image: bg3_2
+            - type: text
+              text: PINBALL POWERED BY P-ROC!
+              font_size: 70
+              font_name: FEASFBI_.ttf
+              color: ffff00
+              anchor_x: center
+              anchor_y: bottom
+              z: 1
+    attract_started:
+        widgets:
+            - type: text
+              text: PRESS START TO
+              font_size: 70
+              font_name: FEASFBI_.ttf
+              color: ffff00
+              anchor_x: center
+              anchor_y: bottom
+            - type: text
+              text: ESCAPE!!!!
+              font_size: 80
+              font_name: FEASFBI_.ttf
+              color: ffff00
+              anchor_x: center
+              anchor_y: top
+              z: 2
 
 slide_player:
-    mc_reset_phase_1:
-        window_slide:
+    init_done:
+        welcome_slide:
+            expire: 10s
             target: lcd
+    mode_attract_started: attract_started
