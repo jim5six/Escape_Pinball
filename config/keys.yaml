@@ -1,5 +1,5 @@
-#config_version=5
-#ESCAPE!
+# config_version=4
+# ESCAPE!
 
 virtual_platform_start_active_switches:
     s_trough1
