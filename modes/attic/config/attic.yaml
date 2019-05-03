@@ -8,7 +8,6 @@ mode:
         attic_mode_start
     restart_on_next_ball: true
     stop_events:
-#        timer_mode_countdown_complete
         attic_mode_complete
     priority: 300
 
@@ -24,7 +23,7 @@ sequences:
 slides:
     attic_mode_slide:
         - type: text
-          text: HIT THE ATTIC HVAC RETURN
+          text: FALL INTO THE ATTIC VENT
           font_size: 75
           font_name: FEASFBI_.ttf
           color: ffff00
@@ -60,10 +59,3 @@ slides:
 
 slide_player:
     mode_attic_started: attic_mode_slide
-
-# timers:
-#     mode_countdown:
-#         start_value: 30
-#         end_value: 0
-#         direction: down
-#         start_running: true

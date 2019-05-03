@@ -368,12 +368,12 @@ coils:
     #####################################################
     c_auto_plunge:
         number: A0-B0-0
-        default_pulse_ms: 10
+        default_pulse_ms: 12
         max_pulse_ms: 50
         label: Auto Plunger
     c_trough_eject:
         number: A0-B0-1
-        default_pulse_ms: 17
+        default_pulse_ms: 20
         max_pulse_ms: 50
         label: Trough Eject
     c_flipper_right_upper:
@@ -393,7 +393,7 @@ coils:
     c_flipper_right_main:
         number: A0-B0-4
         allow_enable: true
-        default_pulse_ms: 17
+        default_pulse_ms: 20
         max_pulse_ms: 50
         default_hold_power: 0.125
         label: Right Flipper
@@ -438,8 +438,8 @@ coils:
         label: Single Drop Target
     c_ball_release:
         number: A0-B1-4
-        default_pulse_ms: 75
-        max_pulse_ms: 100
+        default_pulse_ms: 110
+        max_pulse_ms: 110
         label: Ball Release Coil
 #    c_Bad Transistor - Do not use:
 #        number: A0-B1-5

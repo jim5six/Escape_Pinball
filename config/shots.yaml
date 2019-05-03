@@ -92,24 +92,21 @@ sequence_shots:
     center_orbit:
         switch_sequence: s_skillsave, s_center_orbit, s_right_orbit
         sequence_timeout: 3s
-    # left_ramp:
-    #     switch_sequence: s_left_ramp_enter, s_left_ramp_center, s_left_ramp_top
-    #     sequence_timeout: 5s
-    # attic_ramp:
-    #     switch_sequence: s_right_ramp_enter, s_right_ramp_top
-    #     sequence_timeout: 3s
-    # captive_ball:
-    #     switch_sequence: s_captive_ball, s_captive_target
-    #     time: 2s
+    left_ramp:
+        switch_sequence: s_left_ramp_enter, s_left_ramp_center, s_left_ramp_top
+        sequence_timeout: 5s
+    attic_ramp:
+        switch_sequence: s_right_ramp_enter, s_right_ramp_top
+        sequence_timeout: 3s
     ramp_targets:
         switch_sequence: s_ramp_target1, s_ramp_target2, s_ramp_target3, s_ramp_target4
         sequence_timeout: 10s
-    # subway:
-    #     switch_sequence: s_subway1, s_subway2, s_subway3
-    #     sequence_timeout: 10s
-    # upstairs_loop:
-    #     switch_sequence: s_left_ramp_top, s_right_inlane, s_left_ramp_enter, s_left_ramp_center
-    #     sequence_timeout: 5s
+    subway:
+        switch_sequence: s_subway2, s_subway1, s_ball_release
+        sequence_timeout: 10s
+    upstairs_loop:
+        switch_sequence: s_left_ramp_enter, s_left_ramp_center, s_left_ramp_top, s_right_inlane
+        sequence_timeout: 5s
 
 shot_groups:
     rollover_lanes:

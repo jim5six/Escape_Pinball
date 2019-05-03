@@ -8,7 +8,7 @@ config:
 - modes.yaml
 # Comment out keys.yaml on psyical machine
 #- keys.yaml
-#- audio.yaml
+- audio.yaml
 
 game:
     balls_per_game: 3

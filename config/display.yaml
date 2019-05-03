@@ -6,18 +6,18 @@ displays:
     #     width: 800
     #     height: 200
     lcd:
-        width: 1920
-        height: 1080
+        width: 1280
+        height: 720
         default: true
     second_monitor:
         width: 600
         height: 800
 
 window:
-    width: 1920
-    height: 1080
+    width: 1280
+    height: 720
     title: Escape! Pinball
-    resizable: False
+    resizable: false
     fullscreen: true
     borderless: true
     exit_on_escape: true

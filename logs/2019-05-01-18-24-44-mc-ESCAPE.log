@@ -1,0 +1,73 @@
+2019-05-01 18:24:44,095 : kivy : Factory: 194 symbols loaded
+2019-05-01 18:24:44,689 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_gif (img_ffpyplayer ignored)
+2019-05-01 18:24:44,955 : kivy : VideoGstplayer: Using Gstreamer 1.10.2.0
+2019-05-01 18:24:44,955 : kivy : Video: Provider: gstplayer
+2019-05-01 18:24:45,236 : kivy : Loading MPF-MC controller
+2019-05-01 18:24:45,236 : mpfmc : Mission Pinball Framework Media Controller v0.50.8
+2019-05-01 18:24:45,236 : mpfmc : Mission Pinball Framework Game Engine v0.50.13
+2019-05-01 18:24:45,236 : mpfmc : Machine path: C:\Pinball
+2019-05-01 18:24:45,251 : ConfigProcessor : Config file in cache changed: C:\Pinball\config\config
+2019-05-01 18:24:46,501 : ConfigProcessor : Loading config from file c:\python36\lib\site-packages\mpfmc\mcconfig.yaml.
+2019-05-01 18:24:46,642 : ConfigProcessor : Loading config: c:\python36\lib\site-packages\mpfmc\mcconfig.yaml
+2019-05-01 18:24:46,642 : ConfigProcessor : Loading config from file C:\Pinball\config\config.
+2019-05-01 18:24:46,658 : ConfigProcessor : Loading config: C:\Pinball\config\config
+2019-05-01 18:24:46,923 : ConfigProcessor : Loading config: C:\Pinball\config\hardware.yaml
+2019-05-01 18:24:46,970 : ConfigProcessor : Loading config: C:\Pinball\config\display.yaml
+2019-05-01 18:24:47,080 : ConfigProcessor : Loading config: C:\Pinball\config\lights.yaml
+2019-05-01 18:24:47,095 : ConfigProcessor : Loading config: C:\Pinball\config\modes.yaml
+2019-05-01 18:24:47,127 : ConfigProcessor : Loading config: C:\Pinball\config\audio.yaml
+2019-05-01 18:24:47,142 : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\7d6f6bfe91813b06fcb8b606b1a9d529.mpf_cache
+2019-05-01 18:24:47,173 : mpfmc : Starting clock at 60.0Hz
+2019-05-01 18:24:47,236 : kivy : Text: Provider: sdl2
+2019-05-01 18:24:48,564 : kivy : Window: Provider: sdl2
+2019-05-01 18:24:49,184 : kivy : GL: Using the "OpenGL" graphics system
+2019-05-01 18:24:49,188 : kivy : GL: GLEW initialization succeeded
+2019-05-01 18:24:49,189 : kivy : GL: Backend used <glew>
+2019-05-01 18:24:49,189 : kivy : GL: OpenGL version <b'4.4.0 - Build 20.19.15.4549'>
+2019-05-01 18:24:49,189 : kivy : GL: OpenGL vendor <b'Intel'>
+2019-05-01 18:24:49,189 : kivy : GL: OpenGL renderer <b'Intel(R) HD Graphics 400'>
+2019-05-01 18:24:49,190 : kivy : GL: OpenGL parsed version: 4, 4
+2019-05-01 18:24:49,190 : kivy : GL: Shading version <b'4.40 - Build 20.19.15.4549'>
+2019-05-01 18:24:49,190 : kivy : GL: Texture max size <16384>
+2019-05-01 18:24:49,191 : kivy : GL: Texture max units <32>
+2019-05-01 18:24:49,264 : kivy : Window: auto add sdl2 input provider
+2019-05-01 18:24:49,265 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2019-05-01 18:24:49,301 : AudioInterface : NOTE: You may experience noise and other undesirable sound artifacts when you set your buffer at 1024 or smaller.
+2019-05-01 18:24:51,449 : AudioInterface : Initialized
+2019-05-01 18:24:51,460 : kivy : Base: Start application main loop
+2019-05-01 18:24:51,497 : mpfmc : Display: Setting 'lcd' as default display
+2019-05-01 18:24:51,649 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\7317f88ce1ee903b84e696a8cfa11fff.mpf_cache
+2019-05-01 18:24:51,675 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\ad9c48f607ffcd5e388fe3bc3c0c7fda.mpf_cache
+2019-05-01 18:24:51,701 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\0dd66fc6c681ffbe91623556584db1f9.mpf_cache
+2019-05-01 18:24:51,704 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\3f762b9510b9c6d8f0f20d57621b8608.mpf_cache
+2019-05-01 18:24:51,707 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\57a43899542802443897849e41658bdc.mpf_cache
+2019-05-01 18:24:51,709 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\be4f1e4c458cddfa55e3b2c954e186ee.mpf_cache
+2019-05-01 18:24:51,716 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\693ce3b0801ff769b4c6a72f41c95bfb.mpf_cache
+2019-05-01 18:24:51,747 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\605ac6823e387656bdb3b4e2f6a537c2.mpf_cache
+2019-05-01 18:24:51,761 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\a7d3184283c5ac0679e08c24c756a54b.mpf_cache
+2019-05-01 18:24:51,768 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\9b5ed4443044faae1a7bea0b2e4720fa.mpf_cache
+2019-05-01 18:24:51,782 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\7e8e22c02985bf2ed9f5941b26487eea.mpf_cache
+2019-05-01 18:24:51,797 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\5ebd232df5de466582e7c31fd627eb17.mpf_cache
+2019-05-01 18:24:51,823 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\60c5f8021e9f73475ac052559b18eecb.mpf_cache
+2019-05-01 18:24:51,849 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\b5d505ac5307a0981228993d203a6202.mpf_cache
+2019-05-01 18:24:51,856 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\832f22772570b4467bc46a2d5332ae44.mpf_cache
+2019-05-01 18:24:51,882 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\ea92258076c42fa9f82b1b42852527f1.mpf_cache
+2019-05-01 18:24:51,888 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\601da67c712028ad6cbd2c6d5949d426.mpf_cache
+2019-05-01 18:24:52,252 : MPF-MC BCP Server : Starting up on localhost port 5050
+2019-05-01 18:24:52,266 : MPF-MC BCP Server : Waiting for a connection...
+2019-05-01 18:24:52,267 : mpfmc : SlidePlayer: Play called with settings={'slides': {'welcome_slide': {'expire': 10.0, 'target': 'lcd', 'priority': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'show': True, 'force': False, 'slide': None, 'action': 'play', 'transition': None, 'transition_out': None}}}
+2019-05-01 18:24:52,290 : kivy : GL: NPOT texture support is available
+2019-05-01 18:24:52,531 : MPF-MC BCP Server : Received connection from: 127.0.0.1:49998
+2019-05-01 18:24:52,640 : BcpProcessor : Received invalid BCP command: mode_list
+2019-05-01 18:24:52,907 : mpfmc : SlidePlayer: Play called with settings={'slides': {'welcome_slide': {'expire': 10.0, 'target': 'lcd', 'priority': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'show': True, 'force': False, 'slide': None, 'action': 'play', 'transition': None, 'transition_out': None}}}
+2019-05-01 18:24:52,954 : mpfmc : SlidePlayer: Play called with settings={'slides': {'attract_started': {'priority': None, 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'show': True, 'force': False, 'expire': None, 'slide': None, 'action': 'play', 'transition': None, 'transition_out': None}}}
+2019-05-01 18:24:55,906 : mpfmc : SlidePlayer: Play called with settings={'slides': {'mode_base_slide': {'widgets': [{'type': 'text', 'text': 'FIND THE KEYS TO OPEN THE DOOR!', 'font_size': 75, 'font_name': 'FEASFBI_.ttf', 'color': [1.0, 1.0, 0.0, 1], 'anchor_x': 'center', 'anchor_y': 'bottom', '_default_settings': ['font_name', 'font_size', 'color'], 'x': None, 'y': None, 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': [], 'style': None, 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'number_grouping': False, 'min_digits': 0, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}, {'type': 'text', 'text': '(score)', 'number_grouping': True, 'min_digits': 2, 'font_size': 100, 'font_name': 'digital-7 (italic).ttf', 'color': [1.0, 0.6470588235294118, 0.0, 1], 'anchor_x': 'center', 'anchor_y': 'top', '_default_settings': ['font_name', 'font_size', 'color'], 'x': None, 'y': None, 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': [], 'style': None, 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}, {'type': 'text', 'text': 'PLAYER (number)', 'y': '0', 'x': '3', 'font_size': 40, 'font_name': 'FEASFBI_.ttf', 'color': [1.0, 1.0, 0.0, 1], 'anchor_x': 'left', 'anchor_y': 'bottom', '_default_settings': ['font_name', 'font_size', 'color'], 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': [], 'style': None, 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'number_grouping': False, 'min_digits': 0, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}, {'type': 'text', 'text': 'BALL (ball)', 'y': '0', 'x': 'right-3', 'anchor_x': 'right', 'anchor_y': 'bottom', 'font_size': 40, 'font_name': 'FEASFBI_.ttf', 'color': [1.0, 1.0, 0.0, 1], '_default_settings': ['font_name', 'font_size', 'color'], 'round_anchor_x': None, 'round_anchor_y': None, 'opacity': 1.0, 'z': 0, 'reset_animations_events': [], 'style': None, 'adjust_top': 0, 'adjust_bottom': 0, 'adjust_left': 0, 'adjust_right': 0, 'expire': None, 'key': None, 'bitmap_font': False, 'font_kerning': True, 'bold': False, 'italic': False, 'number_grouping': False, 'min_digits': 0, 'halign': 'center', 'valign': 'middle', 'rotation': 0, 'scale': 1.0, 'casing': None, 'animations': None}], 'priority': None, 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'show': True, 'force': False, 'expire': None, 'slide': None, 'action': 'play', 'transition': None, 'transition_out': None}}}
+2019-05-01 18:25:16,018 : kivy : Base: Leaving application in progress...
+2019-05-01 18:25:16,333 : mpfmc : Stopping...
+2019-05-01 18:25:16,333 : mpfmc : Loop rate 77.55 Hz
+2019-05-01 18:25:16,333 : kivy : MC run loop ended.
+2019-05-01 18:25:16,333 : kivy : Stopping child threads... (3 remaining)
+2019-05-01 18:25:16,584 : MPF-MC BCP Server : Stopping BCP sending thread
+2019-05-01 18:25:16,584 : mpfmc : Stopping...
+2019-05-01 18:25:16,584 : mpfmc : Loop rate 76.78 Hz
+2019-05-01 18:25:17,428 : kivy : All child threads stopped.

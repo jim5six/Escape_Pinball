@@ -1,0 +1,103 @@
+2019-04-26 21:57:41,185 : kivy : Factory: 194 symbols loaded
+2019-04-26 21:57:42,810 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_gif (img_ffpyplayer ignored)
+2019-04-26 21:57:44,269 : kivy : VideoGstplayer: Using Gstreamer 1.10.2.0
+2019-04-26 21:57:44,284 : kivy : Video: Provider: gstplayer
+2019-04-26 21:57:45,893 : kivy : Loading MPF-MC controller
+2019-04-26 21:57:45,893 : mpfmc : Mission Pinball Framework Media Controller v0.50.8
+2019-04-26 21:57:45,893 : mpfmc : Mission Pinball Framework Game Engine v0.50.13
+2019-04-26 21:57:45,893 : mpfmc : Machine path: C:\Pinball
+2019-04-26 21:57:45,893 : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\7d6f6bfe91813b06fcb8b606b1a9d529.mpf_cache
+2019-04-26 21:57:47,096 : ConfigProcessor : Loading config from file c:\python36\lib\site-packages\mpfmc\mcconfig.yaml.
+2019-04-26 21:57:47,284 : ConfigProcessor : Loading config: c:\python36\lib\site-packages\mpfmc\mcconfig.yaml
+2019-04-26 21:57:47,284 : ConfigProcessor : Loading config from file C:\Pinball\config\config.
+2019-04-26 21:57:47,284 : ConfigProcessor : Loading config: C:\Pinball\config\config
+2019-04-26 21:57:47,581 : ConfigProcessor : Loading config: C:\Pinball\config\hardware.yaml
+2019-04-26 21:57:47,612 : ConfigProcessor : Loading config: C:\Pinball\config\display.yaml
+2019-04-26 21:57:47,768 : ConfigProcessor : Loading config: C:\Pinball\config\lights.yaml
+2019-04-26 21:57:47,768 : ConfigProcessor : Loading config: C:\Pinball\config\modes.yaml
+2019-04-26 21:57:47,815 : ConfigProcessor : Loading config: C:\Pinball\config\audio.yaml
+2019-04-26 21:57:47,831 : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\7d6f6bfe91813b06fcb8b606b1a9d529.mpf_cache
+2019-04-26 21:57:47,846 : mpfmc : Starting clock at 60.0Hz
+2019-04-26 21:57:48,206 : kivy : Text: Provider: sdl2
+2019-04-26 21:57:50,549 : kivy : Window: Provider: sdl2
+2019-04-26 21:57:51,867 : kivy : GL: Using the "OpenGL" graphics system
+2019-04-26 21:57:51,878 : kivy : GL: GLEW initialization succeeded
+2019-04-26 21:57:51,880 : kivy : GL: Backend used <glew>
+2019-04-26 21:57:51,882 : kivy : GL: OpenGL version <b'4.4.0 - Build 20.19.15.4549'>
+2019-04-26 21:57:51,883 : kivy : GL: OpenGL vendor <b'Intel'>
+2019-04-26 21:57:51,883 : kivy : GL: OpenGL renderer <b'Intel(R) HD Graphics 400'>
+2019-04-26 21:57:51,884 : kivy : GL: OpenGL parsed version: 4, 4
+2019-04-26 21:57:51,885 : kivy : GL: Shading version <b'4.40 - Build 20.19.15.4549'>
+2019-04-26 21:57:51,886 : kivy : GL: Texture max size <16384>
+2019-04-26 21:57:51,886 : kivy : GL: Texture max units <32>
+2019-04-26 21:57:52,049 : kivy : Window: auto add sdl2 input provider
+2019-04-26 21:57:52,051 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2019-04-26 21:57:52,235 : AudioInterface : NOTE: You may experience noise and other undesirable sound artifacts when you set your buffer at 1024 or smaller.
+2019-04-26 21:58:00,212 : AudioInterface : Initialized
+2019-04-26 21:58:00,226 : kivy : Base: Start application main loop
+2019-04-26 21:58:00,280 : mpfmc : Display: Setting 'lcd' as default display
+2019-04-26 21:58:00,600 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\0dd66fc6c681ffbe91623556584db1f9.mpf_cache
+2019-04-26 21:58:00,603 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\5ebd232df5de466582e7c31fd627eb17.mpf_cache
+2019-04-26 21:58:00,627 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\9b5ed4443044faae1a7bea0b2e4720fa.mpf_cache
+2019-04-26 21:58:00,641 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\b5d505ac5307a0981228993d203a6202.mpf_cache
+2019-04-26 21:58:00,647 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\7317f88ce1ee903b84e696a8cfa11fff.mpf_cache
+2019-04-26 21:58:00,673 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\ea92258076c42fa9f82b1b42852527f1.mpf_cache
+2019-04-26 21:58:00,679 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\60c5f8021e9f73475ac052559b18eecb.mpf_cache
+2019-04-26 21:58:00,704 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\3f762b9510b9c6d8f0f20d57621b8608.mpf_cache
+2019-04-26 21:58:00,707 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\a7d3184283c5ac0679e08c24c756a54b.mpf_cache
+2019-04-26 21:58:00,713 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\605ac6823e387656bdb3b4e2f6a537c2.mpf_cache
+2019-04-26 21:58:00,726 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\832f22772570b4467bc46a2d5332ae44.mpf_cache
+2019-04-26 21:58:00,752 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\57a43899542802443897849e41658bdc.mpf_cache
+2019-04-26 21:58:00,755 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\ad9c48f607ffcd5e388fe3bc3c0c7fda.mpf_cache
+2019-04-26 21:58:00,779 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\be4f1e4c458cddfa55e3b2c954e186ee.mpf_cache
+2019-04-26 21:58:00,784 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\601da67c712028ad6cbd2c6d5949d426.mpf_cache
+2019-04-26 21:58:00,798 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\693ce3b0801ff769b4c6a72f41c95bfb.mpf_cache
+2019-04-26 21:58:00,828 : ConfigProcessor : Loading config from cache: C:\Users\Jim5s\AppData\Local\Temp\7e8e22c02985bf2ed9f5941b26487eea.mpf_cache
+2019-04-26 21:58:01,531 : MPF-MC BCP Server : Starting up on localhost port 5050
+2019-04-26 21:58:01,545 : MPF-MC BCP Server : Waiting for a connection...
+2019-04-26 21:58:01,546 : mpfmc : SlidePlayer: Play called with settings={'slides': {'welcome_slide': {'expire': 10.0, 'target': 'lcd', 'priority': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'show': True, 'force': False, 'slide': None, 'action': 'play', 'transition': None, 'transition_out': None}}}
+2019-04-26 21:58:01,619 : kivy : GL: NPOT texture support is available
+2019-04-26 21:58:02,221 : MPF-MC BCP Server : Received connection from: 127.0.0.1:49815
+2019-04-26 21:58:02,270 : BcpProcessor : Received invalid BCP command: mode_list
+2019-04-26 21:58:02,735 : mpfmc : SlidePlayer: Play called with settings={'slides': {'welcome_slide': {'expire': 10.0, 'target': 'lcd', 'priority': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'show': True, 'force': False, 'slide': None, 'action': 'play', 'transition': None, 'transition_out': None}}}
+2019-04-26 21:58:02,779 : mpfmc : SlidePlayer: Play called with settings={'slides': {'attract_started': {'priority': None, 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'show': True, 'force': False, 'expire': None, 'slide': None, 'action': 'play', 'transition': None, 'transition_out': None}}}
+2019-04-26 21:58:07,756 : mpfmc : base mode's sound_player: section contains a "ball_starting:" event which is also in the start_events: for the base mode. Change the sound_player: ball_starting: event name to "mode_base_started:"
+2019-04-26 21:58:07,757 : kivy : Base: Leaving application in progress...
+2019-04-26 21:58:07,758 : kivy : base mode's sound_player: section contains a "ball_starting:" event which is also in the start_events: for the base mode. Change the sound_player: ball_starting: event name to "mode_base_started:"
+Traceback (most recent call last):
+  File "c:\python36\lib\site-packages\mpfmc\commands\mc.py", line 189, in __init__
+    thread_stopper=thread_stopper).run()
+  File "c:\python36\lib\site-packages\kivy\app.py", line 826, in run
+    runTouchApp()
+  File "c:\python36\lib\site-packages\kivy\base.py", line 502, in runTouchApp
+    EventLoop.window.mainloop()
+  File "c:\python36\lib\site-packages\kivy\core\window\window_sdl2.py", line 727, in mainloop
+    self._mainloop()
+  File "c:\python36\lib\site-packages\kivy\core\window\window_sdl2.py", line 460, in _mainloop
+    EventLoop.idle()
+  File "c:\python36\lib\site-packages\kivy\base.py", line 337, in idle
+    Clock.tick()
+  File "c:\python36\lib\site-packages\kivy\clock.py", line 581, in tick
+    self._process_events()
+  File "kivy\_clock.pyx", line 384, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 414, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 412, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 167, in kivy._clock.ClockEvent.tick
+  File "c:\python36\lib\site-packages\mpfmc\core\bcp_processor.py", line 132, in _get_from_queue
+    self._process_command(cmd, **kwargs)
+  File "c:\python36\lib\site-packages\mpfmc\core\bcp_processor.py", line 150, in _process_command
+    self.bcp_commands[bcp_command](**kwargs)
+  File "c:\python36\lib\site-packages\mpfmc\core\bcp_processor.py", line 195, in _bcp_mode_start
+    self.mc.modes[name].start(mode_priority=int(priority))
+  File "c:\python36\lib\site-packages\mpfmc\core\mode.py", line 113, in start
+    **item.kwargs))
+  File "c:\python36\lib\site-packages\mpf\core\config_player.py", line 198, in mode_start
+    event_keys = self.register_player_events(config, mode, priority)
+  File "c:\python36\lib\site-packages\mpf\core\config_player.py", line 297, in register_player_events
+    mode.name, self.config_file_section, event))
+ValueError: base mode's sound_player: section contains a "ball_starting:" event which is also in the start_events: for the base mode. Change the sound_player: ball_starting: event name to "mode_base_started:"
+2019-04-26 21:58:08,033 : kivy : Stopping child threads... (3 remaining)
+2019-04-26 21:58:08,154 : mpfmc : Stopping...
+2019-04-26 21:58:08,244 : MPF-MC BCP Server : Stopping BCP sending thread
+2019-04-26 21:58:08,244 : mpfmc : Loop rate 62.47 Hz
+2019-04-26 21:58:08,545 : kivy : All child threads stopped.

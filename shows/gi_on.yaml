@@ -1,0 +1,16 @@
+#show_version=5
+#ESCAPE!
+
+- time: 0
+  lights:
+      gi_0: white
+      gi_1: white
+      gi_2: white
+      gi_3: white
+      gi_4: white
+      gi_5: white
+      gi_6: white
+      gi_7: white
+      gi_8: white
+      gi_9: white
+

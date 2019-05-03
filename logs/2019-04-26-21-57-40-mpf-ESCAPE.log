@@ -1,0 +1,132 @@
+2019-04-26 21:57:40,982 : INFO : Machine : Mission Pinball Framework Core Engine v0.50.13
+2019-04-26 21:57:40,982 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'mpfconfigfile': 'c:\\python36\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'force_assets_load': False, 'logfile': 'logs\\2019-04-26-21-57-40-mpf-ESCAPE.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None}
+2019-04-26 21:57:40,982 : INFO : Machine : MPF path: c:\python36\lib\site-packages\mpf
+2019-04-26 21:57:40,982 : INFO : Machine : Machine path: C:\Pinball
+2019-04-26 21:57:40,982 : INFO : Machine : Platform: win32
+2019-04-26 21:57:40,982 : INFO : Machine : Python executable location: c:\python36\python.exe
+2019-04-26 21:57:40,982 : INFO : Machine : Python version: 3.6.4 (64-bit)
+2019-04-26 21:57:42,200 : INFO : Machine : Machine config file #1: config.yaml
+2019-04-26 21:57:42,200 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\c4e9d623f469297d868ca16f28fbd073.mpf_cache
+2019-04-26 21:57:42,200 : INFO : ConfigProcessor : Loading config from file c:\python36\lib\site-packages\mpf\mpfconfig.yaml.
+2019-04-26 21:57:42,497 : INFO : ConfigProcessor : Loading config: c:\python36\lib\site-packages\mpf\mpfconfig.yaml
+2019-04-26 21:57:42,497 : INFO : ConfigProcessor : Loading config from file C:\Pinball\config\config.yaml.
+2019-04-26 21:57:42,528 : INFO : ConfigProcessor : Loading config: C:\Pinball\config\config.yaml
+2019-04-26 21:57:42,841 : INFO : ConfigProcessor : Loading config: C:\Pinball\config\hardware.yaml
+2019-04-26 21:57:42,903 : INFO : ConfigProcessor : Loading config: C:\Pinball\config\display.yaml
+2019-04-26 21:57:43,060 : INFO : ConfigProcessor : Loading config: C:\Pinball\config\lights.yaml
+2019-04-26 21:57:43,091 : INFO : ConfigProcessor : Loading config: C:\Pinball\config\modes.yaml
+2019-04-26 21:57:43,138 : INFO : ConfigProcessor : Loading config: C:\Pinball\config\audio.yaml
+2019-04-26 21:57:43,153 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\c4e9d623f469297d868ca16f28fbd073.mpf_cache
+2019-04-26 21:57:43,185 : INFO : Machine : Initialise MPF.
+2019-04-26 21:57:43,550 : INFO : P-ROC : Connecting to P-ROC
+2019-04-26 21:57:44,034 : INFO : P-ROC : Successfully connected to P-ROC/P3-ROC. Firmware Version: 1. Firmware Revision: 22. Hardware Board ID: 0
+2019-04-26 21:57:47,706 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\5ebd232df5de466582e7c31fd627eb17.mpf_cache
+2019-04-26 21:57:47,706 : INFO : ConfigProcessor : Loading config from file C:\Pinball\modes\upstairs\config\upstairs.yaml.
+2019-04-26 21:57:47,799 : INFO : ConfigProcessor : Loading config: C:\Pinball\modes\upstairs\config\upstairs.yaml
+2019-04-26 21:57:47,799 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\5ebd232df5de466582e7c31fd627eb17.mpf_cache
+2019-04-26 21:57:47,846 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\7317f88ce1ee903b84e696a8cfa11fff.mpf_cache
+2019-04-26 21:57:47,846 : INFO : ConfigProcessor : Loading config from file C:\Pinball\modes\bathroom\config\bathroom.yaml.
+2019-04-26 21:57:47,940 : INFO : ConfigProcessor : Loading config: C:\Pinball\modes\bathroom\config\bathroom.yaml
+2019-04-26 21:57:47,956 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\7317f88ce1ee903b84e696a8cfa11fff.mpf_cache
+2019-04-26 21:57:47,987 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\ea92258076c42fa9f82b1b42852527f1.mpf_cache
+2019-04-26 21:57:47,987 : INFO : ConfigProcessor : Loading config from file C:\Pinball\modes\playfield_bonus\config\playfield_bonus.yaml.
+2019-04-26 21:57:48,065 : INFO : ConfigProcessor : Loading config: C:\Pinball\modes\playfield_bonus\config\playfield_bonus.yaml
+2019-04-26 21:57:48,081 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\ea92258076c42fa9f82b1b42852527f1.mpf_cache
+2019-04-26 21:57:48,127 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\601da67c712028ad6cbd2c6d5949d426.mpf_cache
+2019-04-26 21:57:48,127 : INFO : ConfigProcessor : Loading config from file C:\Pinball\modes\check_exit1\config\check_exit1.yaml.
+2019-04-26 21:57:48,190 : INFO : ConfigProcessor : Loading config: C:\Pinball\modes\check_exit1\config\check_exit1.yaml
+2019-04-26 21:57:48,190 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\601da67c712028ad6cbd2c6d5949d426.mpf_cache
+2019-04-26 21:57:48,237 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\ad9c48f607ffcd5e388fe3bc3c0c7fda.mpf_cache
+2019-04-26 21:57:48,237 : INFO : ConfigProcessor : Loading config from file C:\Pinball\modes\kitchen\config\kitchen.yaml.
+2019-04-26 21:57:48,346 : INFO : ConfigProcessor : Loading config: C:\Pinball\modes\kitchen\config\kitchen.yaml
+2019-04-26 21:57:48,346 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\ad9c48f607ffcd5e388fe3bc3c0c7fda.mpf_cache
+2019-04-26 21:57:48,377 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\9b5ed4443044faae1a7bea0b2e4720fa.mpf_cache
+2019-04-26 21:57:48,377 : INFO : ConfigProcessor : Loading config from file C:\Pinball\modes\mode_select\config\mode_select.yaml.
+2019-04-26 21:57:48,424 : INFO : ConfigProcessor : Loading config: C:\Pinball\modes\mode_select\config\mode_select.yaml
+2019-04-26 21:57:48,440 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\9b5ed4443044faae1a7bea0b2e4720fa.mpf_cache
+2019-04-26 21:57:48,471 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\7e8e22c02985bf2ed9f5941b26487eea.mpf_cache
+2019-04-26 21:57:48,471 : INFO : ConfigProcessor : Loading config from file C:\Pinball\modes\attic\config\attic.yaml.
+2019-04-26 21:57:48,534 : INFO : ConfigProcessor : Loading config: C:\Pinball\modes\attic\config\attic.yaml
+2019-04-26 21:57:48,534 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\7e8e22c02985bf2ed9f5941b26487eea.mpf_cache
+2019-04-26 21:57:48,565 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\832f22772570b4467bc46a2d5332ae44.mpf_cache
+2019-04-26 21:57:48,565 : INFO : ConfigProcessor : Loading config from file C:\Pinball\modes\basement\config\basement.yaml.
+2019-04-26 21:57:48,721 : INFO : ConfigProcessor : Loading config: C:\Pinball\modes\basement\config\basement.yaml
+2019-04-26 21:57:48,737 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\832f22772570b4467bc46a2d5332ae44.mpf_cache
+2019-04-26 21:57:48,768 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\605ac6823e387656bdb3b4e2f6a537c2.mpf_cache
+2019-04-26 21:57:48,768 : INFO : ConfigProcessor : Loading config from file C:\Pinball\modes\mode_select2\config\mode_select2.yaml.
+2019-04-26 21:57:48,815 : INFO : ConfigProcessor : Loading config: C:\Pinball\modes\mode_select2\config\mode_select2.yaml
+2019-04-26 21:57:48,831 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\605ac6823e387656bdb3b4e2f6a537c2.mpf_cache
+2019-04-26 21:57:48,862 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\3f762b9510b9c6d8f0f20d57621b8608.mpf_cache
+2019-04-26 21:57:48,862 : INFO : ConfigProcessor : Loading config from file c:\python36\lib\site-packages\mpf\modes\game\config\game.yaml.
+2019-04-26 21:57:48,877 : INFO : ConfigProcessor : Loading config: c:\python36\lib\site-packages\mpf\modes\game\config\game.yaml
+2019-04-26 21:57:48,877 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\3f762b9510b9c6d8f0f20d57621b8608.mpf_cache
+2019-04-26 21:57:49,003 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\be4f1e4c458cddfa55e3b2c954e186ee.mpf_cache
+2019-04-26 21:57:49,003 : INFO : ConfigProcessor : Loading config from file C:\Pinball\modes\playfield_bonus8\config\playfield_bonus8.yaml.
+2019-04-26 21:57:49,081 : INFO : ConfigProcessor : Loading config: C:\Pinball\modes\playfield_bonus8\config\playfield_bonus8.yaml
+2019-04-26 21:57:49,081 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\be4f1e4c458cddfa55e3b2c954e186ee.mpf_cache
+2019-04-26 21:57:49,112 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\60c5f8021e9f73475ac052559b18eecb.mpf_cache
+2019-04-26 21:57:49,112 : INFO : ConfigProcessor : Loading config from file C:\Pinball\modes\quiet\config\quiet.yaml.
+2019-04-26 21:57:49,206 : INFO : ConfigProcessor : Loading config: C:\Pinball\modes\quiet\config\quiet.yaml
+2019-04-26 21:57:49,206 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\60c5f8021e9f73475ac052559b18eecb.mpf_cache
+2019-04-26 21:57:49,268 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\0dd66fc6c681ffbe91623556584db1f9.mpf_cache
+2019-04-26 21:57:49,268 : INFO : ConfigProcessor : Loading config from file C:\Pinball\modes\achievements\config\achievements.yaml.
+2019-04-26 21:57:49,346 : INFO : ConfigProcessor : Loading config: C:\Pinball\modes\achievements\config\achievements.yaml
+2019-04-26 21:57:49,346 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\0dd66fc6c681ffbe91623556584db1f9.mpf_cache
+2019-04-26 21:57:49,393 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\a7d3184283c5ac0679e08c24c756a54b.mpf_cache
+2019-04-26 21:57:49,393 : INFO : ConfigProcessor : Loading config from file C:\Pinball\modes\superspinner\config\superspinner.yaml.
+2019-04-26 21:57:49,424 : INFO : ConfigProcessor : Loading config: C:\Pinball\modes\superspinner\config\superspinner.yaml
+2019-04-26 21:57:49,424 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\a7d3184283c5ac0679e08c24c756a54b.mpf_cache
+2019-04-26 21:57:49,455 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\57a43899542802443897849e41658bdc.mpf_cache
+2019-04-26 21:57:49,455 : INFO : ConfigProcessor : Loading config from file c:\python36\lib\site-packages\mpf\modes\attract\config\attract.yaml.
+2019-04-26 21:57:49,471 : INFO : ConfigProcessor : Loading config: c:\python36\lib\site-packages\mpf\modes\attract\config\attract.yaml
+2019-04-26 21:57:49,471 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\57a43899542802443897849e41658bdc.mpf_cache
+2019-04-26 21:57:49,565 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\b5d505ac5307a0981228993d203a6202.mpf_cache
+2019-04-26 21:57:49,565 : INFO : ConfigProcessor : Loading config from file C:\Pinball\modes\playfield_bonus4\config\playfield_bonus4.yaml.
+2019-04-26 21:57:49,643 : INFO : ConfigProcessor : Loading config: C:\Pinball\modes\playfield_bonus4\config\playfield_bonus4.yaml
+2019-04-26 21:57:49,643 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\b5d505ac5307a0981228993d203a6202.mpf_cache
+2019-04-26 21:57:49,690 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\693ce3b0801ff769b4c6a72f41c95bfb.mpf_cache
+2019-04-26 21:57:49,690 : INFO : ConfigProcessor : Loading config from file C:\Pinball\modes\base\config\base.yaml.
+2019-04-26 21:57:50,002 : INFO : ConfigProcessor : Loading config: C:\Pinball\modes\base\config\base.yaml
+2019-04-26 21:57:50,002 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\693ce3b0801ff769b4c6a72f41c95bfb.mpf_cache
+2019-04-26 21:57:50,377 : INFO : SwitchController : Found active switch: s_trough1
+2019-04-26 21:57:50,377 : INFO : SwitchController : Found active switch: s_trough2
+2019-04-26 21:57:50,377 : INFO : SwitchController : Found active switch: s_trough3
+2019-04-26 21:57:50,377 : INFO : SwitchController : Found active switch: s_trough4
+2019-04-26 21:57:50,644 : INFO : BCPClientSocket.local_display : Connecting BCP to 'local_display' at localhost:5050...
+2019-04-26 21:58:02,222 : INFO : BCPClientSocket.local_display : Connected BCP to 'local_display' localhost:5050
+2019-04-26 21:58:02,491 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\1f42d7353e53a5379732c84309d7b100.mpf_cache
+2019-04-26 21:58:02,491 : INFO : ConfigProcessor : Loading config from file C:\Pinball\shows\flash_lanes.yaml.
+2019-04-26 21:58:02,548 : INFO : ConfigProcessor : Loading config: C:\Pinball\shows\flash_lanes.yaml
+2019-04-26 21:58:02,550 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\1f42d7353e53a5379732c84309d7b100.mpf_cache
+2019-04-26 21:58:02,580 : WARNING : ConfigProcessor : Cache file not found: C:\Users\Jim5s\AppData\Local\Temp\b9386666b72cdf238fba6b37e1afc504.mpf_cache
+2019-04-26 21:58:02,580 : INFO : ConfigProcessor : Loading config from file C:\Pinball\shows\gi_on.yaml.
+2019-04-26 21:58:02,606 : INFO : ConfigProcessor : Loading config: C:\Pinball\shows\gi_on.yaml
+2019-04-26 21:58:02,608 : INFO : ConfigProcessor : Config file cache created: C:\Users\Jim5s\AppData\Local\Temp\b9386666b72cdf238fba6b37e1afc504.mpf_cache
+2019-04-26 21:58:02,766 : INFO : Mode.attract : Started. Priority: 10
+2019-04-26 21:58:02,776 : INFO : Machine : Starting the main run loop.
+2019-04-26 21:58:07,440 : INFO : SwitchController : <<<<<<< 's_start' active >>>>>>>
+2019-04-26 21:58:07,568 : INFO : SwitchController : <<<<<<< 's_start' inactive >>>>>>>
+2019-04-26 21:58:07,593 : INFO : Mode.attract : Stopped.
+2019-04-26 21:58:07,595 : INFO : Mode.game : Started. Priority: 20
+2019-04-26 21:58:07,604 : INFO : Mode.game : Player added successfully. Total players: 1
+2019-04-26 21:58:07,766 : INFO : Mode.achievements : Started. Priority: 100
+2019-04-26 21:58:07,774 : INFO : Mode.base : Started. Priority: 100
+2019-04-26 21:58:07,794 : INFO : ball_device.bd_trough : Ejecting ball to <ball_device.bd_plunger>
+2019-04-26 21:58:07,799 : INFO : coil.c_trough_eject : Pulsing Driver for 20ms (1.0 pulse_power)
+2019-04-26 21:58:07,822 : INFO : SwitchController : <<<<<<< 's_trough1' inactive >>>>>>>
+2019-04-26 21:58:07,855 : INFO : SwitchController : <<<<<<< 's_trough2' inactive >>>>>>>
+2019-04-26 21:58:07,877 : INFO : SwitchController : <<<<<<< 's_trough2' active >>>>>>>
+2019-04-26 21:58:07,999 : INFO : SwitchController : <<<<<<< 's_trough2' inactive >>>>>>>
+2019-04-26 21:58:08,021 : INFO : SwitchController : <<<<<<< 's_trough3' inactive >>>>>>>
+2019-04-26 21:58:08,044 : INFO : SwitchController : <<<<<<< 's_trough4' inactive >>>>>>>
+2019-04-26 21:58:08,198 : INFO : SwitchController : <<<<<<< 's_trough3' active >>>>>>>
+2019-04-26 21:58:08,226 : INFO : SwitchController : <<<<<<< 's_trough3' inactive >>>>>>>
+2019-04-26 21:58:08,249 : INFO : SwitchController : <<<<<<< 's_trough3' active >>>>>>>
+2019-04-26 21:58:08,273 : INFO : SwitchController : <<<<<<< 's_trough2' active >>>>>>>
+2019-04-26 21:58:08,296 : WARNING : BCPClientSocket.local_display : WARNING: Failed to write to bcp since transport is closing. Transport <_SelectorSocketTransport closing fd=1200 read=idle write=<idle, bufsize=0>>
+2019-04-26 21:58:08,300 : INFO : SwitchController : <<<<<<< 's_trough3' inactive >>>>>>>
+2019-04-26 21:58:08,322 : INFO : SwitchController : <<<<<<< 's_trough1' active >>>>>>>
+2019-04-26 21:58:08,344 : INFO : SwitchController : <<<<<<< 's_trough3' active >>>>>>>
+2019-04-26 21:58:08,366 : INFO : Machine : Shutting down...
+2019-04-26 21:58:08,397 : INFO : SwitchController : <<<<<<< 's_plunger_lane' active >>>>>>>
+2019-04-26 21:58:08,443 : INFO : root : MPF run loop ended.

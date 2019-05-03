@@ -5,7 +5,7 @@ sound_system:
     buffer: 1024
     frequency: 44100
     channels: 2
-    master_volume: 0.9
+    master_volume: 10.0
     tracks:
         voice:
             volume: 0.8
@@ -16,13 +16,13 @@ sound_system:
             simultaneous_sounds: 8
             preload: yes
         music:
-            volume: 0.8
+            volume: 5.0
             simultaneous_sounds: 1
 
 assets:
     sounds:
         default:
-            load: preload
+            load: on_demand
         voice:
             load: preload
             track: voice
@@ -35,7 +35,7 @@ assets:
 
 
 sounds:
-    Background:
+    BG1:
         target: music
         events_when_looping: Background_looping
         events_when_played: Background_played

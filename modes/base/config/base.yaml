@@ -5,6 +5,12 @@ mode:
     start_events: ball_starting
     priority: 100
 
+sound_player:
+    mode_base_started:
+        BG1:
+            action: play
+            loops: -1
+
 ball_saves:
     default:
         active_time: 8s
@@ -121,9 +127,6 @@ sequence_shots:
     attic_ramp:
         switch_sequence: s_right_ramp_enter, s_right_ramp_top
         sequence_timeout: 3s
-    # captive_ball:
-    #     switch_sequence: s_captive_ball, s_captive_target
-    #     time: 2s
     ramp_targets:
         switch_sequence: s_ramp_target1, s_ramp_target2, s_ramp_target3, s_ramp_target4
         sequence_timeout: 10s
@@ -139,12 +142,9 @@ shot_groups:
         shots: e_lane, s_lane, c_lane, a_lane, p_lane, e2_lane
         rotate_left_events:
             s_left_flipper_active
-            s_popbumper1_active
             s_upper_slingshot_active
         rotate_right_events:
             s_right_flipper_active
-            s_popbumper2_active
-            s_popbumper3_active
         reset_events: rollover_lanes_lit_complete
     ramp_target_set:
         shots: ramp_target1, ramp_target2, ramp_target3, ramp_target4
@@ -166,7 +166,7 @@ counters:
             quiet_achievement_complete
             bathroom_achievement_complete
         count_events:
-            left_orbit_hit
+            right_orbit_hit
         starting_count: 0
         count_complete_value: 1
         direction: up
@@ -190,7 +190,7 @@ counters:
             basement_achievement_complete
             upstairs_achievement_complete
         count_events:
-            right_orbit_hit
+            left_orbit_hit
         starting_count: 0
         count_complete_value: 2
         direction: up
@@ -206,16 +206,6 @@ counters:
         events_when_complete:
             light_mode_select2_complete
             mode_select2_start
-    # closet_mode:
-    #     count_events:
-    #         s_subway3_active
-    #     starting_count: 0
-    #     count_complete_value: 2
-    #     direction: up
-    #     persist_state: true
-    #     events_when_complete:
-    #         closetmultiball_mode_start
-    #         closet_mode_complete
     bonus_qualify:
         count_events:
             rollover_lanes_complete
@@ -293,8 +283,8 @@ slide_player:
 widgets:
     modeselect_widget:
         -  type: text
-           text: "HIT THE LEFT ORBIT TO\nLITE SCOOP FOR MODE START" 
-           font_size: 50
+           text: "HIT THE RIGHT ORBIT TO\nLITE SCOOP FOR MODE START" 
+           font_size: 40
            font_name: FEASFBI_.ttf
            color: ffff00
            x: left+5
@@ -303,8 +293,8 @@ widgets:
            anchor_y: top
     modeselect2_widget:
         -  type: text
-           text: "HIT THE RIGHT ORBIT TWICE TO\nLITE SCOOP FOR MODE START" 
-           font_size: 50
+           text: "HIT THE LEFT ORBIT 2 TIMES TO\nLITE SCOOP FOR MODE START" 
+           font_size: 40
            font_name: FEASFBI_.ttf
            color: ffff00
            x: left+5
@@ -314,7 +304,7 @@ widgets:
     multiplier_widget:
         -  type: text
            text: "COMPLETE E.S.C.A.P.E. LANES\nTO ACTIVATE PLAYFIELD MULTIPLIER" 
-           font_size: 50
+           font_size: 40
            font_name: FEASFBI_.ttf
            color: ffff00
            x: left+5
@@ -324,7 +314,7 @@ widgets:
     spinner_widget:
         -  type: text
            text: "HIT THE RAMP TARGETS\nTO ACTVATE SUPER SPINNER" 
-           font_size: 50
+           font_size: 40
            font_name: FEASFBI_.ttf
            color: ffff00
            x: right-5
@@ -334,7 +324,7 @@ widgets:
     loopseb_widget:
         -  type: text
            text: "HIT THE LEFT RAMP 5 TIMES\nIN A ROW TO COLLECT EXRTA BALL" 
-           font_size: 50
+           font_size: 40
            font_name: FEASFBI_.ttf
            color: ffff00
            x: right-5
