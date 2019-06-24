@@ -80,12 +80,12 @@ switches:
         label: Right Flipper Button
     s_left_slingshot:
         number: SD10
-        tags: playfield_active
+        tags:
         debounce: quick
         label: Left Sling
     s_right_slingshot:
         number: SD11
-        tags: playfield_active
+        tags:
         debounce: quick
         label: Right Sling
     s_left_inlane:
@@ -94,7 +94,7 @@ switches:
         label: Left Inlane
     s_right_inlane:
         number: SD13
-        tags: playfield_active
+        tags:
         label: Right Inlane
     s_left_outlane:
         number: SD14
